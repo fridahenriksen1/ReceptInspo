@@ -1,4 +1,5 @@
  @import './sass_partials/variables';
+ @import './sass_partials/typography';
 
 // $p-900:hotpink;
 // $p-800: blue;
@@ -20,17 +21,10 @@
 .mid-rubrik3{
     font-size: 2rem;
 }
+body{
+    font-family: 'Satoshi', sans-serif;
+}
 
-h3{
-    font-size: 1.5rem;
-}
-p{
-    line-height: 1.45;
-    margin-bottom: 1rem;
-    body{
-        font-family: 'Satoshi', sans-serif;
-    }
-}
 @mixin flexbox($direction, $justify-content, $align-items , $wrap) {
     display: flex;
     flex-direction: $direction;
@@ -43,16 +37,43 @@ img{
     display: block;
     height: auto;
 }
+.main-header{
+    background-color: #e194a6;
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        @include flexbox(row, space-between, center, nowrap);
+        padding: 1rem;
+        
+        .logo{
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+           
+          
+          
+        }
+        .main-nav{
 
-.container{
-    max-width: 1200px;
-    margin: auto;
     
+            .main-menu{
+                display: flex;
+                list-style: none;
+                .main-menu-item{
+                    margin: 0 1rem;
+                    .link{
+                        color: white;
+                    a{
+                        text-decoration: none;
+                        color: #212121;
+                    }
+                }
+            }
+        }
+
+    }
 }
-.logo{
-    font-size: 2rem;
-    font-weight: 700;
-}
+
 .btn{
     display: inline-block;
     background-color: $p-900;
@@ -95,6 +116,7 @@ img{
     padding: 2rem 1rem;
 }
 #search-bar{
+    
     position: relative;
     #header-search{
         padding:1rem 1rem 1rem 3rem;
@@ -115,6 +137,7 @@ img{
         background-color: transparent;
         border: none;
         cursor: pointer;
+        
     }
 }
 .user-recipes{
@@ -244,30 +267,7 @@ img{
 
 
 
-.main-header{
-    background-color: #e194a6;
-    .container{
-        @include flexbox(row, space-between, center, nowrap);
-        padding: 1rem;
-    }
-    .logo{
-        color: white;
-    }
-    .main-menu{
-        display: flex;
-        list-style: none;
-        .main-menu-item{
-            margin: 0 1rem;
-            .link{
-                color: white;
-            }
-            a{
-                text-decoration: none;
-                color: #212121;
-            }
-        }
-    }
-}
+
 
 @mixin coverer {
     width: 100vw;

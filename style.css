@@ -38,14 +38,38 @@ img {
   height: auto;
 }
 
-.container {
+.main-header {
+  background-color: #e194a6;
+}
+.main-header .container {
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 1rem;
 }
-
-.logo {
+.main-header .container .logo {
+  color: white;
   font-size: 2rem;
   font-weight: 700;
+}
+.main-header .container .main-nav .main-menu {
+  display: flex;
+  list-style: none;
+}
+.main-header .container .main-nav .main-menu .main-menu-item {
+  margin: 0 1rem;
+}
+.main-header .container .main-nav .main-menu .main-menu-item .link {
+  color: white;
+  text-decoration: none;
+}
+.main-header .container .main-nav .main-menu .main-menu-item a {
+  text-decoration: none;
+  color: #212121;
 }
 
 .btn {
@@ -242,35 +266,6 @@ img {
 }
 .card.hide {
   display: none;
-}
-
-.main-header {
-  background-color: #e194a6;
-}
-.main-header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 1rem;
-}
-.main-header .logo {
-  color: white;
-}
-.main-header .main-menu {
-  display: flex;
-  list-style: none;
-}
-.main-header .main-menu .main-menu-item {
-  margin: 0 1rem;
-}
-.main-header .main-menu .main-menu-item .link {
-  color: white;
-}
-.main-header .main-menu .main-menu-item a {
-  text-decoration: none;
-  color: #212121;
 }
 
 #hero {
