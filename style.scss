@@ -1,36 +1,12 @@
  @import './sass_partials/variables';
+ @import './sass_partials/typography';
+ @import './sass_partials/reset';
 
-// $p-900:hotpink;
-// $p-800: blue;
 
-.rubrik1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.rubrik2{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.mid-rubrik1{
-    font-size: 2rem;
-}
-.mid-rubrik2{
-    font-size: 2rem;
-}
-.mid-rubrik3{
-    font-size: 2rem;
+body{
+    font-family: 'Satoshi', sans-serif;
 }
 
-h3{
-    font-size: 1.5rem;
-}
-p{
-    line-height: 1.45;
-    margin-bottom: 1rem;
-    body{
-        font-family: 'Satoshi', sans-serif;
-    }
-}
 @mixin flexbox($direction, $justify-content, $align-items , $wrap) {
     display: flex;
     flex-direction: $direction;
@@ -43,16 +19,78 @@ img{
     display: block;
     height: auto;
 }
+.main-header{
+    background-color: #e194a6;
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        @include flexbox(row, space-between, center, nowrap);
+        padding: 1rem;
+        
+        .logo{
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+           
+          
+          
+        }
+        .main-nav{
+            .main-menu{
+                display: flex;
+                list-style: none;
+                .main-menu-item{
+                    margin: 0 1rem;
+                    .link{
+                        color: white;
+                        // color: #212121;
+                       
+                    
+                }
+            }
+        }
 
+    }
+}
+}
+#hero{
+    position: relative;
+    color: white;
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    @include flexbox(column, center, center,nowrap);
+  }
+  .overlay{
+        filter: blur(4px);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(6px);
+  }
+}
 .container{
-    max-width: 1200px;
-    margin: auto;
+    .popular{
+        padding-top: 1.5rem;
+        margin:2rem 0;
+        .popular-cards{
+            @include flexbox(row, center, flex-start,nowrap);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+    }
     
+
 }
-.logo{
-    font-size: 2rem;
-    font-weight: 700;
-}
+
+
 .btn{
     display: inline-block;
     background-color: $p-900;
@@ -95,6 +133,7 @@ img{
     padding: 2rem 1rem;
 }
 #search-bar{
+    
     position: relative;
     #header-search{
         padding:1rem 1rem 1rem 3rem;
@@ -115,6 +154,7 @@ img{
         background-color: transparent;
         border: none;
         cursor: pointer;
+        
     }
 }
 .user-recipes{
@@ -165,15 +205,7 @@ img{
         }
     }
 }
-.popular{
-    padding-top: 1.5rem;
-    margin:2rem 0;
-    .popular-cards{
-        @include flexbox(row, center, flex-start,nowrap);
-        gap: 1rem;
-        margin-top: 1.5rem;
-    }
-}
+
 
 .card{
     position: relative;
@@ -244,30 +276,7 @@ img{
 
 
 
-.main-header{
-    background-color: #e194a6;
-    .container{
-        @include flexbox(row, space-between, center, nowrap);
-        padding: 1rem;
-    }
-    .logo{
-        color: white;
-    }
-    .main-menu{
-        display: flex;
-        list-style: none;
-        .main-menu-item{
-            margin: 0 1rem;
-            .link{
-                color: white;
-            }
-            a{
-                text-decoration: none;
-                color: #212121;
-            }
-        }
-    }
-}
+
 
 @mixin coverer {
     width: 100vw;
@@ -276,29 +285,7 @@ img{
     top: 0;
     left: 0;
 }
-#hero{
-    position: relative;
-    color: white;
-  .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    transform: translate(-50%, -50%);
-    @include flexbox(column, center, center,nowrap);
-  }
-  .overlay{
-        filter: blur(4px);
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(6px);
-  }
-}
+
   .video-header {
     position: relative;
     text-align: center;
@@ -360,13 +347,8 @@ img{
     .news-card{
         width: calc(100%/2 - 1rem);
         margin-bottom: 1rem;
-        a{
-            text-decoration: none;
-            color: #212121;
-        }
     }
     a{
-        text-decoration: none;
         color: #212121;
     }
 }
