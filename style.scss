@@ -3,30 +3,9 @@
  @import './sass_partials/reset';
 
 
-// $p-900:hotpink;
-// $p-800: blue;
-
-.rubrik1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.rubrik2{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.mid-rubrik1{
-    font-size: 2rem;
-}
-.mid-rubrik2{
-    font-size: 2rem;
-}
-.mid-rubrik3{
-    font-size: 2rem;
-}
 body{
     font-family: 'Satoshi', sans-serif;
 }
-
 
 @mixin flexbox($direction, $justify-content, $align-items , $wrap) {
     display: flex;
@@ -74,6 +53,43 @@ img{
     }
 }
 }
+#hero{
+    position: relative;
+    color: white;
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    @include flexbox(column, center, center,nowrap);
+  }
+  .overlay{
+        filter: blur(4px);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(6px);
+  }
+}
+.container{
+    .popular{
+        padding-top: 1.5rem;
+        margin:2rem 0;
+        .popular-cards{
+            @include flexbox(row, center, flex-start,nowrap);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+    }
+    
+
+}
+
 
 .btn{
     display: inline-block;
@@ -189,15 +205,7 @@ img{
         }
     }
 }
-.popular{
-    padding-top: 1.5rem;
-    margin:2rem 0;
-    .popular-cards{
-        @include flexbox(row, center, flex-start,nowrap);
-        gap: 1rem;
-        margin-top: 1.5rem;
-    }
-}
+
 
 .card{
     position: relative;
@@ -277,29 +285,7 @@ img{
     top: 0;
     left: 0;
 }
-#hero{
-    position: relative;
-    color: white;
-  .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    transform: translate(-50%, -50%);
-    @include flexbox(column, center, center,nowrap);
-  }
-  .overlay{
-        filter: blur(4px);
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(6px);
-  }
-}
+
   .video-header {
     position: relative;
     text-align: center;
@@ -361,13 +347,8 @@ img{
     .news-card{
         width: calc(100%/2 - 1rem);
         margin-bottom: 1rem;
-        a{
-            text-decoration: none;
-            color: #212121;
-        }
     }
     a{
-        text-decoration: none;
         color: #212121;
     }
 }

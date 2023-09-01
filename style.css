@@ -11,12 +11,6 @@ a {
   text-decoration: none;
 }
 
-*, html {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .rubrik1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -37,6 +31,12 @@ a {
 
 .mid-rubrik3 {
   font-size: 2rem;
+}
+
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -76,6 +76,49 @@ img {
 }
 .main-header .container .main-nav .main-menu .main-menu-item .link {
   color: white;
+}
+
+#hero {
+  position: relative;
+  color: white;
+}
+#hero .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#hero .overlay {
+  filter: blur(4px);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.container .popular {
+  padding-top: 1.5rem;
+  margin: 2rem 0;
+}
+.container .popular .popular-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .btn {
@@ -201,20 +244,6 @@ img {
   background-color: blue;
 }
 
-.popular {
-  padding-top: 1.5rem;
-  margin: 2rem 0;
-}
-.popular .popular-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
 .card {
   position: relative;
   height: 350px;
@@ -272,35 +301,6 @@ img {
 }
 .card.hide {
   display: none;
-}
-
-#hero {
-  position: relative;
-  color: white;
-}
-#hero .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-#hero .overlay {
-  filter: blur(4px);
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
 }
 
 .video-header {
@@ -375,11 +375,6 @@ img {
   width: calc(50% - 1rem);
   margin-bottom: 1rem;
 }
-.news .news-card a {
-  text-decoration: none;
-  color: #212121;
-}
 .news a {
-  text-decoration: none;
   color: #212121;
 }/*# sourceMappingURL=style.css.map */
