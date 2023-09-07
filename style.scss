@@ -1,7 +1,26 @@
  @import './sass_partials/variables';
  @import './sass_partials/typography';
  @import './sass_partials/reset';
+ @import './sass_partials/breakpoints';
+ @import './sass_partials/colors';
+ @import './sass_partials/base';
+ @import './sass_partials/components/buttons';
 
+
+//  //! componenter från lektionen
+// @import 'sass/komponenter/buttons';
+
+
+
+// @mixin flexbox($justify:flex-start,$alignItem:stretch){
+//     display: flex;
+//     justify-content: $justify;
+//     align-items: $alignItem;
+
+// }
+// .container{
+//     @include flexbox(center);
+// }
 
 body{
     font-family: 'Satoshi', sans-serif;
