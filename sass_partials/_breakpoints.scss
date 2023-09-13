@@ -1,3 +1,11 @@
+@import '/sass_partials/variables';
+
+
+@mixin xs{
+    @media(min-width: $bp-xs){
+        @content;
+    }
+}
 @mixin sm{
     @media(min-width: $bp-sm){
         @content;
@@ -8,11 +16,46 @@
         @content;
     }
 }
+@mixin lg{
+    @media(min-width: $bp-lg){
+        @content;
+    }
+}
 @mixin breakpoint($bp:0){
     @media(min-width: $bp){
         @content;
     }
 
+}
+
+
+.responsive-cards{
+    @include xs{
+       
+    }
+    @include sm{
+        
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
+}
+.r-popular-cards{
+    @include xs{
+       
+    }
+    @include sm{
+        
+    }
+    @include md{
+        
+    }
+    @include lg{
+        
+    }
 }
 
 .responsive-test{
