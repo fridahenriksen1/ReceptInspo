@@ -1,0 +1,14 @@
+
+
+.btn{
+    @include btn();
+   
+}
+.btn-primary{
+    @include btn($palette-1);
+
+}
+.btn-secondary{
+    @include btn($palette-2, $palette-5);
+
+}
