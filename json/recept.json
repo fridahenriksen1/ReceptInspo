@@ -43,35 +43,56 @@
     },
     {
         "id": 2,
-        "name": "Spaghetti Bolognese",
+        "name": "Vodka pasta",
         "category": "pasta",
-        "description": "En klassisk italiensk rätt med smakrik köttfärssås och al dente kokt spaghetti.",
+        "description": "Vodkapasta är en krämig och smakrik pastarätt med en distinkt smak av vodka och chili. Den är en perfekt kombination av kryddig hetta och krämig gräddighet. Denna pastarätt är enkel att förbereda och passar både för vardagsmiddagar och speciella tillfällen.",
         "ingredients": [
             {
-                "quantity": "250 g",
-                "name": "spaghetti",
-                "type": "Pasta"
+                "quantity": "3 st",
+                "name": "vitlöksklyftor",
+                "type": "Vegetables"
             },
             {
-                "quantity": "300 g",
-                "name": "köttfärs",
-                "type": "Meat"
+                "quantity": "2 msk",
+                "name": "olivolja",
+                "type": "Condiments"
             },
             {
-                "quantity": "1 burk",
-                "name": "krossade tomater",
+                "quantity": "1 dl",
+                "name": "tomatpuré",
                 "type": "Canned Goods"
             },
             {
-                "quantity": "1",
-                "name": "gul lök",
-                "type": "Vegetables"
+                "quantity": "1/2 tsk",
+                "name": "chilliflakes",
+                "type": "Spices"
             },
             {
-                "quantity": "2",
-                "name": "vitlöksklyftor",
-                "type": "Vegetables"
+                "quantity": "1/2 dl",
+                "name": "vodka",
+                "type": "Drinks"
+            },
+            {
+                "quantity": "2 1/2 dl",
+                "name": "vispgrädde",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "4 port",
+                "name": "pasta",
+                "type": "Pasta" 
             }
+
         ],
         "steps": [
             "Koka spaghettin enligt anvisningarna på förpackningen.",
