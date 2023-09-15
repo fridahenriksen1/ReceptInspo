@@ -52,6 +52,7 @@ h3 {
 p {
   line-height: 1.45;
   margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 @media (min-width: 1200px) {
   p {
@@ -61,6 +62,7 @@ p {
 
 a {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn {
@@ -97,7 +99,7 @@ a {
 }
 
 body {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Inclusive Sans", sans-serif;
 }
 
 img {
