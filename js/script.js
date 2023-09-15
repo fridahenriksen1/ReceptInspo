@@ -56,7 +56,7 @@ fetch(jsonUrl)
     if(dataUserCards){
         getCard();
     }
-    const maxCardsToShow = 3; // Antal kort att visa
+    const maxCardsToShow = 4; // Antal kort att visa
     if(dataUserPopuar){
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
