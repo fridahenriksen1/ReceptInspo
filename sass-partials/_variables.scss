@@ -1,14 +1,8 @@
-// $direction: cloumn;
-// $justify-content: space-between;
-// $p-900:rgb(107, 184, 65);
-// $p-800: blue;
-
-
-$palette-1:#ef476f;
+$primary-color:#B8B89E;
 $palette-2: #ffc233;
 $palette-3: #06d6a0;
 $palette-4: #1b98e0;
-$palette-5: #ff9f1c;
+$neutral-dark: rgb(11, 11, 11);
 
 //! Breakpoints
 
@@ -19,7 +13,9 @@ $bp-lg:960px;
 $bp-xl:1200px;
 
 //! Font Family
-
-
+ //!Rubrik
+$primary-text: 'Inclusive Sans', sans-serif;
+//!Brödtext 
+$primary-secondary: 'Roboto', sans-serif;
 
 //! 

@@ -1,6 +1,14 @@
-@import 'mixin';
-@import 'variables';
+//Rensa i html och använd generella element h1,h2 osv 
+h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    @include bp-sm{
+        font-size: 4rem;
+    }
+}
+h2{
 
+}
 h3{
     font-size: 1.5rem;
 }
@@ -12,16 +20,6 @@ p{
 a{
     text-decoration: none;
   
-}
-.rubrik1{
-
-    @include xs-h1;
-    @media(min-width:360px){
-        font-size: 1rem;
-    }
-    font-size: 3rem;
-    margin-bottom: 1rem;
-   
 }
 .rubrik2{
     font-size: 3rem;

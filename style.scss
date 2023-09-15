@@ -1,10 +1,12 @@
 //  @import 'sass-partials/variables';
 @import 'sass-partials/variables';
+@import 'sass-partials/mixin';
+@import 'sass-partials/reset';
  @import 'sass-partials/typography';
- @import 'sass-partials/reset';
+
  @import 'sass-partials/breakpoints';
 
- @import 'sass-partials/mixin';
+
  @import 'sass-partials/components/buttons';
 
 
@@ -12,28 +14,10 @@
 // @import 'sass/komponenter/buttons';
 
 
-
-// @mixin flexbox($justify:flex-start,$alignItem:stretch){
-//     display: flex;
-//     justify-content: $justify;
-//     align-items: $alignItem;
-
-// }
-// .container{
-//     @include flexbox(center);
-// }
-
 body{
     font-family: 'Satoshi', sans-serif;
 }
 
-// @mixin flexbox($direction, $justify-content, $align-items , $wrap) {
-//     display: flex;
-//     flex-direction: $direction;
-//     justify-content: $justify-content;
-//     align-items: $align-items;
-//     flex-wrap: $wrap;
-// }
 img{
     width: 100%;
     display: block;
@@ -44,11 +28,13 @@ img{
     margin: auto;
 }
 .main-header{
-    background-color: #e194a6;
-        // @include flexbox(row, space-between, center, nowrap);
+        background-color:$primary-color;
         padding: 1rem;
+        .container{
+            @include flexbox(space-between, center, nowrap);
+        }
         .logo{
-            color: white;
+            color: rgb(11, 11, 11);
             font-size: 2rem;
             font-weight: 700;
         }
@@ -59,7 +45,7 @@ img{
                 .main-menu-item{
                     margin: 0 1rem;
                     .link{
-                        color: white;
+                        color: $neutral-dark;
                         // color: #212121;
                        
                     
@@ -74,14 +60,25 @@ img{
 #hero{
     position: relative;
     color: white;
-  .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    transform: translate(-50%, -50%);
-    // @include flexbox(column, center, center,nowrap);
-  }
+    position: relative;
+    text-align: center;
+    background-color: grey;
+    //? Borde detta vara kvar?
+    width: 100vw;
+    height: 50vh;
+    video {
+      object-fit: cover;
+      @include coverer;
+    }
+
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        // @include flexbox(column, center, center,nowrap);
+    }
   .overlay{
         filter: blur(4px);
         position: absolute;
@@ -98,8 +95,7 @@ img{
         padding-top: 1.5rem;
         margin:2rem 0;
         .popular-cards{
-            // @include flexbox(row, center, flex-start,nowrap);
-          
+            @include flexbox(center,stretch,wrap);
             gap: 1rem;
             margin-top: 1.5rem;
         }
@@ -109,13 +105,13 @@ img{
 .card{
     position: relative;
     height: 350px;
-    margin-bottom: 1rem;
     border-radius: 1rem;
-    overflow: hidden;
-    width:400px;
-    // a{
-    //     color: #212121;
-    // }
+    @include bp-sm{
+        flex: 0 0 calc(100%/2 - 1rem);
+    }
+    @include bp-lg{
+        flex: 0 0 calc(100%/3 - 1rem);
+    }
     .gradient{
         top: 0;
         bottom: 0;
@@ -171,18 +167,7 @@ img{
         display: none;
     }
 }
-.btn{
-    display: inline-block;
-    background-color: red;
-    color: white;
-    font-weight: 500;
-    padding: .7rem 2rem;
-    border-radius: 10px;
-    border: none;
-    &.btn-submit{
-        background-color: green;
-    }
-}
+
 
 .quote{
     background-color: green;
@@ -200,15 +185,7 @@ img{
         text-align: center;
     }
 }
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
+
 #search{
     padding: 2rem 1rem;
 }
@@ -238,7 +215,7 @@ img{
     }
 }
 .user-recipes{
-    // @include flexbox(row, center, flex-start,wrap);
+    @include flexbox(center, flex-start,wrap);
     
     gap: 1rem;
 }
@@ -297,17 +274,7 @@ img{
 }
 
   .video-header {
-    position: relative;
-    text-align: center;
-    //? Borde detta vara kvar?
-    // width: 100vw;
-    // height: 50vh;
-    &, video, .viewport-header {
-      @include coverer;
-    }
-    video {
-      object-fit: cover;
-    }
+    
     
   }
   .textField{
