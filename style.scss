@@ -1,11 +1,11 @@
 //  @import 'sass-partials/variables';
 @import 'sass-partials/variables';
-//  @import 'sass-partials/typography';
-//  @import 'sass-partials/reset';
-//  @import 'sass-partials/breakpoints';
-//  @import 'sass-partials/colors';
-//  @import 'sass-partials/base';
-//  @import 'sass-partials/components/buttons';
+ @import 'sass-partials/typography';
+ @import 'sass-partials/reset';
+ @import 'sass-partials/breakpoints';
+
+ @import 'sass-partials/mixin';
+ @import 'sass-partials/components/buttons';
 
 
   //! componenter från lektionen
@@ -27,32 +27,30 @@ body{
     font-family: 'Satoshi', sans-serif;
 }
 
-@mixin flexbox($direction, $justify-content, $align-items , $wrap) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
-    flex-wrap: $wrap;
-}
+// @mixin flexbox($direction, $justify-content, $align-items , $wrap) {
+//     display: flex;
+//     flex-direction: $direction;
+//     justify-content: $justify-content;
+//     align-items: $align-items;
+//     flex-wrap: $wrap;
+// }
 img{
     width: 100%;
     display: block;
     height: auto;
 }
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 .main-header{
     background-color: #e194a6;
-    .container{
-        
-        @include flexbox(row, space-between, center, nowrap);
+        // @include flexbox(row, space-between, center, nowrap);
         padding: 1rem;
-        
         .logo{
             color: white;
             font-size: 2rem;
             font-weight: 700;
-           
-          
-          
         }
         .main-nav{
             .main-menu{
@@ -70,12 +68,9 @@ img{
         }
 
     }
+
 }
-}
-.container{
-    max-width: 1200px;
-    margin: auto;
-}
+
 #hero{
     position: relative;
     color: white;
@@ -85,7 +80,7 @@ img{
     left: 50%;
     z-index: 3;
     transform: translate(-50%, -50%);
-    @include flexbox(column, center, center,nowrap);
+    // @include flexbox(column, center, center,nowrap);
   }
   .overlay{
         filter: blur(4px);
@@ -99,23 +94,17 @@ img{
         backdrop-filter: blur(6px);
   }
 }
-.container{
     .popular{
         padding-top: 1.5rem;
         margin:2rem 0;
         .popular-cards{
-            @include flexbox(row, center, flex-start,nowrap);
+            // @include flexbox(row, center, flex-start,nowrap);
+          
             gap: 1rem;
             margin-top: 1.5rem;
-
-            
-            
-            
         }
     }
-    
 
-}
 
 .card{
     position: relative;
@@ -123,7 +112,7 @@ img{
     margin-bottom: 1rem;
     border-radius: 1rem;
     overflow: hidden;
-    // width:400px;
+    width:400px;
     // a{
     //     color: #212121;
     // }
@@ -249,7 +238,8 @@ img{
     }
 }
 .user-recipes{
-    @include flexbox(row, center, flex-start,wrap);
+    // @include flexbox(row, center, flex-start,wrap);
+    
     gap: 1rem;
 }
 .chips{
@@ -298,12 +288,6 @@ img{
 }
 
 
-
-
-
-
-
-
 @mixin coverer {
     width: 100vw;
     height: 50vh;
@@ -315,8 +299,9 @@ img{
   .video-header {
     position: relative;
     text-align: center;
-    width: 100vw;
-    height: 50vh;
+    //? Borde detta vara kvar?
+    // width: 100vw;
+    // height: 50vh;
     &, video, .viewport-header {
       @include coverer;
     }
@@ -362,7 +347,7 @@ img{
 }
 .news{
     margin: 2rem 0;
-    @include flexbox(row, space-between, flex-start,wrap);
+    // @include flexbox(row, space-between, flex-start,wrap);
     h2{
         width: 100%;
         margin-bottom: 1rem;

@@ -130,7 +130,7 @@
             0
         ],
         "html": "recept/spaghetti_bolognese.html",
-        "imageURL": "../img/bolognese.webp"
+        "imageURL": "../img/paella.jpg"
     },
     {
         "id": 3,
@@ -179,7 +179,7 @@
             0
         ],
         "html": "chicken_stir_fry.html",
-        "imageURL": "../img/bolognese.webp"
+        "imageURL": "../img/paella.jpg"
     },
     {
         "id": 4,

@@ -1,3 +1,54 @@
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.rubrik1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 360px) {
+  .rubrik1 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 360px) {
+  .rubrik1 {
+    font-size: 1rem;
+  }
+}
+
+.rubrik2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mid-rubrik1 {
+  font-size: 2rem;
+}
+
+.mid-rubrik2 {
+  font-size: 2rem;
+}
+
+.mid-rubrik3 {
+  font-size: 2rem;
+}
+
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Satoshi", sans-serif;
 }
@@ -8,36 +59,29 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .main-header {
   background-color: #e194a6;
-}
-.main-header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
   padding: 1rem;
 }
-.main-header .container .logo {
+.main-header .logo {
   color: white;
   font-size: 2rem;
   font-weight: 700;
 }
-.main-header .container .main-nav .main-menu {
+.main-header .main-nav .main-menu {
   display: flex;
   list-style: none;
 }
-.main-header .container .main-nav .main-menu .main-menu-item {
+.main-header .main-nav .main-menu .main-menu-item {
   margin: 0 1rem;
 }
-.main-header .container .main-nav .main-menu .main-menu-item .link {
+.main-header .main-nav .main-menu .main-menu-item .link {
   color: white;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
 }
 
 #hero {
@@ -50,11 +94,6 @@ img {
   left: 50%;
   z-index: 3;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
 }
 #hero .overlay {
   filter: blur(4px);
@@ -69,16 +108,11 @@ img {
           backdrop-filter: blur(6px);
 }
 
-.container .popular {
+.popular {
   padding-top: 1.5rem;
   margin: 2rem 0;
 }
-.container .popular .popular-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+.popular .popular-cards {
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -89,6 +123,7 @@ img {
   margin-bottom: 1rem;
   border-radius: 1rem;
   overflow: hidden;
+  width: 400px;
 }
 .card .gradient {
   top: 0;
@@ -208,11 +243,6 @@ img {
 }
 
 .user-recipes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -260,8 +290,6 @@ img {
 .video-header {
   position: relative;
   text-align: center;
-  width: 100vw;
-  height: 50vh;
 }
 .video-header, .video-header video, .video-header .viewport-header {
   width: 100vw;
@@ -312,11 +340,6 @@ img {
 
 .news {
   margin: 2rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
 .news h2 {
   width: 100%;

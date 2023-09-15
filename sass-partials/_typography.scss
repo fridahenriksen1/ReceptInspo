@@ -1,3 +1,6 @@
+@import 'mixin';
+@import 'variables';
+
 h3{
     font-size: 1.5rem;
 }
@@ -11,8 +14,14 @@ a{
   
 }
 .rubrik1{
+
+    @include xs-h1;
+    @media(min-width:360px){
+        font-size: 1rem;
+    }
     font-size: 3rem;
     margin-bottom: 1rem;
+   
 }
 .rubrik2{
     font-size: 3rem;
