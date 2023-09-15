@@ -1,61 +1,37 @@
-@import 'variables';
+//!Mixin för mediafrågor
+@mixin bp-sm{
+    @media(min-width: $bp-sm){
+        @content;
+    }
+}
+@mixin bp-md{
+    @media(min-width: $bp-md){
+        @content;
+    }
+}
+@mixin bp-lg{
+    @media(min-width: $bp-lg){
+        @content;
+    }
+}
+@mixin bp-xl{
+    @media(min-width: $bp-xl){
+        @content;
+    }
+}
 
+//Mixin för att använda flexbox
+@mixin flexbox($justify:flex-start,$alignItem:stretch,$wrap:nowrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignItem;
+    flex-wrap: $wrap;
+}
 
-//! MIXIN Media frågor
-
-//!Kan ha t.ex phone-wrap eller no-phone-wrap istället för xs så det blir mer anpassningsbart
-// @mixin xs{
-//     @media(max-width: $bp-xs){
-//         @include center;
-//     }
-// }
-// @mixin sm{
-//     @media(max-width: $bp-sm){
-//         @content;
-//     }
-// }
-// @mixin md{
-//     @media(max-width: $bp-md){
-//         @content;
-//     }
-// }
-// @mixin lg{
-//     @media(max-width: $bp-lg){
-//         @content;
-//     }
-// }
-// @mixin breakpoint($bp:0){
-//     @media(max-width: $bp){
-//         @content;
-//     }
-
-// }
-
-
-//! rubrik h1 för att göra fonten mindre i mobil
-@mixin xs-h1{
-          @media(min-width: $bp-xs){
-            @content;
-            font-size: 1rem;
-            
-          }
-        }
-
-
-//! MIXIN flexbox
-
-
-//! Komponenter knapp/Knappar
-
-// @mixin btn($bg-color:#818181, $text-color:#ffffff){
-//     display: inline-block;
-//     cursor: pointer;
-//     background-color: $bg-color;
-//     padding: 1rem 2rem;
-//     border-radius: 10px;
-//     border:0;
-//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
-//     color: $text-color;
-
-// }
-
+@mixin coverer {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
