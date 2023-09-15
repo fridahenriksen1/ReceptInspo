@@ -92,12 +92,15 @@ img{
   }
 }
     .popular{
-        padding-top: 1.5rem;
         margin:2rem 0;
+       padding: 1.5rem 1rem;
+
+      
         .popular-cards{
             @include flexbox(center,stretch,wrap);
             gap: 1rem;
             margin-top: 1.5rem;
+           
         }
     }
 
