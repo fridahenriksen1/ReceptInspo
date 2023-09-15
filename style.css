@@ -206,6 +206,11 @@ img {
     flex: 0 0 calc(25% - 1rem);
   }
 }
+@media (min-width: 1200px) {
+  .card {
+    padding-bottom: 9rem;
+  }
+}
 .card .card-bg {
   background-color: white;
   padding: 0.2rem 0.8rem;

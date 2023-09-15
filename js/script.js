@@ -66,6 +66,7 @@ fetch(jsonUrl)
                 const img = card.querySelector('[data-image]');
                 const cat = card.querySelector('[data-cat]');
                 const link = card.querySelector('[data-link]');
+                
                 link.setAttribute('href', recipe.html);
                 header.textContent = recipe.name;
                 cat.textContent = recipe.category;

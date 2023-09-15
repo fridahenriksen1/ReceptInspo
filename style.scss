@@ -118,6 +118,10 @@ img{
     @include bp-lg{
         flex: 0 0 calc(100%/4 - 1rem);
     }
+    @include bp-xl{
+        padding-bottom:9rem;
+       
+    }
     // .gradient{
     //     top: 0;
     //     bottom: 0;
