@@ -92,7 +92,11 @@ img{
 }
     .popular{
         margin:2rem 0;
-       padding: 1.5rem 1rem;
+       padding: 1.5rem 0rem;
+       @include bp-sm{
+        padding: 1.5rem 1rem;
+        
+    }
 
       
         .popular-cards{

@@ -179,7 +179,12 @@ img {
 
 .popular {
   margin: 2rem 0;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0rem;
+}
+@media (min-width: 480px) {
+  .popular {
+    padding: 1.5rem 1rem;
+  }
 }
 .popular .popular-cards {
   display: flex;
