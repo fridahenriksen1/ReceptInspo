@@ -349,3 +349,25 @@ img{
         color: #212121;
     }
 }
+
+
+
+//!Här är rubriken i recept
+.recipe-heading{
+    padding-top:3rem;
+}
+
+.time-recipe{
+    
+    font-size: 1rem;
+    background-color: rgb(138, 167, 138);
+    @include flexbox(stretch);
+   
+}
+//!Information i recept sidorna
+.info-recipe{
+    padding-top: 3rem;
+}
+.steps-container{
+ //padding-top: 2rem;
+}
