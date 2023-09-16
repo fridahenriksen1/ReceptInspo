@@ -43,41 +43,62 @@
     },
     {
         "id": 2,
-        "name": "Spaghetti Bolognese",
+        "name": "Vodka pasta",
         "category": "pasta",
-        "description": "En klassisk italiensk rätt med smakrik köttfärssås och al dente kokt spaghetti.",
+        "description": "Vodkapasta är en krämig och smakrik pastarätt med en distinkt smak av vodka och chili. Den är en perfekt kombination av kryddig hetta och krämig gräddighet. Denna pastarätt är enkel att förbereda och passar både för vardagsmiddagar och speciella tillfällen.",
         "ingredients": [
             {
-                "quantity": "250 g",
-                "name": "spaghetti",
-                "type": "Pasta"
+                "quantity": "3 st",
+                "name": "vitlöksklyftor",
+                "type": "Vegetables"
             },
             {
-                "quantity": "300 g",
-                "name": "köttfärs",
-                "type": "Meat"
+                "quantity": "2 msk",
+                "name": "olivolja",
+                "type": "Condiments"
             },
             {
-                "quantity": "1 burk",
-                "name": "krossade tomater",
+                "quantity": "1 dl",
+                "name": "tomatpuré",
                 "type": "Canned Goods"
             },
             {
-                "quantity": "1",
-                "name": "gul lök",
-                "type": "Vegetables"
+                "quantity": "1/2 tsk",
+                "name": "chilliflakes",
+                "type": "Spices"
             },
             {
-                "quantity": "2",
-                "name": "vitlöksklyftor",
-                "type": "Vegetables"
+                "quantity": "1/2 dl",
+                "name": "vodka",
+                "type": "Drinks"
+            },
+            {
+                "quantity": "2 1/2 dl",
+                "name": "vispgrädde",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "4 port",
+                "name": "pasta",
+                "type": "Pasta" 
             }
+
         ],
         "steps": [
-            "Koka spaghettin enligt anvisningarna på förpackningen.",
-            "Stek köttfärsen tills den är genomstekt. Tillsätt lök och vitlök.",
-            "Tillsätt de krossade tomaterna och låt sjuda i cirka 15-20 minuter.",
-            "Servera köttfärssåsen över den kokta spaghettin."
+            "Skala och hacka vitlöken. Fräs i oljan tills den får lite färg. Tillsätt tomatpuré och chiliflakes och fräs ytterligare ca 5 minuter på medelvärme. Häll i vodkan och låt koka någon minut.",
+            "Öppna timer: 5 minuter.",
+            "Rör ner grädden och låt koka ihop. Smaka av med salt och peppar.",
+            "Koka pastan enligt anvisning på förpackningen. Häll av och spar 1–2 dl av pastavattnet (för 4 port). Rör ner pastan. Tillsätt lite pastavatten i taget rör till önskad konsistens. Toppa med parmesan och basilika."
         ],
         "timers": [
             0,

@@ -56,7 +56,7 @@ fetch(jsonUrl)
     if(dataUserCards){
         getCard();
     }
-    const maxCardsToShow = 3; // Antal kort att visa
+    const maxCardsToShow = 4; // Antal kort att visa
     if(dataUserPopuar){
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
@@ -66,6 +66,7 @@ fetch(jsonUrl)
                 const img = card.querySelector('[data-image]');
                 const cat = card.querySelector('[data-cat]');
                 const link = card.querySelector('[data-link]');
+                
                 link.setAttribute('href', recipe.html);
                 header.textContent = recipe.name;
                 cat.textContent = recipe.category;
