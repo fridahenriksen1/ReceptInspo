@@ -1,0 +1,26 @@
+//!Här är rubriken i recept
+.recipe-heading{
+    padding-top:3rem;
+}
+
+.time-recipe{
+    
+    font-size: 1rem;
+   
+    // @include flexbox(stretch);
+
+   
+}
+//!Information i recept sidorna
+.info-recipe{
+    //padding-top: 1rem;
+}
+.steps-container{
+ //padding-top: 2rem;
+}
+
+.time-ingredients-container{
+    margin-top: 2rem;
+    background-color: rgb(138, 167, 138);
+         
+}

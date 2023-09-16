@@ -39,6 +39,8 @@
         ],
         "html": "recept/paella.html",
         "time": "Cirka 20 min",
+        "buyIngredients": "7 ingredienser",
+        "base": "Bas: Sallad",
         "imageURL": "../img/paella.jpg"
     },
     {

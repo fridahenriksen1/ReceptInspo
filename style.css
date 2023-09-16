@@ -65,6 +65,19 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+.recipe-heading {
+  padding-top: 3rem;
+}
+
+.time-recipe {
+  font-size: 1rem;
+}
+
+.time-ingredients-container {
+  margin-top: 2rem;
+  background-color: rgb(138, 167, 138);
+}
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -402,21 +415,4 @@ img {
 }
 .news a {
   color: #212121;
-}
-
-.recipe-heading {
-  padding-top: 3rem;
-}
-
-.time-recipe {
-  font-size: 1rem;
-  background-color: rgb(138, 167, 138);
-  display: flex;
-  justify-content: stretch;
-  align-items: stretch;
-  flex-wrap: nowrap;
-}
-
-.info-recipe {
-  padding-top: 3rem;
 }/*# sourceMappingURL=style.css.map */

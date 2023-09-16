@@ -19,17 +19,25 @@ fetch('../json/recept.json')
             let h2I = document.createElement('h2');
             let section1 = document.createElement('section');
             let section2 = document.createElement('section');
+            let section3 = document.createElement('section');
             let time = document.createElement('span');
+            let buyIngredients = document.createElement('span');
+            let base = document.createElement('span');
             h1.textContent = item.name;
             p.textContent = item.description;
             time.textContent = item.time;
+            buyIngredients.textContent = item.buyIngredients;
+           base.textContent = item.base;
             img.setAttribute('src',item.imageURL);
             h1.classList.add('class', 'recipe-heading')
             figure.setAttribute('class','recept-img');
-            time.classList.add('class', 'time-recipe')
+            time.classList.add('class', 'time-recipe');
+            buyIngredients.classList.add('class','buy-ingredients');
+            base.classList.add('class','base-ingredients');
             p.classList.add('class', 'info-recipe')
             section1.classList.add('steps-container');
             section2.classList.add('steps-container');
+            section3.classList.add('time-ingredients-container');
             h2G.textContent = 'Gör så här';
             h2I.textContent = 'Ingredienser';
             ul.classList.add('steps-list');
@@ -47,11 +55,13 @@ fetch('../json/recept.json')
                 ul.append(li);
             });
             //Lägger till det nya elementen i DOM
-            section1.append(time,p,h2I,ul);
+
+            section3.append(time,buyIngredients,base);
+            section1.append(p,h2I,ul);
             section2.append(h2G,ol);
             figure.append(img);
             header.append(h1);
-            getID.append(header,figure,section1,section2); 
+            getID.append(header,figure,section3,section1,section2); 
         }
     });
 })
