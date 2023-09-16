@@ -24,7 +24,10 @@ fetch('../json/recept.json')
             p.textContent = item.description;
             time.textContent = item.time;
             img.setAttribute('src',item.imageURL);
+            h1.classList.add('class', 'recipe-heading')
             figure.setAttribute('class','recept-img');
+            time.classList.add('class', 'time-recipe')
+            p.classList.add('class', 'info-recipe')
             section1.classList.add('steps-container');
             section2.classList.add('steps-container');
             h2G.textContent = 'Gör så här';
@@ -44,11 +47,11 @@ fetch('../json/recept.json')
                 ul.append(li);
             });
             //Lägger till det nya elementen i DOM
-            section1.append(h2G,ol);
-            section2.append(h2I,ul);
+            section1.append(time,p,h2I,ul);
+            section2.append(h2G,ol);
             figure.append(img);
-            header.append(time,h1,p);
-            getID.append(figure,header,section1,section2); 
+            header.append(h1);
+            getID.append(header,figure,section1,section2); 
         }
     });
 })
