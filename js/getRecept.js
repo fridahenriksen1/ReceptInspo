@@ -23,6 +23,8 @@ fetch('../json/recept.json')
             let time = document.createElement('span');
             let buyIngredients = document.createElement('span');
             let base = document.createElement('span');
+            //! icon from google symbols
+            let icon = document.createElement('span');
             h1.textContent = item.name;
             p.textContent = item.description;
             time.textContent = item.time;
@@ -42,6 +44,9 @@ fetch('../json/recept.json')
             h2I.textContent = 'Ingredienser';
             ul.classList.add('steps-list');
             ol.classList.add('steps-list');
+            //! icon from google symbols
+            icon.classList.add('material-symbols-outlined');
+            icon.textContent = item.icon;
             //För att skapa nya LI för varje step i json
             item.steps.forEach(step => {
                 let li = document.createElement('li');
@@ -56,7 +61,7 @@ fetch('../json/recept.json')
             });
             //Lägger till det nya elementen i DOM
 
-            section3.append(time,buyIngredients,base);
+            section3.append(time,icon,buyIngredients,base);
             section1.append(p,h2I,ul);
             section2.append(h2G,ol);
             figure.append(img);

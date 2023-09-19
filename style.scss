@@ -235,7 +235,7 @@ img{
 }
 .user-recipes{
     @include flexbox(center, flex-start,wrap);
-    
+  
     gap: 1rem;
 }
 .chips{
@@ -253,12 +253,7 @@ img{
     }
     
 }
-.steps-container{
-    padding: 2rem;
-    .steps-list{
 
-    }
-}
 #categorys{
     margin-top: 1rem;
 }

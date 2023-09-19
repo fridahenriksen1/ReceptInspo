@@ -3,14 +3,7 @@
     padding-top:3rem;
 }
 
-.time-recipe{
-    
-    font-size: 1rem;
-   
-    // @include flexbox(stretch);
 
-   
-}
 //!Information i recept sidorna
 .info-recipe{
     //padding-top: 1rem;
@@ -22,5 +15,42 @@
 .time-ingredients-container{
     margin-top: 2rem;
     background-color: rgb(138, 167, 138);
+    
+     @include flex-spacebetween(space-around);
+
+    .time-recipe{
+    
+        font-size: 1rem;
+       
+        // @include flexbox(stretch);
+    }
+    //!Hur många ingredinser som är i receptet
+    .buy-ingredients{
+
+    }
+    //! Vilken bas ingrediens som är huvudbasen i rätten
+    .base-ingredients{
+
+    }
+   //! ikoner ovanför texten
+    .material-symbols-outlined{
+    
+    }
          
 }
+//! container runt "ingredinser" och "Gör såhär"
+.steps-container{
+    padding: 2rem;
+    .steps-list{
+
+      li{
+        background-color: white;
+        margin:0.5rem;
+        padding:1rem;
+        border-radius: 0.25rem;
+        
+      }
+
+    }
+}
+
