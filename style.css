@@ -81,6 +81,9 @@ a {
 .steps-container {
   padding: 2rem 0rem;
 }
+.steps-container .steps-list {
+  list-style: none;
+}
 .steps-container .steps-list li {
   background-color: white;
   margin: 0.5rem;
