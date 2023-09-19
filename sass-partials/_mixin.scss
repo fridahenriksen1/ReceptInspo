@@ -28,6 +28,11 @@
     flex-wrap: $wrap;
 }
 
+@mixin flex-spacebetween($justify:space-between){
+    display: flex;
+    justify-content: $justify;
+}
+
 @mixin coverer {
     width: 100vw;
     height: 50vh;

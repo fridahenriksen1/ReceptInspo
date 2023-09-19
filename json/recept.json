@@ -41,7 +41,9 @@
         "time": "Cirka 20 min",
         "buyIngredients": "7 ingredienser",
         "base": "Bas: Sallad",
+        "icon": "schedule",
         "imageURL": "../img/paella.jpg"
+        
     },
     {
         "id": 2,
@@ -109,6 +111,9 @@
             0
         ],
         "html": "recept/spaghetti_bolognese.html",
+        "time": "Under 30 min",
+        "buyIngredients": "11 ingredienser",
+        "base": "Bas: Pasta",
         "imageURL": "../img/paella.jpg"
     },
     {

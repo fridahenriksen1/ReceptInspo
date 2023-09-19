@@ -69,13 +69,23 @@ a {
   padding-top: 3rem;
 }
 
-.time-recipe {
-  font-size: 1rem;
-}
-
 .time-ingredients-container {
   margin-top: 2rem;
   background-color: rgb(138, 167, 138);
+  display: flex;
+  justify-content: space-around;
+}
+.time-ingredients-container .time-recipe {
+  font-size: 1rem;
+}
+.steps-container {
+  padding: 2rem;
+}
+.steps-container .steps-list li {
+  background-color: white;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
 }
 
 .btn {
@@ -337,9 +347,6 @@ img {
      object-fit: cover;
 }
 
-.steps-container {
-  padding: 2rem;
-}
 #categorys {
   margin-top: 1rem;
 }
