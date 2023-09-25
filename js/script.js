@@ -43,8 +43,6 @@ function getCard (){
         link.setAttribute('href', recipe.html);
         header.textContent = recipe.name;
         cat.textContent = recipe.category;
-        //!Testar att lägga till time
-        time.textContent = recipe.time;
         img.setAttribute('src', recipe.imageURL);
         dataUserCards.append(card);
        
