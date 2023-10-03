@@ -39,12 +39,16 @@ function getCard (){
         const img = card.querySelector('[data-image]');
         const cat = card.querySelector('[data-cat]');
         const link = card.querySelector('[data-link]');
+        const time = card.querySelector('[data-time]');
         link.setAttribute('href', recipe.html);
         header.textContent = recipe.name;
         cat.textContent = recipe.category;
+        //!Testar att lägga till time
+        time.textContent = recipe.time;
         img.setAttribute('src', recipe.imageURL);
         dataUserCards.append(card);
-        return{name: recipe.name,category: recipe.category, element:card}
+       
+        return{name: recipe.name,category: recipe.category,time: recipe.time, element:card}
     });
 }
 fetch(jsonUrl)
@@ -56,7 +60,7 @@ fetch(jsonUrl)
     if(dataUserCards){
         getCard();
     }
-    const maxCardsToShow = 3; // Antal kort att visa
+    const maxCardsToShow = 4; // Antal kort att visa
     if(dataUserPopuar){
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
@@ -66,6 +70,7 @@ fetch(jsonUrl)
                 const img = card.querySelector('[data-image]');
                 const cat = card.querySelector('[data-cat]');
                 const link = card.querySelector('[data-link]');
+                
                 link.setAttribute('href', recipe.html);
                 header.textContent = recipe.name;
                 cat.textContent = recipe.category;

@@ -1,85 +1,7 @@
-.rubrik1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.rubrik2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.mid-rubrik1 {
-  font-size: 2rem;
-}
-
-.mid-rubrik2 {
-  font-size: 2rem;
-}
-
-.mid-rubrik3 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-p {
-  line-height: 1.45;
-  margin-bottom: 1rem;
-}
-p body {
-  font-family: "Satoshi", sans-serif;
-}
-
-img {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.btn {
-  display: inline-block;
-  background-color: rgb(107, 184, 65);
-  color: white;
-  font-weight: 500;
-  padding: 0.7rem 2rem;
-  border-radius: 10px;
-  border: none;
-}
-.btn.btn-submit {
-  background-color: blue;
-}
-
-.quote {
-  background-color: blue;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 5rem 0;
-}
-.quote h3 {
-  color: white;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-.quote .btn {
-  background-color: blue;
-}
-.quote .content {
-  text-align: center;
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -93,94 +15,214 @@ img {
   width: 1px;
 }
 
-#search {
-  padding: 2rem 1rem;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
-#search-bar {
-  position: relative;
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
-#search-bar #header-search {
-  padding: 1rem 1rem 1rem 3rem;
-  border-radius: 100px;
-  border: 1px solid grey;
-  width: 100%;
-}
-#search-bar #header-search.focus-border {
-  border: 1px solid rgb(107, 184, 65);
-  outline: none;
-  box-shadow: 0px 0px 20px rgb(107, 184, 65);
-}
-#search-bar #btn-search {
-  position: absolute;
-  left: 1rem;
-  top: 0;
-  bottom: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
-.user-recipes {
+h3 {
+  font-size: 1.5rem;
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
+p {
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.recipe-heading {
+  padding-top: 3rem;
+}
+
+.info-recipe {
+  background-color: white;
+  padding: 0rem 0.8rem;
+}
+
+.time-ingredients-container {
+  margin-top: 2rem;
+  background-color: rgb(138, 167, 138);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-around;
+}
+.time-ingredients-container .time-recipe {
+  font-size: 1rem;
+}
+.steps-container {
+  padding: 2rem 0rem;
+  background-color: #EEE8D2;
+}
+.steps-container .steps-list {
+  list-style: none;
+}
+.steps-container .steps-list li {
+  background-color: white;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
 }
 
-.chips {
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #818181;
   padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
 }
 
-.recept .recept-img {
-  height: 400px;
+.btn-primary {
+  display: inline-block;
+  cursor: pointer;
+  background-color: blue;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: hotpink;
 }
-.recept .recept-img img {
+
+.btn-secondary {
+  display: inline-block;
+  cursor: pointer;
+  background-color: yellow;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: coral;
+}
+
+body {
+  font-family: "Inclusive Sans", sans-serif;
+}
+
+img {
   width: 100%;
-  height: 100%;
+  display: block;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-header {
+  background-color: #B8B89E;
+  padding: 1rem 0rem;
+}
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.main-header .logo {
+  color: rgb(11, 11, 11);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.main-header .main-nav .main-menu {
+  display: flex;
+  list-style: none;
+}
+.main-header .main-nav .main-menu .main-menu-item {
+  margin: 0 1rem;
+}
+.main-header .main-nav .main-menu .main-menu-item .link {
+  color: rgb(11, 11, 11);
+}
+
+#hero {
+  position: relative;
+  color: white;
+  position: relative;
+  text-align: center;
+  background-color: grey;
+  width: 100vw;
+  height: 50vh;
+}
+#hero video {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
-.steps-container {
-  padding: 2rem;
+#hero .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
 }
-#categorys {
-  margin-top: 1rem;
-}
-
-.chip + label {
-  display: inline-block;
-  background-color: rgb(107, 184, 65);
-  border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
-  margin-bottom: 0.4rem;
-  color: white;
-  font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-}
-.chip[type=checkbox] {
-  display: none;
-}
-.chip[type=checkbox]:checked + label {
-  background-color: blue;
+#hero .overlay {
+  filter: blur(4px);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
 }
 
 .popular {
-  padding-top: 1.5rem;
   margin: 2rem 0;
+  padding: 1.5rem 0rem;
+}
+@media (min-width: 480px) {
+  .popular {
+    padding: 1.5rem 1rem;
+  }
 }
 .popular .popular-cards {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+  align-items: stretch;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -188,20 +230,24 @@ img {
 .card {
   position: relative;
   height: 350px;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  width: 400px a;
-  width-text-decoration: none;
-  width-color: #212121;
+  padding-bottom: 9rem;
+  border: solid 1px #F3F0F0;
 }
-.card .gradient {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  background: transparent linear-gradient(180deg, rgba(163, 163, 163, 0) 0%, #0F0F0F 100%) 0% 0% no-repeat padding-box;
+@media (min-width: 480px) {
+  .card {
+    flex: 0 0 calc(50% - 1rem);
+    padding-bottom: 10rem;
+  }
+}
+@media (min-width: 960px) {
+  .card {
+    flex: 0 0 calc(25% - 1rem);
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    padding-bottom: 12rem;
+  }
 }
 .card .card-bg {
   background-color: white;
@@ -217,9 +263,9 @@ img {
 }
 .card .card-text {
   position: absolute;
-  bottom: 1.2rem;
+  bottom: 2.5rem;
   left: 1.2rem;
-  color: white;
+  color: black;
   z-index: 1;
 }
 .card .card-text .card-rating {
@@ -244,80 +290,94 @@ img {
   display: none;
 }
 
-.main-header {
-  background-color: #e194a6;
+.quote {
+  background-color: green;
+  padding: 5rem 0;
 }
-.main-header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 1rem;
-}
-.main-header .logo {
+.quote h3 {
   color: white;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
-.main-header .main-menu {
-  display: flex;
-  list-style: none;
+.quote .btn {
+  background-color: blue;
 }
-.main-header .main-menu .main-menu-item {
-  margin: 0 1rem;
-}
-.main-header .main-menu .main-menu-item .link {
-  color: white;
-}
-.main-header .main-menu .main-menu-item a {
-  text-decoration: none;
-  color: #212121;
+.quote .content {
+  text-align: center;
 }
 
-#hero {
+#search {
+  padding: 2rem 1rem;
+}
+
+#search-bar {
   position: relative;
-  color: white;
 }
-#hero .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+#search-bar #header-search {
+  padding: 1rem 1rem 1rem 3rem;
+  border-radius: 100px;
+  border: 1px solid grey;
+  width: 100%;
 }
-#hero .overlay {
-  filter: blur(4px);
+#search-bar #header-search.focus-border {
+  border: 1px solid red;
+  outline: none;
+  box-shadow: 0px 0px 20px red;
+}
+#search-bar #btn-search {
   position: absolute;
-  z-index: 2;
+  left: 1rem;
   top: 0;
   bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.video-header {
-  position: relative;
-  text-align: center;
-  width: 100vw;
-  height: 50vh;
+.user-recipes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.video-header, .video-header video, .video-header .viewport-header {
-  width: 100vw;
-  height: 50vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.chips {
+  padding: 1rem 2rem;
 }
-.video-header video {
+
+.recept .recept-img {
+  height: 400px;
+}
+.recept .recept-img img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#categorys {
+  margin-top: 1rem;
+}
+
+.chip + label {
+  display: inline-block;
+  background-color: red;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0.4rem;
+  color: white;
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.chip[type=checkbox] {
+  display: none;
+}
+.chip[type=checkbox]:checked + label {
+  background-color: green;
 }
 
 .textField {
@@ -327,7 +387,7 @@ img {
 }
 
 #main-footer {
-  background-color: rgb(107, 184, 65);
+  background-color: red;
   padding: 2rem 0;
   color: white;
 }
@@ -357,11 +417,6 @@ img {
 
 .news {
   margin: 2rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
 .news h2 {
   width: 100%;
@@ -374,11 +429,6 @@ img {
   width: calc(50% - 1rem);
   margin-bottom: 1rem;
 }
-.news .news-card a {
-  text-decoration: none;
-  color: #212121;
-}
 .news a {
-  text-decoration: none;
   color: #212121;
 }/*# sourceMappingURL=style.css.map */
