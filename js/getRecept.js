@@ -2,7 +2,7 @@ const getID = document.querySelector('.recept');
 
 //Detta script hämtar och spottar ut data till ett enkillt recept
 
-fetch('../json/chatRecept.json')
+fetch('../json/recept.json')
     .then(response => response.json())
     .then(data => {
     data.forEach(item => {
@@ -19,18 +19,34 @@ fetch('../json/chatRecept.json')
             let h2I = document.createElement('h2');
             let section1 = document.createElement('section');
             let section2 = document.createElement('section');
+            let section3 = document.createElement('section');
             let time = document.createElement('span');
+            let buyIngredients = document.createElement('span');
+            let base = document.createElement('span');
+            //! icon from google symbols
+            let icon = document.createElement('span');
             h1.textContent = item.name;
             p.textContent = item.description;
             time.textContent = item.time;
+            buyIngredients.textContent = item.buyIngredients;
+           base.textContent = item.base;
             img.setAttribute('src',item.imageURL);
+            h1.classList.add('class', 'recipe-heading')
             figure.setAttribute('class','recept-img');
+            time.classList.add('class', 'time-recipe');
+            buyIngredients.classList.add('class','buy-ingredients');
+            base.classList.add('class','base-ingredients');
+            p.classList.add('class', 'info-recipe')
             section1.classList.add('steps-container');
             section2.classList.add('steps-container');
+            section3.classList.add('time-ingredients-container');
             h2G.textContent = 'Gör så här';
             h2I.textContent = 'Ingredienser';
             ul.classList.add('steps-list');
             ol.classList.add('steps-list');
+            //! icon from google symbols
+            icon.classList.add('material-symbols-outlined');
+            icon.textContent = item.icon;
             //För att skapa nya LI för varje step i json
             item.steps.forEach(step => {
                 let li = document.createElement('li');
@@ -44,11 +60,13 @@ fetch('../json/chatRecept.json')
                 ul.append(li);
             });
             //Lägger till det nya elementen i DOM
-            section1.append(h2G,ol);
-            section2.append(h2I,ul);
+
+            section3.append(time,icon,buyIngredients,base);
+            section1.append(p,h2I,ul);
+            section2.append(h2G,ol);
             figure.append(img);
-            header.append(time,h1,p);
-            getID.append(figure,header,section1,section2); 
+            header.append(h1);
+            getID.append(header,figure,section3,section1,section2); 
         }
     });
 })

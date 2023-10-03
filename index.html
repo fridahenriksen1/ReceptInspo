@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>untitle</title>
+    <title>Recept</title>
      <!-- Preload the largest visible image. -->
      <!-- <link rel="preload" as="video" fetchpriority="high" href="movie/pasta.mp4"> -->
-    <!-- <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
 
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -23,55 +22,82 @@
                         <a class="link" href="recepie.html">Recept</a>
                     </li>
                     <li class="main-menu-item">
-                        <a class="link" href="blogg.html">Blogg</a>
+                        <a class="link" href="blogg.html">Tips</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div id="hero" class="video-header">
+    <section id="hero" class="video-header">
         <video autoplay muted loop id="myVideo">
             <source src="movie/pasta.mp4" type="video/mp4">
         </video>
-        <div class="content">
-            <h1 class="rubrik1">Mat ska vara gott och enkelt</h1>
+        <section class="content">
+            <h1>Mat ska vara gott och enkelt</h1>
             <p>På denna sida kan du lära dig nya goda enkla recept som inte krånglar!</p>
             <a class="btn" href="recepie.html">Hitta ditt nya</a>
-        </div>
+        </section>
         <div class="overlay"></div>
-    </div>
-    <div class="container">
+    </section>
+    <main class="container">
         <div class="popular" >
-            <h2 class="mid-rubrik1">Populära recept</h2>
+            <h2>Nya recept</h2>
             <div class="popular-cards" data-user-popular>
                 <template data-user-template>
                     <div class="card">
                         <a href="" data-link>
+                             <img data-image>
                             <div class="card-text" >
                                 <p data-cat></p>
                                 <h2 data-header></h2>
                             </div>
-                            <img data-image>
-                            <div class="gradient"></div>
+                           
+                            <!-- <div class="gradient"></div> -->
                         </a>
                     </div>
                 </template>
             </div>
         </div>
         <div class="popular" >
-            <h2 class="mid-rubrik2">Goda recept</h2>
+            <h2>Känt från TikTok</h2>
             <div class="popular-cards" data-user-popular>
                 <!-- rör ej template HTML -->
                 <template data-user-template>
                     <div class="card">
                         <a href="" data-link>
-                        div class="card-text" >
+                     
                             <p data-cat></p>
                             <h3 data-header></h3>
                         </header>
                         <img data-image>
-                        <div class="gradient"></div>
+                        <!-- <div class="gradient"></div> -->
                         </a>
+                        <div class="card-text" >
+
+                        
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="popular" >
+            <h2>Gamla goingar</h2>
+            <div class="popular-cards" data-user-popular>
+                <!-- rör ej template HTML -->
+                <template data-user-template>
+                    <div class="card">
+                        <a href="" data-link>
+                     
+                            <p data-cat></p>
+                            <!-- Testar lägga till time -->
+                            <p data-time></p>
+                            <h3 data-header></h3>
+                        </header>
+                        <img data-image>
+                        <!-- <div class="gradient"></div> -->
+                        </a>
+                        <div class="card-text" >
+
+                        
                     </div>
                 </template>
             </div>
@@ -83,7 +109,7 @@
             </div>
         </div>
         <div class="news">
-            <h2 class="mid-rubrik3">Blogg</h2>
+            <h2>Blogg</h2>
             <div class="news-card">
                 <div>
                     <img src="img/graddig-vegansk-svampstroganoff-med-ris.jpg" alt="">
@@ -106,24 +132,9 @@
             </div>
         </div>
     </div>
-
-   <!-- HTML från lektionen -->
-    <!-- <a class="btn" href="#">Click me</a>    
-    <a  class='btn-primary' href="#">Click me</a>    
-    <a  class='btn-secondary'href="#">Click me</a>    
-    <a href="#" class='btn-ghost'>Click me</a>    
-    <div class="container">
-        <h2>1</h2>
-        <h2>2</h2>
-        <h2>3</h2>
-    </div>
-    <br><br>
-    <div class="responsive-test">Change Color</div> -->
-
-
-
+</main>
     <footer id="main-footer">
-        <footer class="footer-inside">
+        <section class="footer-inside">
           <h3>Recept</h3>
           <p>Bli uppdaterad på det senaste</p>
           <form action="/" id="newsletter">
@@ -134,11 +145,8 @@
             <input class="btn btn-submit" type="submit" value="Skicka">
           </form>
           <p class="footer-text">©Copyright 2023 Recept</p>
-        </footer>
+        </section>
     </footer>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- <script src="js/chatgpt.js"></script> -->
     <script src="js/script.js"></script>
     <!-- <script src="js/getRecept.js"></script> -->

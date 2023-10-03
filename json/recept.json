@@ -1,127 +1,108 @@
 [
     {
         "id": 1,
-        "name": "Zeinas paella med kyckling och räkor",
-        "category": "Spanskt",
-        "description": "Zeinas goda variant på den klassiska spanska paellan med ris, saffran, kyckling, räkor och ärtor. En utmärkt festrätt där allt smidigt lagas i en och samma panna.",
+        "name": "Halloumi caesarsallad",
+        "category": "Sallad",
+        "description": "Halloumi Caesarsallad är en härlig variation av den klassiska Caesar-salladen med en unik twist. Denna sallad kombinerar den salta och grillade halloumien med den fräscha och krispiga salladen, sötma från jordgubbar eller melon, och den krämiga Caesar-dressingen. Den är enkel att förbereda och full av smak, vilket gör den till en perfekt rätt för en lätt lunch eller som ett sidorätt till middagen.",
         "ingredients": [
             {
-                "quantity": "4 dl",
-                "name": "risottoris (eller paellaris)"
-            },
-            {
-                "quantity": "1 st",
-                "name": "gul lök"
-            },
-            {
-                "quantity": "1 st",
-                "name": "röd paprika"
-            },
-            {
-                "quantity": "4 klyftor",
-                "name": "vitlök"
-            },
-            {
-                "quantity": "400 g",
-                "name": "krossade tomater"
-            },
-            {
-                "quantity": "3 st",
-                "name": "majskycklinglårfilé"
-            },
-            {
-                "quantity": "100 g",
-                "name": "räkor med skal"
-            },
-            {
-                "quantity": "60 g",
-                "name": "frysta ärtor"
-            },
-            {
-                "quantity": "1 g",
-                "name": "saffran"
-            },
-            {
-                "quantity": "2 tsk",
-                "name": "paprikapulver"
-            },
-            {
-                "quantity": "1 liter",
-                "name": "vatten"
-            },
-            {
-                "quantity": "2 st",
-                "name": "fiskbuljongtärningar"
-            },
-            {
-                "quantity": "1 st",
-                "name": "citron"
-            },
-            {
-                "quantity": "1 dl",
-                "name": "olivolja"
+                "quantity": "",
+                "name": "Halloumi"
             },
             {
                 "quantity": "",
-                "name": "Salt"
+                "name": "Romansallad"
             },
             {
                 "quantity": "",
-                "name": "Peppar"
+                "name": "Jordgubbar/melon"
+            },
+            {
+                "quantity": "",
+                "name": "Rödlök"
+            },
+            {
+                "quantity": "",
+                "name": "Gurka"
+            },
+            {
+                "quantity": "",
+                "name": "Parmesan"
+            },
+            {
+                "quantity": "",
+                "name": "Caesardressing"
             }
         ],
         "steps": [
-            "Skala och hacka löken och vitlök fint. Dela, kärna ur och skär paprikan i tärningar.",
-            "Skär kycklingen i bitar.",
-            "Stek kycklingen i olja i en stor panna tills den fått fin färg runtom. Ta upp och lägg åt sidan.",
-            "Lägg den hackade gula löken i pannan och stek tills den är mjuk och fått lite färg. Tillsätt vitlök och paprika, fortsätt steka 1-2 minuter.",
-            "Strö över paprikapulver och saffran, vänd runt. Tillsätt krossade tomater och blanda allting noga. Låt tomatsåsen puttra utan lock i ca 15 minuter. Lägg i kycklingen.",
-            "Skölj riset noga i ljummet vatten och låt rinna av. Vänd ner riset i tomatsåsen och blanda så att riset fördelas jämnt i såsen. Nu ska detta helst vara den sista gången du rör runt riset. Om du blandar riset för ofta kommer riskornen börja släppa ifrån sig massa stärkelse och istället för en paella kommer du att få en risotto.",
-            "Häll på kokhett vatten som du har blandat med fond eller buljong. Salta och peppra. Skaka pannan försiktigt tills allting blandas samman, undvik att röra runt riset. Låt paellan sjuda på medelvärme utan lock i ca 10 minuter. Skaka på pannan lite lätt efter halva tillagningstiden.",
-            "Tryck ner räkorna lite lätt på toppen av riset. Låt puttra i ytterligare 10 minuter. Du kan tillsätta mer vatten om det känns för torrt.",
-            "Strö över ärtorna, täck pannan med ett lock eller folie och låt allting tillagas någon minut. Smaka av och se så att riset är färdigt. Ta från värmen och låt vila ca 5 minuter före servering. Toppa med citronklyftor och servera."
+            "Hacka och blanda alla grönsaker.", "Stek Halloumi", "Toppa med parmesan och ceasardressing "
         ],
         "html": "recept/paella.html",
-        "time": "40 min",
+        "time": "Cirka 20 min",
+        "buyIngredients": "7 ingredienser",
+        "base": "Bas: Sallad",
+        "icon": "schedule",
         "imageURL": "../img/paella.jpg"
+        
     },
     {
         "id": 2,
-        "name": "Spaghetti Bolognese",
+        "name": "Vodka pasta",
         "category": "pasta",
-        "description": "En klassisk italiensk rätt med smakrik köttfärssås och al dente kokt spaghetti.",
+        "description": "Vodkapasta är en krämig och smakrik pastarätt med en distinkt smak av vodka och chili. Den är en perfekt kombination av kryddig hetta och krämig gräddighet. Denna pastarätt är enkel att förbereda och passar både för vardagsmiddagar och speciella tillfällen.",
         "ingredients": [
             {
-                "quantity": "250 g",
-                "name": "spaghetti",
-                "type": "Pasta"
+                "quantity": "3 st",
+                "name": "vitlöksklyftor",
+                "type": "Vegetables"
             },
             {
-                "quantity": "300 g",
-                "name": "köttfärs",
-                "type": "Meat"
+                "quantity": "2 msk",
+                "name": "olivolja",
+                "type": "Condiments"
             },
             {
-                "quantity": "1 burk",
-                "name": "krossade tomater",
+                "quantity": "1 dl",
+                "name": "tomatpuré",
                 "type": "Canned Goods"
             },
             {
-                "quantity": "1",
-                "name": "gul lök",
-                "type": "Vegetables"
+                "quantity": "1/2 tsk",
+                "name": "chilliflakes",
+                "type": "Spices"
             },
             {
-                "quantity": "2",
-                "name": "vitlöksklyftor",
-                "type": "Vegetables"
+                "quantity": "1/2 dl",
+                "name": "vodka",
+                "type": "Drinks"
+            },
+            {
+                "quantity": "2 1/2 dl",
+                "name": "vispgrädde",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "4 port",
+                "name": "pasta",
+                "type": "Pasta" 
             }
+
         ],
         "steps": [
-            "Koka spaghettin enligt anvisningarna på förpackningen.",
-            "Stek köttfärsen tills den är genomstekt. Tillsätt lök och vitlök.",
-            "Tillsätt de krossade tomaterna och låt sjuda i cirka 15-20 minuter.",
-            "Servera köttfärssåsen över den kokta spaghettin."
+            "Skala och hacka vitlöken. Fräs i oljan tills den får lite färg. Tillsätt tomatpuré och chiliflakes och fräs ytterligare ca 5 minuter på medelvärme. Häll i vodkan och låt koka någon minut.",
+            "Öppna timer: 5 minuter.",
+            "Rör ner grädden och låt koka ihop. Smaka av med salt och peppar.",
+            "Koka pastan enligt anvisning på förpackningen. Häll av och spar 1–2 dl av pastavattnet (för 4 port). Rör ner pastan. Tillsätt lite pastavatten i taget rör till önskad konsistens. Toppa med parmesan och basilika."
         ],
         "timers": [
             0,
@@ -130,7 +111,10 @@
             0
         ],
         "html": "recept/spaghetti_bolognese.html",
-        "imageURL": "../img/bolognese.jpg"
+        "time": "Under 30 min",
+        "buyIngredients": "11 ingredienser",
+        "base": "Bas: Pasta",
+        "imageURL": "../img/paella.jpg"
     },
     {
         "id": 3,
@@ -179,7 +163,7 @@
             0
         ],
         "html": "chicken_stir_fry.html",
-        "imageURL": "../img/BlueberryOatmealBars.jpg"
+        "imageURL": "../img/paella.jpg"
     },
     {
         "id": 4,
