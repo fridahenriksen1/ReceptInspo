@@ -30,61 +30,60 @@
         </div>
     </header>
     <section id="hero" class="video-header">
-        <video autoplay muted loop id="myVideo">
-            <source src="movie/pasta.mp4" type="video/mp4">
-        </video>
-        <section class="content">
+      <img src="/img/kantarellPasta.webp" alt="kantarell pasta">
+        <article class="content">
             <h1>Mat ska vara gott och enkelt</h1>
             <p>På denna sida kan du lära dig nya goda enkla recept som inte krånglar!</p>
             <a class="btn" href="recepie.html">Hitta ditt nya</a>
-        </section>
+        </article>
         <div class="overlay"></div>
     </section>
-    <main class="container">
-        <div class="popular" >
+    <main class="container main-container">
+        <section class="popular" >
             <h2>Nya recept</h2>
-            <div class="popular-cards" data-user-popular>
+            <article class="popular-cards" data-user-popular>
                 <template data-user-template>
-                    <div class="card">
+                    <article class="card">
                         <a href="" data-link>
                              <img data-image>
-                            <div class="card-text" >
-                                <p data-cat></p>
-                                <h2 data-header></h2>
-                                <span class="material-symbols-outlined">
+                            <figcaption class="card-text" >
+                                <p class="style-chips p1" data-cat></p>
+                                <h2 class="p1" data-header></h2>
+                                <section class="time-box">
+                                <span class="material-symbols-outlined p1">
                                     schedule
                                     </span>
                                     <span data-time></span>
-                            </div>
+                                </section>
+                            </figcaption>
+                       
                            
                             <!-- <div class="gradient"></div> -->
                         </a>
-                    </div>
+                    </article>
                 </template>
-            </div>
-        </div>
+            </article>
+        </section>
         <div class="popular" >
             <h2>Känt från TikTok</h2>
             <div class="popular-cards" data-user-popular>
                 <!-- rör ej template HTML -->
                 <template data-user-template>
-                    <div class="card">
+                    <article class="card">
                         <a href="" data-link>
-                     
-                            <p data-cat></p>
-                            <h3 data-header></h3>
-                        </header>
-                      
-                            <img data-image>
-
-                        
-                       
-                        <!-- <div class="gradient"></div> -->
+                             <img data-image>
+                            <figcaption class="card-text" >
+                                <p class="p1" data-cat></p>
+                                <h2 class="p1"  data-header></h2>
+                                <span class="material-symbols-outlined p1">
+                                    schedule
+                                    </span>
+                                    <span data-time></span>
+                            </figcaption>
+                           
+                            <!-- <div class="gradient"></div> -->
                         </a>
-                        <div class="card-text" >
-
-                        
-                    </div>
+                    </article>
                 </template>
             </div>
         </div>

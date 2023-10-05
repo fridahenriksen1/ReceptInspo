@@ -39,7 +39,6 @@
         ],
         "html": "recept/paella.html",
         "time": "Cirka 20 min",
-        "buyIngredients": "7 ingredienser",
         "base": "Bas: Sallad",
         "icon": "schedule",
         "imageURL": "../img/paella.jpg"
@@ -48,7 +47,7 @@
     {
         "id": 2,
         "name": "Vodka pasta",
-        "category": "pasta",
+        "category": "Pasta",
         "description": "Vodkapasta är en krämig och smakrik pastarätt med en distinkt smak av vodka och chili. Den är en perfekt kombination av kryddig hetta och krämig gräddighet. Denna pastarätt är enkel att förbereda och passar både för vardagsmiddagar och speciella tillfällen.",
         "ingredients": [
             {
