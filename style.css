@@ -147,7 +147,7 @@ img {
 
 .main-header {
   background-color: #B8B89E;
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
 }
 .main-header .container {
   display: flex;
@@ -230,6 +230,7 @@ img {
 .card {
   position: relative;
   height: 350px;
+  flex: 1 auto;
   padding-bottom: 9rem;
   border: solid 1px #F3F0F0;
 }
@@ -417,6 +418,10 @@ img {
 
 .news {
   margin: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 .news h2 {
   width: 100%;
@@ -426,7 +431,7 @@ img {
   margin: 0.5rem 0;
 }
 .news .news-card {
-  width: calc(50% - 1rem);
+  width: calc(100% - 1rem);
   margin-bottom: 1rem;
 }
 .news a {
