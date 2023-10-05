@@ -12,7 +12,7 @@ h1{
 }
 h2{
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    //margin-bottom: 1rem;
     @include bp-xl{
         font-size: 2rem;
     }
@@ -27,7 +27,7 @@ h3{
 }
 p{
     line-height: 1.45;
-    margin-bottom: 1rem;
+    //margin-bottom: 1rem;
     font-family: $secondary-text;
     @include bp-xl{
         font-size: 1.3rem;
