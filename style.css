@@ -159,8 +159,8 @@ img {
 }
 .main-header .logo {
   color: rgb(11, 11, 11);
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
 }
 .main-header .main-nav .main-menu {
   display: flex;
