@@ -37,16 +37,17 @@ function getCard (){
         const card = dataUserTemplate.content.cloneNode(true).children[0];
         const header = card.querySelector('[data-header]');
         const img = card.querySelector('[data-image]');
-        const cat = card.querySelector('[data-cat]');
+        // const cat = card.querySelector('[data-cat]');
         const link = card.querySelector('[data-link]');
         const time = card.querySelector('[data-time]');
+        console.log(time);
         link.setAttribute('href', recipe.html);
         header.textContent = recipe.name;
-        cat.textContent = recipe.category;
-        //!Testar att lägga till time
-        time.textContent = recipe.time;
+        // cat.textContent = recipe.category;
         img.setAttribute('src', recipe.imageURL);
+        time.textContent = recipe.time;
         dataUserCards.append(card);
+        
        
         return{name: recipe.name,category: recipe.category,time: recipe.time, element:card}
     });
@@ -70,13 +71,15 @@ fetch(jsonUrl)
                 const img = card.querySelector('[data-image]');
                 const cat = card.querySelector('[data-cat]');
                 const link = card.querySelector('[data-link]');
-                
+                const time = card.querySelector('[data-time]');
+                console.log(time);
                 link.setAttribute('href', recipe.html);
                 header.textContent = recipe.name;
                 cat.textContent = recipe.category;
                 img.setAttribute('src', recipe.imageURL);
+                time.textContent = recipe.time;
                 section.append(card);
-                return{name: recipe.name,category: recipe.category, element:card}
+                return{name: recipe.name,category: recipe.category,time: recipe.time, element:card}
             });
         }); 
     }  
