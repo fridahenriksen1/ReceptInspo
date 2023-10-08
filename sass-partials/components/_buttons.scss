@@ -12,7 +12,7 @@
     @include btn;
 }
 .btn-primary {
-    @include btn(blue,hotpink)
+    @include btn(#D3D8D4,black)
 }
 .btn-secondary{
     @include btn(yellow, coral);
