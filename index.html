@@ -10,6 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 </head>
 <body>
@@ -28,34 +29,50 @@
             </nav>
         </div>
     </header>
-    <section id="hero" class="video-header">
-        <video autoplay muted loop id="myVideo">
-            <source src="movie/pasta.mp4" type="video/mp4">
-        </video>
-        <section class="content">
-            <h1>Mat ska vara gott och enkelt</h1>
-            <p>På denna sida kan du lära dig nya goda enkla recept som inte krånglar!</p>
-            <a class="btn" href="recepie.html">Hitta ditt nya</a>
-        </section>
+    <section id="hero" class="img-header">
+      <img src="/img/kantarellPasta.webp" alt="kantarell pasta">
+        <article class="content">
+            <h1>Att äta mer vegetariskt ska vara lätt, vi är här för att hjälpa dig</h1>
+            <!-- <p>Att äta mer vegitariskt ska vara lätt, vi är här för att hjälpa dig</p> -->
+            <!-- <a class="btn" href="recepie.html">Hitta ditt nya</a> -->
+        </article>
         <div class="overlay"></div>
     </section>
-    <main class="container">
-        <div class="popular" >
+    <main class="container main-container">
+        <section class="popular" >
             <h2>Nya recept</h2>
-            <div class="popular-cards" data-user-popular>
+            <article class="popular-cards" data-user-popular>
                 <template data-user-template>
-                    <div class="card">
+                    <article class="card">
+                      
+
+                      
                         <a href="" data-link>
+                            <figure class="img-box">
                              <img data-image>
-                            <div class="card-text" >
-                                <p data-cat></p>
-                                <h2 data-header></h2>
-                            </div>
+                            </figure>
+                            <figcaption class="card-text" >
+                                <p class="style-chips p1" data-cat></p>
+                                <h2 class="p1" data-header></h2>
+                                <section class="time-box">
+                                <span class="material-symbols-outlined p1">
+                                    schedule
+                                    </span>
+                                    <span data-time></span>
+                                </section>
+                            </figcaption>
+                       
                            
                             <!-- <div class="gradient"></div> -->
                         </a>
-                    </div>
+                    </article>
                 </template>
+            </article>
+        </section>
+        <div class="quote">
+            <div class="content">
+                <h3>Använd filtreringsverktyget om du vill ha inspiration efter vilken bas du vill jobba med</h3>
+                <a class="btn-primary" href="lar-dig-laga-mat.html">Till filtreringsvektyget</a>
             </div>
         </div>
         <div class="popular" >
@@ -63,19 +80,21 @@
             <div class="popular-cards" data-user-popular>
                 <!-- rör ej template HTML -->
                 <template data-user-template>
-                    <div class="card">
+                    <article class="card">
                         <a href="" data-link>
-                     
-                            <p data-cat></p>
-                            <h3 data-header></h3>
-                        </header>
-                        <img data-image>
-                        <!-- <div class="gradient"></div> -->
+                             <img data-image>
+                            <figcaption class="card-text" >
+                                <p class="p1" data-cat></p>
+                                <h2 class="p1"  data-header></h2>
+                                <span class="material-symbols-outlined p1">
+                                    schedule
+                                    </span>
+                                    <span data-time></span>
+                            </figcaption>
+                           
+                            <!-- <div class="gradient"></div> -->
                         </a>
-                        <div class="card-text" >
-
-                        
-                    </div>
+                    </article>
                 </template>
             </div>
         </div>
@@ -102,12 +121,7 @@
                 </template>
             </div>
         </div>
-        <div class="quote">
-            <div class="content">
-                <h3>Lär dig att laga mat</h3>
-                <a class="btn" href="lar-dig-laga-mat.html">klicka här</a>
-            </div>
-        </div>
+    
         <div class="news">
             <h2>Blogg</h2>
             <div class="news-card">
