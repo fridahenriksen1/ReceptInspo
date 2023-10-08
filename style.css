@@ -109,12 +109,12 @@ a {
 .btn-primary {
   display: inline-block;
   cursor: pointer;
-  background-color: blue;
+  background-color: #D3D8D4;
   padding: 1rem 2rem;
   border-radius: 10px;
   border: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: hotpink;
+  color: black;
 }
 
 .btn-secondary {
@@ -135,7 +135,7 @@ body {
 img {
   width: 100%;
   display: block;
-  height: auto;
+  height: 100%;
 }
 
 .container {
@@ -175,14 +175,14 @@ img {
 
 #hero {
   position: relative;
-  color: white;
+  color: black;
   position: relative;
   text-align: center;
   background-color: grey;
   width: 100vw;
   height: 50vh;
 }
-#hero video {
+#hero img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100vw;
@@ -198,6 +198,14 @@ img {
   z-index: 3;
   transform: translate(-50%, -50%);
 }
+#hero .content h1 {
+  font-size: 1rem;
+}
+@media (min-width: 480px) {
+  #hero .content h1 {
+    font-size: 1.5rem;
+  }
+}
 #hero .overlay {
   filter: blur(4px);
   position: absolute;
@@ -206,9 +214,8 @@ img {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  background: white;
+  opacity: 70%;
 }
 
 .popular {
@@ -238,13 +245,15 @@ img {
 @media (min-width: 480px) {
   .card {
     flex: 0 0 calc(50% - 1rem);
-    padding-bottom: 10rem;
   }
 }
 @media (min-width: 960px) {
   .card {
     flex: 0 0 calc(25% - 1rem);
   }
+}
+.card .img-box {
+  height: 200px;
 }
 .card .card-bg {
   background-color: white;
@@ -304,12 +313,12 @@ img {
 }
 
 .quote {
-  background-color: green;
+  background-color: #B8B89E;
   padding: 5rem 0;
 }
 .quote h3 {
-  color: white;
-  font-size: 4rem;
+  color: black;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .quote .btn {
