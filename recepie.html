@@ -37,8 +37,8 @@
 
 <body>
     <header class="main-header">
-        <div class="container">
-            <a class="logo" href="index.html">Recept</a>
+        <section class="container">
+            <a class="logo" href="index.html">VegieEats</a>
             <nav class="main-nav">
                 <ul class="main-menu">
                     <li class="main-menu-item">
@@ -49,12 +49,12 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </section>
 
     </header>
     <main>
 
-        <div id="search" class="container">
+        <section id="search" class="container">
             <h1>Recept</h1>
             <form id="search-bar" role='search'>
                 <label for='header-search'>
@@ -84,46 +84,56 @@
                 <input class="chip" type="checkbox" id="categoryEight">
                 <label for="categoryEight">Dessert</label>
             </form>
-        </div>
-        <div class="user-recipes container" data-user-cards>
+        </section>
+        <section class="user-recipes container" data-user-cards>
             <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it:  -->
             <template data-user-template>
                 <article class="card">
-                    <a href="" data-link>
-                        <div class="card-text">
-                            <!-- <p data-cat></p> -->
-                            <h2 data-header></h2>
-                            <span data-time></span>
 
-                        </div>
-                        <img data-image>
+
+
+                    <a href="" data-link>
+                        <figure class="img-box">
+                            <img data-image>
+                        </figure>
+                        <figcaption class="card-text">
+                            <p class="style-chips p1" data-cat></p>
+                            <h2 class="p1" data-header></h2>
+                            <section class="time-box">
+                                <span class="material-symbols-outlined p1">
+                                    schedule
+                                </span>
+                                <span data-time></span>
+                            </section>
+                        </figcaption>
+
+
                         <!-- <div class="gradient"></div> -->
                     </a>
                 </article>
             </template>
-        </div>
-        <div class="quote">
-            <div class="content">
+        </section>
+        <!-- <section class="quote">
+            <article class="content">
                 <h3>Lär dig att laga mat</h3>
                 <a class="btn-primary" href="lar-dig-laga-mat.html">klicka här</a>
                 <a href="#" class="btn-secondary">Annars kan du klicka här!</a>
-            </div>
-        </div>
+            </article>
+        </section> -->
     </main>
     <footer id="main-footer">
-        <div class="footer-inside">
-            <h3>Recept</h3>
-            <p>Bli uppdaterad på det senaste</p>
-
+        <section class="footer-inside">
+            <h3>VegieEats</h3>
+            <p>Skriv in din mejl här du, du kommer ändå inte få något</p>
             <form action="/" id="newsletter">
                 <label for="email">
                     <span class="visually-hidden">Email</span>
                 </label>
                 <input class="textField" type="text" name="email" id="email" placeholder="Email">
-                <input class="btn-primary" type="submit" value="Skicka">
+                <input class="btn btn-submit" type="submit" value="Skicka">
             </form>
-            <p class="footer-text">©Copyright 2023 Recept</p>
-        </div>
+            <p class="footer-text">©Copyright 2023 VegieEats</p>
+        </section>
     </footer>
     <!-- <script src="js/chatgpt.js"></script> -->
     <script src="js/script.js" defer></script>

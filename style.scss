@@ -17,6 +17,7 @@
 
 body {
     font-family: $primary-text;
+    background-color: #eff2f0;
 }
 
 img {
@@ -32,7 +33,7 @@ img {
 
     &.main-container {
         padding: 0 1.8rem;
-        background-color: #eff2f0;
+        //background-color: #eff2f0;
 
     }
 
@@ -41,7 +42,7 @@ img {
 
 .main-header {
     background-color: $primary-color;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
 
     .container {
 
@@ -67,6 +68,7 @@ img {
                 .link {
                     color: $neutral-dark;
                     // color: #212121;
+                    font-size: 1.3rem;
 
 
                 }
@@ -120,7 +122,7 @@ img {
     }
 
     .overlay {
-        filter: blur(4px);
+        //filter: blur(4px);
         position: absolute;
         z-index: 2;
         top: 0;
@@ -299,6 +301,8 @@ img {
     background-color: #B8B89E;
     // @include flexbox(row,center,center,nowrap );
     padding: 5rem 0;
+    //width: 100vw;
+    border-radius: 1rem;
 
     h3 {
         color: black;
@@ -306,9 +310,9 @@ img {
         margin-bottom: 1rem;
     }
 
-    .btn {
-        background-color: blue;
-    }
+    // .btn {
+    //     background-color: blue;
+    // }
 
     .content {
         text-align: center;
@@ -381,7 +385,7 @@ img {
         border-radius: 5rem;
         padding: 0.5rem 1.5rem;
         margin-bottom: .4rem;
-        color: white;
+        //color: white;
         font-size: 1rem;
         user-select: none;
         cursor: pointer;
@@ -392,7 +396,7 @@ img {
 
         &:checked {
             +label {
-                background-color: green;
+                background-color: #FFD9A0;
             }
         }
     }
@@ -408,9 +412,9 @@ img {
 }
 
 #main-footer {
-    background-color: red;
+    background-color: $primary-color;
     padding: 2rem 0;
-    color: white;
+    //color: white;
 
     .footer-inside {
         max-width: 400px;
