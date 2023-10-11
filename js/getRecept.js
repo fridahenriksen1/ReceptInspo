@@ -22,7 +22,7 @@ fetch('../json/recept.json')
             let section3 = document.createElement('section');
             let time = document.createElement('span');
             let buyIngredients = document.createElement('span');
-            let base = document.createElement('span');
+     
             let amountIngredients = item.ingredients.length;
             //! icon from google symbols
             let icon = document.createElement('span');
@@ -30,13 +30,13 @@ fetch('../json/recept.json')
             p.textContent = item.description;
             time.textContent = item.time;
             buyIngredients.textContent = `${amountIngredients} ingredienser`;
-           base.textContent = item.base;
+     
             img.setAttribute('src',item.imageURL);
             h1.classList.add('class', 'recipe-heading')
             figure.setAttribute('class','recept-img');
             time.classList.add('class', 'time-recipe');
             buyIngredients.classList.add('class','buy-ingredients');
-            base.classList.add('class','base-ingredients');
+        
             p.classList.add('class', 'info-recipe')
             section1.classList.add('steps-container');
             section2.classList.add('steps-container');
@@ -46,7 +46,7 @@ fetch('../json/recept.json')
             ul.classList.add('steps-list');
             ol.classList.add('steps-list');
             //! icon from google symbols
-            icon.classList.add('material-symbols-outlined');
+         
             icon.textContent = item.icon;
             console.log(item.ingredients.length);
    
@@ -64,7 +64,7 @@ fetch('../json/recept.json')
             });
             //Lägger till det nya elementen i DOM
 
-            section3.append(time,icon,buyIngredients,base);
+            section3.append(time,buyIngredients);
             section1.append(p,h2I,ul);
             section2.append(h2G,ol);
             figure.append(img);

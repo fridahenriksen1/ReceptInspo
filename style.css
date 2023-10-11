@@ -63,18 +63,33 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+.recept .recept-img {
+  height: 400px;
+  padding: 1rem;
+}
+.recept .recept-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .recipe-heading {
   padding-top: 3rem;
+  padding-left: 1rem;
 }
 
 .info-recipe {
   background-color: white;
-  padding: 0rem 0.8rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .time-ingredients-container {
-  margin-top: 2rem;
-  background-color: rgb(138, 167, 138);
+  margin: 2rem 1rem;
+  background-color: #FFE795;
+  padding: 2rem 1rem;
+  border-radius: 5px;
   display: flex;
   justify-content: space-around;
 }
@@ -82,17 +97,18 @@ a {
   font-size: 1rem;
 }
 .steps-container {
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
+  margin: 4rem 0rem;
   background-color: #EEE8D2;
 }
 .steps-container .steps-list {
   list-style: none;
 }
 .steps-container .steps-list li {
-  background-color: white;
-  margin: 0.5rem;
+  background-color: #FFD9A0;
+  margin: 1rem;
   padding: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 5px;
 }
 
 .btn {
@@ -159,8 +175,13 @@ img {
 }
 .main-header .logo {
   color: rgb(11, 11, 11);
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: "Oswald", sans-serif;
+}
+@media (min-width: 480px) {
+  .main-header .logo {
+    font-size: 3rem;
+  }
 }
 .main-header .main-nav .main-menu {
   display: flex;
@@ -360,16 +381,6 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-.recept .recept-img {
-  height: 400px;
-}
-.recept .recept-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #categorys {
