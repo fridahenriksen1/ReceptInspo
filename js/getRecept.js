@@ -10,6 +10,8 @@ fetch('../json/recept.json')
             console.log(item);
             let figure = document.createElement('figure');
             let img = document.createElement('img');
+            //!srcet 400px
+            let imgS = document.createElement('img');
             let ol = document.createElement('ol');
             let ul = document.createElement('ul');
             let header = document.createElement('header');
@@ -39,12 +41,15 @@ fetch('../json/recept.json')
             buyIngredients.textContent = `${amountIngredients} ingredienser`;
      
             img.setAttribute('src',item.imageURL);
+            img.setAttribute('srcset',`${item.image400} 400w`);
+            img.setAttribute('srcset',`${item.image400} 800w`);
+            img.setAttribute('srcset',`${item.imageURL} 1200w`);
             h1.classList.add('class', 'recipe-heading')
             figure.setAttribute('class','recept-img');
             time.classList.add('class', 'time-recipe');
             buyIngredients.classList.add('class','buy-ingredients');
         
-            // p.classList.add('class', 'info-recipe')
+            p.classList.add('class', 'info-recipe')
             section1.classList.add('steps-container');
             section2.classList.add('steps-container');
             section3.classList.add('time-ingredients-container');
