@@ -3,7 +3,6 @@
         "id": 1,
         "name": "Halloumi caesarsallad",
         "category": "Sallad",
-        "description": "Halloumi Caesarsallad är en härlig variation av den klassiska Caesar-salladen med en unik twist. Denna sallad kombinerar den salta och grillade halloumien med den fräscha och krispiga salladen, sötma från jordgubbar eller melon, och den krämiga Caesar-dressingen. Den är enkel att förbereda och full av smak, vilket gör den till en perfekt rätt för en lätt lunch eller som ett sidorätt till middagen.",
         "ingredients": [
             {
                 "quantity": "",
@@ -37,12 +36,13 @@
         "steps": [
             "Hacka och blanda alla grönsaker.", "Stek Halloumi", "Toppa med parmesan och ceasardressing "
         ],
-        "html": "recept/paella.html",
+        "html": "recept/halloumi_ceasersallad.html",
         "time": "Cirka 20 min",
      
         "imageURL": "../img/paella.jpg"
         
     },
+    
     {
         "id": 2,
         "name": "Vodka pasta",

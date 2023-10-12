@@ -25,7 +25,14 @@ fetch('../json/recept.json')
      
             let amountIngredients = item.ingredients.length;
             //! icon from google symbols
-            let icon = document.createElement('span');
+            let timeIcon = document.createElement('span');
+            let ingridentsIcon = document.createElement('span');
+            //! Div box till tid och ikon
+            let timebox = document.createElement('div');
+            //! Div box till ingredinser och ikon
+            let ingridentsBox = document.createElement('div');
+            timebox.classList.add('time-box');
+            ingridentsBox.classList.add('ingridients-box');
             h1.textContent = item.name;
             p.textContent = item.description;
             time.textContent = item.time;
@@ -37,7 +44,7 @@ fetch('../json/recept.json')
             time.classList.add('class', 'time-recipe');
             buyIngredients.classList.add('class','buy-ingredients');
         
-            p.classList.add('class', 'info-recipe')
+            // p.classList.add('class', 'info-recipe')
             section1.classList.add('steps-container');
             section2.classList.add('steps-container');
             section3.classList.add('time-ingredients-container');
@@ -46,8 +53,11 @@ fetch('../json/recept.json')
             ul.classList.add('steps-list');
             ol.classList.add('steps-list');
             //! icon from google symbols
-         
-            icon.textContent = item.icon;
+            timeIcon.classList.add('material-symbols-outlined');
+            timeIcon.textContent = "schedule";
+            ingridentsIcon.classList.add('material-symbols-outlined');
+            ingridentsIcon.textContent = "local_pizza";
+
             console.log(item.ingredients.length);
    
             //För att skapa nya LI för varje step i json
@@ -64,7 +74,15 @@ fetch('../json/recept.json')
             });
             //Lägger till det nya elementen i DOM
 
-            section3.append(time,buyIngredients);
+            // divNew1.append(iconWatch,time)
+            // divNe2w.append(iconbag,buyIngredients)
+
+            timebox.append(timeIcon, time );
+            ingridentsBox.append(ingridentsIcon,buyIngredients);
+
+
+            // section3.append(time,buyIngredients);
+            section3.append(timebox, ingridentsBox);
             section1.append(p,h2I,ul);
             section2.append(h2G,ol);
             figure.append(img);

@@ -61,6 +61,7 @@ p {
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  color: rgb(11, 11, 11);
 }
 
 .recept .recept-img {
@@ -93,6 +94,11 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.time-ingredients-container .timebox {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 10%;
+}
 .time-ingredients-container .time-recipe {
   font-size: 1rem;
 }
@@ -100,6 +106,9 @@ a {
   padding: 3rem 0rem;
   margin: 4rem 0rem;
   background-color: #EEE8D2;
+}
+.steps-container h2 {
+  margin-left: 1rem;
 }
 .steps-container .steps-list {
   list-style: none;
@@ -273,6 +282,12 @@ img {
     flex: 0 0 calc(25% - 1rem);
   }
 }
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
 .card .img-box {
   height: 200px;
 }
@@ -288,18 +303,19 @@ img {
   z-index: 1;
   font-size: 0.8rem;
 }
-.card .card-text {
-  color: black;
-}
-.card .card-text .p1 {
-  margin: 0.5rem;
-}
-.card .card-text .time-box {
+.card .time-box {
   display: flex;
   align-items: center;
   background-color: #FFE795;
   justify-content: center;
   border-radius: 5px;
+}
+.card .p1 {
+  margin: 0.5rem;
+}
+.card .card-text {
+  color: black;
+  margin: 1rem 0;
 }
 .card .card-text .style-chips {
   display: inline-block;
@@ -311,6 +327,7 @@ img {
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 .card .card-text .card-rating {
   display: inline-flex;
@@ -378,7 +395,7 @@ img {
 .user-recipes {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -403,7 +420,7 @@ img {
   display: none;
 }
 .chip[type=checkbox]:checked + label {
-  background-color: #FFD9A0;
+  background-color: #22211d;
 }
 
 .textField {
