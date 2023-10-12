@@ -3,6 +3,7 @@
         "id": 1,
         "name": "Halloumi caesarsallad",
         "category": "Sallad",
+        "description":"Denna sallad är en explosion av smaker, med den salta halloumin, den krispiga salladen och den söta fruktiga smaken. Den passar utmärkt till sommarmiddagar eller när du bara vill ha något lätt och uppfriskande. Smaklig måltid!",
         "ingredients": [
             {
                 "quantity": "",
@@ -39,8 +40,8 @@
         "html": "recept/halloumi_ceasersallad.html",
         "time": "Cirka 20 min",
      
-        "imageURL": "../img/paella.jpg",
-        "image400": "../img/halloumi_400"
+        "imageURL": "../img/Halloumitallrik-ugnspotatis-1200.webp",
+        "image400": "../img/Halloumitallrik-ugnspotatis-400.webp"
         
     },
     
