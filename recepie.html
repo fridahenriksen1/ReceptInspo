@@ -87,31 +87,30 @@
         </section>
         <section class="user-recipes container" data-user-cards>
             <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it:  -->
-            <template data-user-template>
-                <article class="card">
-
-
-
-                    <a href="" data-link>
-                        <figure class="img-box">
-                            <img data-image>
-                        </figure>
-                        <figcaption class="card-text">
-                            <p class="style-chips p1" data-cat></p>
-                            <h2 class="p1" data-header></h2>
+                <template data-user-template>
+                    <article class="card">
+                        <a class="card-content" href="" data-link>
+                            <figure>
+                                <div class="img-box">
+                                    <img data-image>
+                                </div>
+                                <figcaption class="card-text">
+                                    <p class="style-chips" data-cat></p>
+                                    <h2 data-header></h2>
+                                </figcaption>
+                            </figure>
+                            
                             <section class="time-box">
                                 <span class="material-symbols-outlined p1">
                                     schedule
                                 </span>
                                 <span data-time></span>
                             </section>
-                        </figcaption>
-
-
-                        <!-- <div class="gradient"></div> -->
-                    </a>
-                </article>
-            </template>
+                            <!-- <div class="gradient"></div> -->
+                        </a>
+                    </article>
+                </template>
+            
         </section>
         <!-- <section class="quote">
             <article class="content">
