@@ -39,7 +39,8 @@
         "html": "recept/halloumi_ceasersallad.html",
         "time": "Cirka 20 min",
      
-        "imageURL": "../img/paella.jpg"
+        "imageURL": "../img/paella.jpg",
+        "image400": "../img/halloumi_400"
         
     },
     
