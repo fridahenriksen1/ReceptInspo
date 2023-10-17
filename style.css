@@ -64,9 +64,15 @@ a {
   color: rgb(11, 11, 11);
 }
 
+.textImgInfoBox {
+  background-color: red;
+}
+
 .recept .recept-img {
   height: 400px;
   padding: 1rem;
+  width: 400px;
+  margin: auto;
 }
 .recept .recept-img img {
   width: 100%;
@@ -76,21 +82,24 @@ a {
 }
 
 .recipe-heading {
-  padding-top: 3rem;
-  padding-left: 1rem;
+  text-align: center;
 }
 
 .info-recipe {
   background-color: white;
   padding: 2rem;
   margin-bottom: 2rem;
+  border-radius: 5px;
+  margin: 3rem 0rem;
 }
 
 .time-ingredients-container {
-  margin: 2rem 1rem;
   background-color: #FFE795;
   padding: 2rem 1rem;
   border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
+  justify-content: center;
   display: flex;
   justify-content: space-around;
 }
@@ -103,9 +112,10 @@ a {
   font-size: 1rem;
 }
 .steps-container {
-  padding: 3rem 0rem;
   margin: 4rem 0rem;
   background-color: #EEE8D2;
+  max-width: 700px;
+  margin: auto;
 }
 .steps-container h2 {
   margin-left: 1rem;

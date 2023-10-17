@@ -41,7 +41,8 @@
         "time": "Cirka 20 min",
      
         "imageURL": "../img/Halloumitallrik-ugnspotatis-1200.webp",
-        "image400": "../img/Halloumitallrik-ugnspotatis-400.webp"
+        "image400": "../img/Halloumitallrik-ugnspotatis-400.webp",
+        "image800": "../img/Halloumitallrik-ugnspotatis-800.webp"
         
     },
     
@@ -49,7 +50,7 @@
         "id": 2,
         "name": "Vodka pasta",
         "category": "Pasta",
-        "description": "Vodkapasta är en krämig och smakrik pastarätt med en distinkt smak av vodka och chili. Den är en perfekt kombination av kryddig hetta och krämig gräddighet. Denna pastarätt är enkel att förbereda och passar både för vardagsmiddagar och speciella tillfällen.",
+        "description": "Vodkapasta är en krämig och smakrik pastarätt med en distinkt smak av vodka och chili. Den är en perfekt kombination av kryddig hetta och krämig gräddighet. Denna pastarätt är enkel att förbereda och passar både för vardagsmiddagar och speciella tillfällen!",
         "ingredients": [
             {
                 "quantity": "3 st",

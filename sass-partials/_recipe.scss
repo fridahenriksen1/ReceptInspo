@@ -1,9 +1,16 @@
+.textImgInfoBox{
+    background-color: red;
+}
+
 //!Här är bilden i enskilda recept
 
 .recept {
     .recept-img {
         height: 400px;
         padding: 1rem;
+
+        width: 400px;
+        margin: auto;
     
 
         img {
@@ -17,8 +24,9 @@
 
 //!Här är rubriken i recept
 .recipe-heading{
-    padding-top:3rem;
-    padding-left:1rem;
+   // padding-top:3rem;
+  //  padding-left:1rem;
+    text-align: center;
 }
 
 
@@ -28,15 +36,20 @@
     background-color: white;
     padding:2rem;
     margin-bottom: 2rem;
+    border-radius: 5px;
+   margin: 3rem 0rem;
    
 }
 
 
 .time-ingredients-container{
-    margin: 2rem 1rem;
+   // margin: 2rem 1rem;
     background-color: $cta-color;
     padding:2rem 1rem;
     border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+   justify-content: center;
     
      @include flex-spacebetween(space-around);
      
@@ -82,16 +95,19 @@
 }
 //! container runt "ingredinser" och "Gör såhär"
 .steps-container{
-    padding: 3rem 0rem;
+    //padding: 3rem 0rem;
     margin: 4rem 0rem;
     background-color: $steps-container-color;
+    max-width: 700px;
+   margin: auto;
 
     h2{
         margin-left: 1rem;
     }
   
     .steps-list{
-       
+      
+     
         list-style: none;
 
       li{
