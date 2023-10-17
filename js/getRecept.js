@@ -11,7 +11,7 @@ fetch('../json/recept.json')
             let figure = document.createElement('figure');
             let img = document.createElement('img');
             //!srcet 400px
-            let imgS = document.createElement('img');
+            //let imgS = document.createElement('img');
             let ol = document.createElement('ol');
             let ul = document.createElement('ul');
             let header = document.createElement('header');
@@ -35,6 +35,10 @@ fetch('../json/recept.json')
             let ingridentsBox = document.createElement('div');
             timebox.classList.add('time-box');
             ingridentsBox.classList.add('ingridients-box');
+
+            //! Div box till heading, figure och info-recipie
+            let textImgInfoBox = document.createElement('div');
+            textImgInfoBox.classList.add('textImgInfoBox');
             h1.textContent = item.name;
             p.textContent = item.description;
             time.textContent = item.time;
@@ -42,7 +46,7 @@ fetch('../json/recept.json')
      
             img.setAttribute('src',item.imageURL);
             img.setAttribute('srcset',`${item.image400} 400w`);
-            img.setAttribute('srcset',`${item.image400} 800w`);
+            img.setAttribute('srcset',`${item.image800} 800w`);
             img.setAttribute('srcset',`${item.imageURL} 1200w`);
             h1.classList.add('class', 'recipe-heading')
             figure.setAttribute('class','recept-img');
@@ -85,9 +89,15 @@ fetch('../json/recept.json')
             timebox.append(timeIcon, time );
             ingridentsBox.append(ingridentsIcon,buyIngredients);
 
+           
+
 
             // section3.append(time,buyIngredients);
             section3.append(timebox, ingridentsBox);
+           // textImgInfoBox.append(h1,figure, timebox)
+           textImgInfoBox.append(section3);
+
+            
             section1.append(p,h2I,ul);
             section2.append(h2G,ol);
             figure.append(img);
