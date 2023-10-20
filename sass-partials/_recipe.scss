@@ -1,139 +1,186 @@
-.section3{
-    background-color: red;
-}
 
-//!Här är bilden i enskilda recept
 
 .recept {
-    .recept-img {
-        height: 400px;
-        padding: 1rem;
+    .bigBox{
+        @include bp-sm {
+         
+          
+        }
 
-        width: 400px;
-        margin: auto;
+        @include bp-lg {
+            display: flex;
+            //justify-content: center;
+            justify-content: space-around;
+          
+            //padding:5rem;
+       
     
+        }
+       
+            .section3{
+              //  background-color: red;
+                //!Här är rubriken i recept
+                .recipe-heading{
+                    // padding-top:3rem;
+                //  padding-left:1rem;
+                    text-align: center;
+                    
+                }
+                .recept-img {
+                 
+                    padding: 1rem;
+            
+               
+                    margin: auto;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+                    @include bp-sm {
+
+                        height: 400px;
+                     
+                        width: 400px;
+         
+          
+                    }
+
+                    @include bp-lg {
+                        height: 500px;
+                     
+                        width: 500px;
+                
+                    }
+                   
+                
+            
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .time-ingredients-container{
+                    // margin: 2rem 1rem;
+                    background-color: $cta-color;
+                    padding:2rem 1rem;
+                    border-radius: 5px;
+                    max-width: 400px;
+                    margin: auto;
+                    justify-content: center;
+                    
+                    @include flex-spacebetween(space-around);
+                    .timebox{
+                    //     display: flex;
+                    //  flex-wrap: wrap;
+                    
+                    //  flex: 0 0 10%;
+                    
+                        .material-symbols-outlined{
+                    
+                        display: block;
+                
+                        }
+                        
+                    }
+                    .ingridentsBox{
+                        .material-symbols-outlined{
+                        
+                            display: block;
+                    
+                            }
+                            
+                
+                    }
+                    .time-recipe{
+                    
+                        font-size: 1rem;
+                        
+                        // @include flexbox(stretch);
+                    }
+                    //!Hur många ingredinser som är i receptet
+                    .buy-ingredients{
+                
+                    }
+                    //! Vilken bas ingrediens som är huvudbasen i rätten
+                    .base-ingredients{
+                
+                
+                
+                    }
+                    //! ikoner ovanför texten
+                    .material-symbols-outlined{
+                    
+                    }
+                        
+                }
+
+                //!Information i recept sidorna
+                .info-recipe{
+                    //padding-top: 1rem;
+                    background-color: white;
+                    padding:2rem;
+                    margin-bottom: 2rem;
+                    border-radius: 5px;
+                    margin: 3rem 0rem;
+                    max-width: 400px;
+                    margin: auto;
+                
+                }
+
+
+
+
+            }
+
+        .howToMake{
+
+            //! container runt "ingredinser" och "Gör såhär"
+            .steps-container{
+                //padding: 3rem 0rem;
+              
+               // background-color: $steps-container-color;
+                max-width: 600px;
+              
+                margin: 5rem 0rem;
+               // margin: auto;
+               // justify-content: center;
+
+                h2{
+                    margin-left: 1rem;
+                }
+            
+                .steps-list{
+                   justify-content: center;
+                
+                
+                    list-style: none;
+                    li{
+                        background-color: $ingredients-color;
+                        margin:1rem;
+                        padding:1rem;
+                        border-radius: 5px;
+                        
+                    }
+
+                }
+            }
+
+
         }
     }
 
 }
 
-//!Här är rubriken i recept
-.recipe-heading{
-   // padding-top:3rem;
-  //  padding-left:1rem;
-    text-align: center;
-}
-
-
-//!Information i recept sidorna
-.info-recipe{
-    //padding-top: 1rem;
-    background-color: white;
-    padding:2rem;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-   margin: 3rem 0rem;
-   max-width: 400px;
-   margin: auto;
-   
-}
-
-
-.time-ingredients-container{
-   // margin: 2rem 1rem;
-    background-color: $cta-color;
-    padding:2rem 1rem;
-    border-radius: 5px;
-    max-width: 400px;
-    margin: auto;
-   justify-content: center;
-    
-     @include flex-spacebetween(space-around);
-     
-  
-     
-     
-
-     .timebox{
-    //     display: flex;
-    //  flex-wrap: wrap;
-      
-    //  flex: 0 0 10%;
-   
-       .material-symbols-outlined{
-     
-        display: block;
-
-       }
-       
-     }
-     .ingridentsBox{
-        .material-symbols-outlined{
-       
-            display: block;
-    
-           }
-           
-
-     }
-     
-
-    .time-recipe{
-    
-        font-size: 1rem;
-       
-        // @include flexbox(stretch);
-    }
-    //!Hur många ingredinser som är i receptet
-    .buy-ingredients{
-
-    }
-    //! Vilken bas ingrediens som är huvudbasen i rätten
-    .base-ingredients{
-
-
-
-    }
-   //! ikoner ovanför texten
-    .material-symbols-outlined{
-    
-    }
-         
-}
 
 
 
 
-//! container runt "ingredinser" och "Gör såhär"
-.steps-container{
-    //padding: 3rem 0rem;
-    margin: 4rem 0rem;
-    background-color: $steps-container-color;
-    max-width: 700px;
-   margin: auto;
 
-    h2{
-        margin-left: 1rem;
-    }
-  
-    .steps-list{
-      
-     
-        list-style: none;
 
-      li{
-        background-color: $ingredients-color;
-        margin:1rem;
-        padding:1rem;
-        border-radius: 5px;
-        
-      }
 
-    }
-}
+
+
+
+
+
+
+
 

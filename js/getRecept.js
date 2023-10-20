@@ -22,6 +22,7 @@ fetch('../json/recept.json')
             let section1 = document.createElement('section');
             let section2 = document.createElement('section');
             let section4 = document.createElement('section');
+            let bigBox = document.createElement('div');
             let timeCategoty = document.createElement('section');
             let time = document.createElement('span');
             let buyIngredients = document.createElement('span');
@@ -41,8 +42,8 @@ fetch('../json/recept.json')
 
             timebox.classList.add('time-box');
             ingridentsBox.classList.add('ingridients-box');
-            h1.classList.add('class', 'recipe-heading');
-            time.classList.add('class', 'time-recipe');
+            h1.classList.add('recipe-heading');
+            time.classList.add('time-recipe');
             section3.classList.add('section3');
             section4.classList.add('howToMake');
             buyIngredients.classList.add('class','buy-ingredients');
@@ -55,6 +56,7 @@ fetch('../json/recept.json')
             //! icon from google symbols
             timeIcon.classList.add('material-symbols-outlined');
             ingridentsIcon.classList.add('material-symbols-outlined');
+            bigBox.classList.add('bigBox');
 
 
             h1.textContent = item.name;
@@ -106,12 +108,15 @@ fetch('../json/recept.json')
            // section3.append(h1,figure, timebox)
            section3.append(header,figure, timeCategoty,p);
             section4.append(section1, section2);
+
+            bigBox.append(section3,section4);
             
             section1.append(h2I,ul);
             section2.append(h2G,ol);
             figure.append(img);
             header.append(h1);
-            getID.append(section3,section4); 
+            // getID.append(section3,section4); 
+            getID.append(bigBox); 
         }
     });
 })
