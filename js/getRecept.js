@@ -21,10 +21,10 @@ fetch('../json/recept.json')
             let h2I = document.createElement('h2');
             let section1 = document.createElement('section');
             let section2 = document.createElement('section');
-            let section3 = document.createElement('section');
+            let section4 = document.createElement('section');
+            let timeCategoty = document.createElement('section');
             let time = document.createElement('span');
             let buyIngredients = document.createElement('span');
-     
             let amountIngredients = item.ingredients.length;
             //! icon from google symbols
             let timeIcon = document.createElement('span');
@@ -33,39 +33,46 @@ fetch('../json/recept.json')
             let timebox = document.createElement('div');
             //! Div box till ingredinser och ikon
             let ingridentsBox = document.createElement('div');
+             //! Div box till heading, figure och info-recipie
+             let section3 = document.createElement('div');
+
+
+            //! CLASSES
+
             timebox.classList.add('time-box');
             ingridentsBox.classList.add('ingridients-box');
+            h1.classList.add('class', 'recipe-heading');
+            time.classList.add('class', 'time-recipe');
+            section3.classList.add('section3');
+            section4.classList.add('howToMake');
+            buyIngredients.classList.add('class','buy-ingredients');
+            p.classList.add('info-recipe')
+            section1.classList.add('steps-container');
+            section2.classList.add('steps-container');
+            timeCategoty.classList.add('time-ingredients-container');
+            ul.classList.add('steps-list');
+            ol.classList.add('steps-list');
+            //! icon from google symbols
+            timeIcon.classList.add('material-symbols-outlined');
+            ingridentsIcon.classList.add('material-symbols-outlined');
 
-            //! Div box till heading, figure och info-recipie
-            let textImgInfoBox = document.createElement('div');
-            textImgInfoBox.classList.add('textImgInfoBox');
+
             h1.textContent = item.name;
             p.textContent = item.description;
             time.textContent = item.time;
             buyIngredients.textContent = `${amountIngredients} ingredienser`;
+            h2G.textContent = 'Gör så här';
+            h2I.textContent = 'Ingredienser';
+            timeIcon.textContent = "schedule";
+            ingridentsIcon.textContent = "local_pizza";
+        
      
             img.setAttribute('src',item.imageURL);
             img.setAttribute('srcset',`${item.image400} 400w`);
             img.setAttribute('srcset',`${item.image800} 800w`);
             img.setAttribute('srcset',`${item.imageURL} 1200w`);
-            h1.classList.add('class', 'recipe-heading')
+           
             figure.setAttribute('class','recept-img');
-            time.classList.add('class', 'time-recipe');
-            buyIngredients.classList.add('class','buy-ingredients');
-        
-            p.classList.add('class', 'info-recipe')
-            section1.classList.add('steps-container');
-            section2.classList.add('steps-container');
-            section3.classList.add('time-ingredients-container');
-            h2G.textContent = 'Gör så här';
-            h2I.textContent = 'Ingredienser';
-            ul.classList.add('steps-list');
-            ol.classList.add('steps-list');
-            //! icon from google symbols
-            timeIcon.classList.add('material-symbols-outlined');
-            timeIcon.textContent = "schedule";
-            ingridentsIcon.classList.add('material-symbols-outlined');
-            ingridentsIcon.textContent = "local_pizza";
 
             console.log(item.ingredients.length);
    
@@ -86,23 +93,25 @@ fetch('../json/recept.json')
             // divNew1.append(iconWatch,time)
             // divNe2w.append(iconbag,buyIngredients)
 
+
+
+            //!APPEND
             timebox.append(timeIcon, time );
             ingridentsBox.append(ingridentsIcon,buyIngredients);
-
            
 
 
-            // section3.append(time,buyIngredients);
-            section3.append(timebox, ingridentsBox);
-           // textImgInfoBox.append(h1,figure, timebox)
-           textImgInfoBox.append(section3);
-
+            // timeCategoty.append(time,buyIngredients);
+            timeCategoty.append(timebox, ingridentsBox);
+           // section3.append(h1,figure, timebox)
+           section3.append(header,figure, timeCategoty,p);
+            section4.append(section1, section2);
             
-            section1.append(p,h2I,ul);
+            section1.append(h2I,ul);
             section2.append(h2G,ol);
             figure.append(img);
             header.append(h1);
-            getID.append(header,figure,section3,section1,section2); 
+            getID.append(section3,section4); 
         }
     });
 })
