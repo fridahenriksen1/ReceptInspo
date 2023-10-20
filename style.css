@@ -64,38 +64,38 @@ a {
   color: rgb(11, 11, 11);
 }
 
-.section3 {
-  background-color: red;
+@media (min-width: 960px) {
+  .recept .bigBox {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-
-.recept .recept-img {
-  height: 400px;
+.recept .bigBox .section3 .recipe-heading {
+  text-align: center;
+}
+.recept .bigBox .section3 .recept-img {
   padding: 1rem;
-  width: 400px;
   margin: auto;
 }
-.recept .recept-img img {
+@media (min-width: 480px) {
+  .recept .bigBox .section3 .recept-img {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media (min-width: 960px) {
+  .recept .bigBox .section3 .recept-img {
+    height: 500px;
+    width: 500px;
+  }
+}
+.recept .bigBox .section3 .recept-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.recipe-heading {
-  text-align: center;
-}
-
-.info-recipe {
-  background-color: white;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 5px;
-  margin: 3rem 0rem;
-  max-width: 400px;
-  margin: auto;
-}
-
-.time-ingredients-container {
+.recept .bigBox .section3 .time-ingredients-container {
   background-color: #FFE795;
   padding: 2rem 1rem;
   border-radius: 5px;
@@ -105,28 +105,36 @@ a {
   display: flex;
   justify-content: space-around;
 }
-.time-ingredients-container .timebox .material-symbols-outlined {
+.recept .bigBox .section3 .time-ingredients-container .timebox .material-symbols-outlined {
   display: block;
 }
-.time-ingredients-container .ingridentsBox .material-symbols-outlined {
+.recept .bigBox .section3 .time-ingredients-container .ingridentsBox .material-symbols-outlined {
   display: block;
 }
-.time-ingredients-container .time-recipe {
+.recept .bigBox .section3 .time-ingredients-container .time-recipe {
   font-size: 1rem;
 }
-.steps-container {
-  margin: 4rem 0rem;
-  background-color: #EEE8D2;
-  max-width: 700px;
+.recept .bigBox .section3 .info-recipe {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  margin: 3rem 0rem;
+  max-width: 400px;
   margin: auto;
 }
-.steps-container h2 {
+.recept .bigBox .howToMake .steps-container {
+  max-width: 600px;
+  margin: 5rem 0rem;
+}
+.recept .bigBox .howToMake .steps-container h2 {
   margin-left: 1rem;
 }
-.steps-container .steps-list {
+.recept .bigBox .howToMake .steps-container .steps-list {
+  justify-content: center;
   list-style: none;
 }
-.steps-container .steps-list li {
+.recept .bigBox .howToMake .steps-container .steps-list li {
   background-color: #FFD9A0;
   margin: 1rem;
   padding: 1rem;
@@ -341,19 +349,6 @@ img {
           user-select: none;
   cursor: pointer;
   margin-bottom: 1rem;
-}
-.card .card-text .card-rating {
-  display: inline-flex;
-  align-items: center;
-  color: #212121;
-  font-size: 0.8rem;
-  margin-bottom: 0.7rem;
-}
-.card .card-text .card-rating .star {
-  color: rgb(255, 200, 0);
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 .card img {
   -o-object-fit: cover;
