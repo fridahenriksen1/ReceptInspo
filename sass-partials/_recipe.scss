@@ -1,4 +1,4 @@
-.textImgInfoBox{
+.section3{
     background-color: red;
 }
 
@@ -38,6 +38,8 @@
     margin-bottom: 2rem;
     border-radius: 5px;
    margin: 3rem 0rem;
+   max-width: 400px;
+   margin: auto;
    
 }
 
@@ -58,15 +60,25 @@
      
 
      .timebox{
-        display: flex;
-     flex-wrap: wrap;
+    //     display: flex;
+    //  flex-wrap: wrap;
       
-     flex: 0 0 10%;
-       
-       
+    //  flex: 0 0 10%;
+   
+       .material-symbols-outlined{
+     
+        display: block;
+
+       }
        
      }
      .ingridentsBox{
+        .material-symbols-outlined{
+       
+            display: block;
+    
+           }
+           
 
      }
      
@@ -93,6 +105,10 @@
     }
          
 }
+
+
+
+
 //! container runt "ingredinser" och "Gör såhär"
 .steps-container{
     //padding: 3rem 0rem;
