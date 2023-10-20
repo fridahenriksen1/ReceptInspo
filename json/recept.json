@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Halloumi caesarsallad",
         "category": "Sallad",
-        "description":"Denna sallad är en explosion av smaker, med den salta halloumin, den krispiga salladen och den söta fruktiga smaken. Den passar utmärkt till sommarmiddagar eller när du bara vill ha något lätt och uppfriskande. Smaklig måltid!",
+        "description": "Denna sallad är en explosion av smaker, med den salta halloumin, den krispiga salladen och den söta fruktiga smaken. Den passar utmärkt till sommarmiddagar eller när du bara vill ha något lätt och uppfriskande. Smaklig måltid!",
         "ingredients": [
             {
                 "quantity": "",
@@ -35,17 +35,16 @@
             }
         ],
         "steps": [
-            "Hacka och blanda alla grönsaker.", "Stek Halloumi", "Toppa med parmesan och ceasardressing "
+            "Hacka och blanda alla grönsaker.",
+            "Stek Halloumi",
+            "Toppa med parmesan och ceasardressing "
         ],
         "html": "recept/halloumi_ceasersallad.html",
         "time": "Cirka 20 min",
-     
         "imageURL": "../img/Halloumitallrik-ugnspotatis-1200.webp",
         "image400": "../img/Halloumitallrik-ugnspotatis-400.webp",
         "image800": "../img/Halloumitallrik-ugnspotatis-800.webp"
-        
     },
-    
     {
         "id": 2,
         "name": "Vodka pasta",
@@ -95,9 +94,8 @@
             {
                 "quantity": "4 port",
                 "name": "pasta",
-                "type": "Pasta" 
+                "type": "Pasta"
             }
-
         ],
         "steps": [
             "Skala och hacka vitlöken. Fräs i oljan tills den får lite färg. Tillsätt tomatpuré och chiliflakes och fräs ytterligare ca 5 minuter på medelvärme. Häll i vodkan och låt koka någon minut.",
@@ -118,42 +116,47 @@
     },
     {
         "id": 3,
-        "name": "Chicken Stir-Fry",
-        "category": "chicken",
-        "description": "A quick and healthy chicken stir-fry with colorful vegetables and a savory sauce.",
+        "name": "Halloumigryta med jordnötssås",
+        "category": "Ris",
+        "description": "Här steks halloumin gyllenbrun, och serveras tillsammans med spenat som fått tillagas i en härlig thai satay curry, och passar utmärkt ihop med kokt ris. Vi önskar dig en enkel och smakrik vegomåltid!",
         "ingredients": [
             {
-                "quantity": "2",
-                "name": "boneless chicken breasts",
-                "type": "Meat"
+                "quantity": "4",
+                "name": "port ris eller annat gryn",
+                "type": "Rice"
+            },
+            {
+                "quantity": "400 g",
+                "name": "halloumi eller grillost",
+                "type": "cheese"
+            },
+            {
+                "quantity": "1 msk",
+                "name": "olja",
+                "type": "oil"
             },
             {
                 "quantity": "1",
-                "name": "red bell pepper",
+                "name": "burk thai satay curry grytbas (à 400 ml)",
+                "type": "Spices"
+            },
+            {
+                "quantity": "65 g",
+                "name": "babyspenat",
                 "type": "Vegetables"
             },
             {
-                "quantity": "1",
-                "name": "yellow bell pepper",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1",
-                "name": "carrot",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "2",
-                "name": "garlic cloves",
+                "quantity": "250 g",
+                "name": "tomater",
                 "type": "Vegetables"
             }
         ],
         "steps": [
-            "Slice the chicken and vegetables into thin strips.",
-            "Stir-fry the chicken in a hot pan until cooked through. Remove and set aside.",
-            "Stir-fry the vegetables until they start to soften.",
-            "Return the chicken to the pan, add the sauce, and cook for a few minutes.",
-            "Serve the stir-fry over rice or noodles."
+            "Koka riset enligt anvisningen på förpackningen.",
+            "Skär halloumin i bitar och stek dem i oljan i en stekpanna. Lägg upp halloumin på en tallrik.",
+            "Sänk värmen på plattan och rör i satay grytbasen och spenaten. Sjud i 2 minuter.",
+            "Skär tomaterna i bitar och rör i pannan. ",
+            "Servera grytan med halloumi och ris."
         ],
         "timers": [
             0,
@@ -162,46 +165,67 @@
             0,
             0
         ],
-        "html": "chicken_stir_fry.html",
-        "imageURL": "../img/paella.jpg"
+        "html": "recept/halloumigryta_jordnotssas.html",
+        "time": "Under 30 min",
+        "buyIngredients": "6 ingredienser",
+        "imageURL": "../img/ica-hallomigryta-jordnösås-1200.webp",
+        "image400": "../img/ica-hallomigryta-jordnösås-400.webp",
+        "image800": "../img/ica-hallomigryta-jordnösås-800.webp"
     },
     {
         "id": 4,
-        "name": "Vegetable Curry",
-        "category": "vegetarian",
-        "description": "A flavorful and aromatic vegetable curry with a blend of spices and assorted vegetables.",
+        "name": "Pizza bianco med sparris",
+        "category": "Pizzabotten",
+        "description": "Pizza bianco är en pizza utan tomatsås, här lakto- vegetarisk med crème fraiche som bas. Toppad med grön sparris och mâchesallad är detta en både vacker och riktigt läcker pizza med en lyxig känsla. Så gott!",
         "ingredients": [
             {
-                "quantity": "2 cups",
-                "name": "mixed vegetables (e.g., potatoes, carrots, peas)",
+                "quantity": "250 g",
+                "name": "grön sparris",
                 "type": "Vegetables"
             },
             {
-                "quantity": "1",
-                "name": "onion",
-                "type": "Vegetables"
+                "quantity": "1 msk",
+                "name": "olivolja",
+                "type": "oil"
             },
             {
-                "quantity": "2",
-                "name": "tomatoes",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1 can",
-                "name": "coconut milk",
-                "type": "Canned Goods"
-            },
-            {
-                "quantity": "2 tablespoons",
-                "name": "curry powder",
+                "quantity": "",
+                "name": "salt",
                 "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "1  förp",
+                "name": "färska pizzabottnar (à 360 g)",
+                "type": "Bread"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "lätt crème fraiche med parmesan och vitlök",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "riven cheddarost",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "65 g",
+                "name": "mâchesallad",
+                "type": "Vegetables"
             }
         ],
         "steps": [
-            "Chop the vegetables and onion.",
-            "Sauté the onion until translucent, then add the tomatoes and curry powder.",
-            "Add the mixed vegetables and coconut milk. Simmer until the vegetables are tender.",
-            "Serve the vegetable curry over rice or with naan."
+            "Sätt ugnen på 250°C.",
+            "Skär bort ca 2 cm av botten på sparrisen. Skala den nedre halvan om sparrisarna är tjocka. Blanda sparrisen med olivoljan och krydda med salt och peppar. ",
+            "Lägg ut pizzabottnarna på ugnsplåtar.",
+            "Fördela crème fraichen på pizzabottnarna. Lägg på sparrisen och riven ost. ",
+            "Grädda pizzorna mitt i ugnen i omgångar, ca 5 min.  ",
+            "Toppa pizzorna med mâchesallad och servera."
         ],
         "timers": [
             0,
@@ -209,46 +233,70 @@
             600,
             0
         ],
-        "html": "vegetable_curry.html",
-        "imageURL": "../img/linssoppa.jpg"
+        "html": "recept/pizza-bianco-sparris.html",
+        "time": "Under 30 min",
+        "buyIngredients": "6 ingredienser",
+        "imageURL": "../img/ica-pizza-blanco-sparris-1200.webp",
+        "image400": "../img/ica-pizza-blanco-sparris-400.webp",
+        "image800": "../img/ica-pizza-blanco-sparris-800.webp"
     },
     {
         "id": 5,
-        "name": "Salmon with Lemon-Dill Sauce",
-        "category": "seafood",
-        "description": "Pan-seared salmon fillet served with a creamy lemon-dill sauce.",
+        "name": "Pasta Alfredo",
+        "category": "pasta",
+        "description": "Pasta Alfredo är en klassisk italiensk pastarätt med smör, ost och grädde. Den går riktigt snabbt att laga och brukar uppskattas av alla! Den här pastarätten passar utmärkt till lunch eller när du behöver en snabblagad middag och är perfekt att fylla matlådan med. Om du vill ha mer protein kan du även lägga till kyckling, kalkon eller ett alternativ till kött, men det här är grundreceptet. Pasta Alfredo blir som godast när den serveras direkt.",
         "ingredients": [
             {
+                "quantity": "300 g",
+                "name": "fettuccine",
+                "type": "Pasta"
+            },
+            {
+                "quantity": "100 g",
+                "name": "riven ost",
+                "type": "Dairy"
+            },
+            {
                 "quantity": "2",
-                "name": "salmon fillets",
-                "type": "Seafood"
+                "name": "schalottenlökar",
+                "type": "Vegetables"
             },
             {
-                "quantity": "1",
-                "name": "lemon",
-                "type": "Fruits"
+                "quantity": "2",
+                "name": "vitlöksklyftor",
+                "type": "Vegetables"
             },
             {
-                "quantity": "2 tablespoons",
-                "name": "fresh dill",
-                "type": "Herbs"
-            },
-            {
-                "quantity": "1/4 cup",
-                "name": "heavy cream",
+                "quantity": "2 msk",
+                "name": "margarin",
                 "type": "Dairy"
             },
             {
-                "quantity": "2 tablespoons",
-                "name": "butter",
+                "quantity": "3 dl",
+                "name": "matlagningsgrädde",
                 "type": "Dairy"
+            },
+            {
+                "quantity": "200 g",
+                "name": "frysta gröna ärter",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "nymalen svartpeppar",
+                "type": "Spices"
             }
         ],
         "steps": [
-            "Season the salmon fillets with salt and pepper.",
-            "Sear the fillets in butter until cooked to your liking.",
-            "In a separate saucepan, heat the cream, lemon juice, and dill. Simmer until slightly thickened.",
-            "Serve the salmon with the lemon-dill sauce drizzled on top."
+            "Koka pastan al dente enligt anvisning på förpackningen. Finriv osten och ställ åt sidan.",
+            "Skala och finhacka lök och vitlök. Fräs all lök mjuk i smöret. Häll på grädde och ärter. Koka upp, ta från värmen och rör ner osten. Smaka av med salt och rikligt med nymalen svartpeppar.",
+            "Blanda den nykokta pastan med såsen.",
+            "Servera din Pasta Alfredo med nymalen svartpeppar; du kan även piffa till rätten med lite färsk persilja om du vill."
         ],
         "timers": [
             0,
@@ -256,46 +304,86 @@
             600,
             0
         ],
-        "html": "salmon_lemon_dill.html",
-        "imageURL": "../img/lax.jpg"
+        "html": "recept/pasta_alfredo.html",
+        "time": "30 min",
+        "buyIngredients": "9 ingredienser",
+        "imageURL": "../img/pasta-alfredo-1200.webp",
+        "image400": "../img/pasta-alfredo-400.webp",
+        "image800": "../img/pasta-alfredo-800.webp"
     },
     {
         "id": 6,
-        "name": "Margherita Pizza",
-        "category": "pizza",
-        "description": "A classic Margherita pizza topped with fresh tomatoes, mozzarella, and basil leaves.",
+        "name": "Kantarellpasta",
+        "category": "pasta",
+        "description": "Har du haft lyckan att hitta kantareller eller fanns det kanske att köpa i din butik? Hur du än fick tag på skogens guld passar de utmärkt i en gräddig pasta med vitt vin, vitlök, grädde, chili och persilja. Lite färskriven parmesan på toppen, sen är det bara att servera!",
         "ingredients": [
             {
                 "quantity": "1",
-                "name": "pizza dough",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2",
-                "name": "tomatoes",
+                "name": "sharlottenlök",
                 "type": "Vegetables"
             },
             {
-                "quantity": "8 ounces",
-                "name": "mozzarella cheese",
+                "quantity": "2",
+                "name": "vitlöksklyftor",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "1/2",
+                "name": "färsk röd chili",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "ca 300 g",
+                "name": "färska kantareller",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "360 g",
+                "name": "pasta",
+                "type": "Pasta"
+            },
+            {
+                "quantity": "25 g",
+                "name": "margarin",
                 "type": "Dairy"
             },
             {
-                "quantity": "1/4 cup",
-                "name": "fresh basil leaves",
-                "type": "Herbs"
+                "quantity": "3 dl",
+                "name": "vispgrädde",
+                "type": "Dairy"
             },
             {
-                "quantity": "2 tablespoons",
-                "name": "olive oil",
-                "type": "Condiments"
+                "quantity": "1 tärning",
+                "name": "svampbuljong",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "1 kruka",
+                "name": "färsk persilja, hackad",
+                "type": "Spices"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "permesanost, nyriven",
+                "type": "Dairy"
             }
         ],
         "steps": [
-            "Roll out the pizza dough to your desired thickness.",
-            "Brush the dough with olive oil and top with sliced tomatoes, mozzarella, and basil leaves.",
-            "Bake the pizza in a preheated oven until the crust is golden and the cheese is melted.",
-            "Slice and serve the Margherita pizza."
+            "Skala och finhacka lök och vitlök. Finhacka chilin. Ansa och dela svampen i mindre bitar.",
+            "Koka pastan enligt anvisning på förpackningen.",
+            "Koka pastan enligt anvisning på förpackningen.",
+            "Tillsätt vin och låt det koka in. Häll på grädden och smula ner buljongen. Koka på svag värme ca 5 min. Smaka av med salt och peppar.",
+            "Tillsätt lite pastavatten till svampen och blanda ner pastan. Strö över persilja och parmesan. Servera direkt."
         ],
         "timers": [
             0,
@@ -303,91 +391,165 @@
             900,
             0
         ],
-        "html": "margherita_pizza.html",
-        "imageURL": "../img/pizza.jpg"
+        "html": "recept/kantarellpasta.html",
+        "time": "30 min",
+        "buyIngredients": "12 ingredienser",
+        "imageURL": "../img/kantarellpasta-1200.webp",
+        "image400": "../img/kantarellpasta-400.webp",
+        "image800": "../img/kantarellpasta-800.webp"
     },
     {
         "id": 7,
-        "name": "Berry Smoothie",
-        "category": "beverage",
-        "description": "A refreshing and nutritious smoothie made with mixed berries and yogurt.",
+        "name": "Stekt ris",
+        "category": "Ris",
+        "description": "Stekt ris med grönsaker och ägg är en lättlagad vardagsrätt. Ett utmärkt sätt att ta tillvara ris och grönsaker som blivit över. Äggen som blandas ner gör det stekta riset krämigt och dressingen med brynt smör, soja och lime ger rätten dess rätta karaktär.",
         "ingredients": [
             {
-                "quantity": "1 cup",
-                "name": "mixed berries (e.g., strawberries, blueberries, raspberries)",
-                "type": "Fruits"
+                "quantity": "3 dl",
+                "name": "jasminris",
+                "type": "Rice"
             },
             {
-                "quantity": "1/2 cup",
-                "name": "plain yogurt",
-                "type": "Dairy"
+                "quantity": "1",
+                "name": "morot",
+                "type": "Vegetables"
             },
             {
-                "quantity": "1/2 cup",
-                "name": "milk",
-                "type": "Drinks"
+                "quantity": "1",
+                "name": "röd paprika",
+                "type": "Vegetables"
             },
             {
-                "quantity": "1 tablespoon",
-                "name": "honey",
-                "type": "Condiments"
+                "quantity": "150 g",
+                "name": "sockerärtor",
+                "type": "Vegetables"
             },
             {
-                "quantity": "1/2 teaspoon",
-                "name": "vanilla extract",
-                "type": "Baking"
+                "quantity": "3",
+                "name": "vitlöksklyftor",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "matolja",
+                "type": "oil"
+            },
+            {
+                "quantity": "1 tsk",
+                "name": "chili flakes",
+                "type": "Spices"
+            },
+            {
+                "quantity": "2",
+                "name": "ägg",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "färsk koriander",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "rostad lök",
+                "type": "Spices"
             }
         ],
         "steps": [
-            "Combine the mixed berries, yogurt, milk, honey, and vanilla extract in a blender.",
-            "Blend until smooth and creamy.",
-            "Pour the berry smoothie into glasses and serve immediately."
+            "Koka riset enligt anvisning på förpackningen.",
+            "Skala och skär tunna stavar av moroten. Strimla paprika och sockerärter. Skala och finhacka vitlöken.",
+            "Hetta upp matoljan i en rymlig stekpanna. Stek alla grönsaker med vitlök och chili flakes på hög värme 2–3 min.",
+            "Tillsätt riset och knäck ner äggen. Stek under omrörning tills äggen stelnat. ",
+            "Toppa stekt ris med koriander och rostad lök. Servera direkt."
         ],
         "timers": [
             0,
             0,
             0
         ],
-        "html": "berry_smoothie.html",
-        "imageURL": "../img/sparris.jpg"
+        "html": "recept/stekt_ris.html",
+        "time": "35 min",
+        "buyIngredients": "10 ingredienser",
+        "imageURL": "../img/stekt-ris-1200.webp",
+        "image400": "../img/stekt-ris-400.webp",
+        "image800": "../img/stekt-ris-800.webp"
     },
     {
         "id": 8,
-        "name": "Homemade Burgers",
-        "category": "burgers",
-        "description": "Juicy homemade burgers with all your favorite toppings.",
+        "name": "Krämig halloumi- pestopasta med sparris",
+        "category": "pasta",
+        "description": "Snabb och krämig halloumi- pestopasta med sparris. Gott och enkelt att göra! Den blir så krämig och god.",
         "ingredients": [
             {
-                "quantity": "1 pound",
-                "name": "ground beef",
-                "type": "Meat"
-            },
-            {
-                "quantity": "4",
-                "name": "hamburger buns",
-                "type": "Bakery"
-            },
-            {
-                "quantity": "4 slices",
-                "name": "cheddar cheese",
+                "quantity": "200 g",
+                "name": "halloumi",
                 "type": "Dairy"
             },
             {
-                "quantity": "1",
-                "name": "onion",
+                "quantity": "2",
+                "name": "vitlöksklyftor",
                 "type": "Vegetables"
             },
             {
-                "quantity": "4 leaves",
-                "name": "lettuce",
+                "quantity": "1",
+                "name": "gul lök",
                 "type": "Vegetables"
+            },
+            {
+                "quantity": "1",
+                "name": "tomat",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "Creme fraiche",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "Creme fraiche",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2",
+                "name": "sparris",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "pesto",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "efter behag",
+                "name": "blandspenat",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "400 g",
+                "name": "pasta",
+                "type": "Pasta"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "parmesan",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "",
+                "name": "chili flakes",
+                "type": "Spices"
             }
         ],
         "steps": [
-            "Divide the ground beef into 4 equal portions and shape into patties.",
-            "Grill or cook the patties on a stovetop until cooked to your preferred doneness.",
-            "Toast the hamburger buns and assemble the burgers with cheese, onion, and lettuce.",
-            "Serve the homemade burgers with your favorite condiments and sides."
+            "Stek först ihop vitlök, gul lök, tomater i olivolja.",
+            "Tillsätt färsk sparris",
+            "Blanda med creme fraiche och grön pesto",
+            "Häll i lite pastavatten för extra smak.",
+            "Tillsätt bladspenat sist av allt.",
+            "Koka pasta och stek halloumi innan du blandar ihop",
+            "Krydda med salt, peppar och chili.",
+            "Toppa med parmesan"
         ],
         "timers": [
             0,
@@ -395,46 +557,61 @@
             0,
             0
         ],
-        "html": "homemade_burgers.html",
-        "imageURL": "../img/caesarsalad.jpg"
+        "html": "recept/kramig-halloumi-pestopasta.html",
+        "time": "ca 30 min",
+        "buyIngredients": "11 ingredienser",
+        "imageURL": "../img/Krämig-kantarell-hallomipasta-1200.webp",
+        "image400": "../img/Krämig-kantarell-hallomipasta-400.webp",
+        "image800": "../img/Krämig-kantarell-hallomipasta-800.webp"
     },
     {
         "id": 9,
-        "name": "Pasta Primavera",
-        "category": "pasta",
-        "description": "A light and vibrant pasta dish with assorted spring vegetables and a lemony sauce.",
+        "name": "Vegocurry med broccoli och halloumi",
+        "category": "nudlar",
+        "description": "En indiskdoftande curry står på kvällens meny, med crunchy broccoli och mjuk halloumi. Till det serveras äggnudlar. Mums!",
         "ingredients": [
             {
-                "quantity": "8 ounces",
-                "name": "pasta (e.g., spaghetti, fettuccine)",
+                "quantity": "250 g",
+                "name": "broccoli",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2  förp",
+                "name": "grillost eller halloumi (à 200 g)",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1 tsk",
+                "name": "olja",
+                "type": "oil"
+            },
+            {
+                "quantity": "1 tsk",
+                "name": "olja",
+                "type": "oil"
+            },
+            {
+                "quantity": "400 ml",
+                "name": "grytbas massam curry",
+                "type": "Spices"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "vatten",
+                "type": "Water"
+            },
+            {
+                "quantity": "4 port",
+                "name": "äggnudlar",
                 "type": "Pasta"
-            },
-            {
-                "quantity": "1",
-                "name": "zucchini",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1",
-                "name": "yellow squash",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1 cup",
-                "name": "cherry tomatoes",
-                "type": "Fruits"
-            },
-            {
-                "quantity": "1/4 cup",
-                "name": "fresh parsley",
-                "type": "Herbs"
             }
         ],
         "steps": [
-            "Cook the pasta according to package instructions.",
-            "Sauté the zucchini, yellow squash, and cherry tomatoes until tender.",
-            "Toss the cooked pasta with the sautéed vegetables and fresh parsley.",
-            "Drizzle with olive oil and lemon juice. Season with salt and pepper."
+            "Skär broccolin i mindre bitar.",
+            "Skär halloumin i små tärningar. Stek osten i oljan i en kastrull, tills den får lite färg.",
+            "Rör ner grytbasen och vattnet. Låt koka upp och lägg ner broccolin, koka tills broccolin är mjuk, ca 5 minuter.",
+            "Koka nudlarna enligt anvisningen på nudelförpackningen.",
+            "Servera curryn med nudlar och broccoli."
         ],
         "timers": [
             0,
@@ -442,49 +619,65 @@
             0,
             0
         ],
-        "html": "pasta_primavera.html",
-        "imageURL": "../img/PastaPrimavera.jpg"
+        "html": "recept/vegocurry-broccoli-hallomi.html",
+        "time": "under 30 min",
+        "buyIngredients": "6 ingredienser",
+        "imageURL": "../img/Vegocurry-broccoli-halloumi-1200.webp",
+        "image400": "../img/Vegocurry-broccoli-halloumi-400.webp",
+        "image800": "../img/Vegocurry-broccoli-halloumi-800.webp"
     },
     {
         "id": 10,
-        "name": "Chocolate Chip Cookies",
-        "category": "dessert",
-        "description": "Classic homemade chocolate chip cookies that are chewy and delicious.",
+        "name": "Grön couscous",
+        "category": "couscous",
+        "description": "Denna gröna couscous är ett nyttigt tillbehör till grillfesten. Den har underbar smak och går snabbt att laga. Couscousen blir vackert grön när du mixar den med spenat och persilja. Servera med en sval vitlöksyoghurt.",
         "ingredients": [
             {
-                "quantity": "1 cup",
-                "name": "butter",
-                "type": "Dairy"
+                "quantity": "1  kruka",
+                "name": "persilja",
+                "type": "Spices"
             },
             {
-                "quantity": "3/4 cup",
-                "name": "granulated sugar",
-                "type": "Baking"
+                "quantity": "65 g",
+                "name": "babyspenat",
+                "type": "Vegetables"
             },
             {
-                "quantity": "3/4 cup",
-                "name": "brown sugar",
-                "type": "Baking"
+                "quantity": "4 port",
+                "name": "couscous",
+                "type": "Pasta"
             },
             {
-                "quantity": "1 teaspoon",
-                "name": "vanilla extract",
-                "type": "Baking"
+                "quantity": "250 g",
+                "name": "miniplommontomater",
+                "type": "Vegetables"
             },
             {
-                "quantity": "2",
-                "name": "eggs",
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "1/2",
+                "name": "citron",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "yoghurt smaksatt med vitlök",
                 "type": "Dairy"
             }
         ],
         "steps": [
-            "Preheat the oven to 375°F (190°C).",
-            "In a large bowl, cream together the butter, granulated sugar, and brown sugar.",
-            "Beat in the vanilla and eggs.",
-            "Combine the dry ingredients in a separate bowl, then gradually add to the butter mixture.",
-            "Stir in the chocolate chips.",
-            "Drop spoonfuls of dough onto ungreased baking sheets and bake for 8-10 minutes.",
-            "Let the cookies cool on the baking sheets before transferring to a wire rack."
+            "Mixa persilja och spenat fint i en matberedare. Tillsätt couscousen och pulsa ett par gånger.",
+            "Koka upp vatten och salt enligt anvisningen på couscousförpackningen och häll över couscousen och låt stå ca 5 minuter. ",
+            "Dela tomaterna i halvor, blanda dem med couscousen. Smaksätt med salt, peppar och citronsaft.",
+            "Servera couscousen med vitlöksyoghurt."
         ],
         "timers": [
             0,
@@ -495,18 +688,11 @@
             600,
             0
         ],
-        "html": "chocolate_chip_cookies.html",
-        "imageURL": "../img/havre.jpg"
+        "html": "recept/gron-couscous.html",
+        "time": "under 30 min",
+        "buyIngredients": "7 ingredienser",
+        "imageURL": "../img/ica-gron-coscos-1200.webp",
+        "image400": "../img/ica-gron-coscos-400.webp",
+        "image800": "../img/ica-gron-coscos-800.webp"
     }
-    
-
-    
-
-    
-    
-
-    
-    
-    
-    
 ]
