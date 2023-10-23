@@ -2,9 +2,12 @@
 
 .recept {
     .bigBox{
+       background-color: white;
+      
         @include bp-sm {
-         
-          
+            padding:3rem 3rem;
+            border-radius: 5px;
+             margin: 3rem;
         }
 
         @include bp-lg {
@@ -19,6 +22,11 @@
        
             .section3{
               //  background-color: red;
+              padding-top: 3.5rem;
+              @include bp-sm {
+
+                padding-top: 1rem;
+            }
                 //!Här är rubriken i recept
                 .recipe-heading{
                     // padding-top:3rem;
@@ -35,22 +43,18 @@
 
                     @include bp-sm {
 
-                        height: 400px;
+                        height: 380px;
                      
-                        width: 400px;
+                        width: 380px;
          
           
                     }
-
                     @include bp-lg {
                         height: 500px;
                      
                         width: 500px;
                 
                     }
-                   
-                
-            
                     img {
                         width: 100%;
                         height: 100%;
@@ -62,11 +66,28 @@
                     background-color: $cta-color;
                     padding:2rem 1rem;
                     border-radius: 5px;
-                    max-width: 400px;
+                    max-width: 348px;
+                   
                     margin: auto;
                     justify-content: center;
+                    @include bp-sm {
+                        max-width: 380px;
+            
+                    }
+                  
+                    @include bp-lg {
+                        //max-width: 380px;
+            
+                    }
+                  
                     
                     @include flex-spacebetween(space-around);
+
+                    @include bp-lg {
+                       
+                        max-width: 470px;
+                
+                    }
                     .timebox{
                     //     display: flex;
                     //  flex-wrap: wrap;
@@ -81,6 +102,8 @@
                         
                     }
                     .ingridentsBox{
+                   
+                     
                         .material-symbols-outlined{
                         
                             display: block;
@@ -116,54 +139,77 @@
                 .info-recipe{
                     //padding-top: 1rem;
                     background-color: white;
+                    //background-color: $ingredients-color;
                     padding:2rem;
                     //margin-bottom: 2rem;
                     border-radius: 5px;
                    // margin: 3rem 0rem;
                     max-width: 400px;
                     margin: auto;
-                   
-          
-                   
-             
+
+                    @include bp-lg {
+                       
+                        max-width: 470px;
+                
+                    }
                 
                 }
-
-
-
-
             }
 
         .howToMake{
+            margin: 4rem 0rem;
+
 
             //! container runt "ingredinser" och "Gör såhär"
             .steps-container{
                 //padding: 3rem 0rem;
-              
                // background-color: $steps-container-color;
                 max-width: 600px;
               
-                margin: 5rem 0rem;
-               // margin: auto;
-               // justify-content: center;
+               margin: auto;
 
                 h2{
                     margin-left: 1rem;
+                    margin-bottom: 1.8rem;
                 }
             
                 .steps-list{
                    justify-content: center;
-                
-                
                     list-style: none;
+                }
+                li{
+                    background-color: $ingredients-color;
+                    margin:1rem;
+                    padding:1rem;
+                    border-radius: 5px;
+                    
+                }
+
+                .steps-list-howTo{
+                   // justify-content: center;
                     li{
-                        background-color: $ingredients-color;
-                        margin:1rem;
-                        padding:1rem;
-                        border-radius: 5px;
-                        
+                        list-style:circle;
+                        list-style-position: inside;
                     }
 
+
+                }
+
+                &.howToContainer{
+                    margin-top: 5rem;
+                    padding-bottom: 3rem;
+
+                    @include bp-sm {
+
+                        padding-bottom: 3rem;
+          
+                    }
+                    @include bp-lg {
+
+                        padding-bottom: 0rem;
+          
+                    }
+                 
                 }
             }
 

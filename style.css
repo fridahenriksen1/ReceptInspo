@@ -64,10 +64,28 @@ a {
   color: rgb(11, 11, 11);
 }
 
+.recept .bigBox {
+  background-color: white;
+}
+@media (min-width: 480px) {
+  .recept .bigBox {
+    padding: 3rem 3rem;
+    border-radius: 5px;
+    margin: 3rem;
+  }
+}
 @media (min-width: 960px) {
   .recept .bigBox {
     display: flex;
     justify-content: space-around;
+  }
+}
+.recept .bigBox .section3 {
+  padding-top: 3.5rem;
+}
+@media (min-width: 480px) {
+  .recept .bigBox .section3 {
+    padding-top: 1rem;
   }
 }
 .recept .bigBox .section3 .recipe-heading {
@@ -79,8 +97,8 @@ a {
 }
 @media (min-width: 480px) {
   .recept .bigBox .section3 .recept-img {
-    height: 400px;
-    width: 400px;
+    height: 380px;
+    width: 380px;
   }
 }
 @media (min-width: 960px) {
@@ -99,11 +117,21 @@ a {
   background-color: #FFE795;
   padding: 2rem 1rem;
   border-radius: 5px;
-  max-width: 400px;
+  max-width: 348px;
   margin: auto;
   justify-content: center;
   display: flex;
   justify-content: space-around;
+}
+@media (min-width: 480px) {
+  .recept .bigBox .section3 .time-ingredients-container {
+    max-width: 380px;
+  }
+}
+@media (min-width: 960px) {
+  .recept .bigBox .section3 .time-ingredients-container {
+    max-width: 470px;
+  }
 }
 .recept .bigBox .section3 .time-ingredients-container .timebox .material-symbols-outlined {
   display: block;
@@ -121,22 +149,49 @@ a {
   max-width: 400px;
   margin: auto;
 }
+@media (min-width: 960px) {
+  .recept .bigBox .section3 .info-recipe {
+    max-width: 470px;
+  }
+}
+.recept .bigBox .howToMake {
+  margin: 4rem 0rem;
+}
 .recept .bigBox .howToMake .steps-container {
   max-width: 600px;
-  margin: 5rem 0rem;
+  margin: auto;
 }
 .recept .bigBox .howToMake .steps-container h2 {
   margin-left: 1rem;
+  margin-bottom: 1.8rem;
 }
 .recept .bigBox .howToMake .steps-container .steps-list {
   justify-content: center;
   list-style: none;
 }
-.recept .bigBox .howToMake .steps-container .steps-list li {
+.recept .bigBox .howToMake .steps-container li {
   background-color: #FFD9A0;
   margin: 1rem;
   padding: 1rem;
   border-radius: 5px;
+}
+.recept .bigBox .howToMake .steps-container .steps-list-howTo li {
+  list-style: circle;
+  list-style-position: inside;
+}
+.recept .bigBox .howToMake .steps-container.howToContainer {
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 480px) {
+  .recept .bigBox .howToMake .steps-container.howToContainer {
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 960px) {
+  .recept .bigBox .howToMake .steps-container.howToContainer {
+    padding-bottom: 0rem;
+  }
 }
 
 #main-footer {
