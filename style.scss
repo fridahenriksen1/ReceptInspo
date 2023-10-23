@@ -6,6 +6,7 @@
 
 @import 'sass-partials/breakpoints';
 @import 'sass-partials/recipe';
+@import 'sass-partials/cookie';
 @import 'sass-partials/footer';
 
 
@@ -39,6 +40,7 @@ img {
     }
 
 }
+
 
 .main-header {
     background-color: $primary-color;
@@ -293,8 +295,24 @@ img {
     background-color: #B8B89E;
     // @include flexbox(row,center,center,nowrap );
     padding: 5rem 0;
-    //width: 100vw;
+
+    //!Om vi vill ha full container så är det bara att kommentera ut från rad 299 till 304
+    // padding: 9rem 0;
+    // width: 100vw;
+    // position: relative;
+    // margin-left: -50vw;
+    // height: 100px;
+    // left: 50%;
+
+  
+    
     border-radius: 1rem;
+    // width: 100vw;
+    // margin-left: -16.5vw;
+    
+    //margin: auto;
+
+   
 
     h3 {
         color: black;
