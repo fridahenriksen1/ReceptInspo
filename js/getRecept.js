@@ -49,10 +49,10 @@ fetch('../json/recept.json')
             buyIngredients.classList.add('class','buy-ingredients');
             p.classList.add('info-recipe')
             section1.classList.add('steps-container');
-            section2.classList.add('steps-container');
+            section2.classList.add('steps-container', 'howToContainer');
             timeCategoty.classList.add('time-ingredients-container');
             ul.classList.add('steps-list');
-            ol.classList.add('steps-list');
+            ol.classList.add('steps-list-howTo');
             //! icon from google symbols
             timeIcon.classList.add('material-symbols-outlined');
             ingridentsIcon.classList.add('material-symbols-outlined');
@@ -117,7 +117,11 @@ fetch('../json/recept.json')
             header.append(h1);
             // getID.append(section3,section4); 
             getID.append(bigBox); 
+
+
+            
         }
     });
 })
 
+           
