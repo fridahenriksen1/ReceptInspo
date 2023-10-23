@@ -117,9 +117,7 @@ a {
 .recept .bigBox .section3 .info-recipe {
   background-color: white;
   padding: 2rem;
-  margin-bottom: 2rem;
   border-radius: 5px;
-  margin: 3rem 0rem;
   max-width: 400px;
   margin: auto;
 }
@@ -448,6 +446,14 @@ img {
 #main-footer .footer-inside h3 {
   text-align: center;
   margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: rgb(11, 11, 11);
+  font-size: 1.5rem;
+}
+@media (min-width: 480px) {
+  #main-footer .footer-inside h3 {
+    font-size: 3rem;
+  }
 }
 #main-footer .footer-inside p {
   margin-bottom: 0.8rem;
