@@ -175,7 +175,7 @@
     {
         "id": 4,
         "name": "Pizza bianco med sparris",
-        "category": "Pizzabotten",
+        "category": "Pizza",
         "description": "Pizza bianco är en pizza utan tomatsås, här lakto- vegetarisk med crème fraiche som bas. Toppad med grön sparris och mâchesallad är detta en både vacker och riktigt läcker pizza med en lyxig känsla. Så gott!",
         "ingredients": [
             {
@@ -567,7 +567,7 @@
     {
         "id": 9,
         "name": "Vegocurry med broccoli och halloumi",
-        "category": "nudlar",
+        "category": "Nudlar",
         "description": "En indiskdoftande curry står på kvällens meny, med crunchy broccoli och mjuk halloumi. Till det serveras äggnudlar. Mums!",
         "ingredients": [
             {
