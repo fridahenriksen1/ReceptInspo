@@ -4,20 +4,22 @@
     .bigBox{
        background-color: white;
       
+      
         @include bp-sm {
-            padding:3rem 3rem;
+          padding-top: 3rem;
             border-radius: 5px;
              margin: 3rem;
+        }
+        @include bp-md {
+            padding:3rem 3rem;
+      
         }
 
         @include bp-lg {
             display: flex;
             //justify-content: center;
             justify-content: space-around;
-          
             //padding:5rem;
-       
-    
         }
        
             .section3{
@@ -66,10 +68,15 @@
                     background-color: $cta-color;
                     padding:2rem 1rem;
                     border-radius: 5px;
-                    max-width: 348px;
+                    margin:0rem 1rem;
+                  
+                
+                    //max-width: 348px;
+                    
                    
-                    margin: auto;
-                    justify-content: center;
+                   
+                   // margin: auto;
+                    //justify-content: center;
                     @include bp-sm {
                         max-width: 380px;
             
@@ -88,29 +95,31 @@
                         max-width: 470px;
                 
                     }
-                    .timebox{
-                    //     display: flex;
-                    //  flex-wrap: wrap;
-                    
-                    //  flex: 0 0 10%;
+                    .time-box{
+                    // display: flex;
+                    // align-items: center;
+                  
+                   text-align: center;
                     
                         .material-symbols-outlined{
                     
                         display: block;
+                        margin-bottom: 0.5rem;
                 
                         }
                         
                     }
-                    .ingridentsBox{
-                   
-                     
+                    .ingridients-box{
+
+                        // display: flex;
+                        // align-items: center;
+                        text-align: center;
                         .material-symbols-outlined{
                         
                             display: block;
+                            margin-bottom: 0.5rem;
                     
                             }
-                            
-                
                     }
                     .time-recipe{
                     
@@ -157,8 +166,16 @@
             }
 
         .howToMake{
-            margin: 4rem 0rem;
-
+       
+            // @include bp-sm {
+            //     margin: 0rem 0rem;
+            // }
+            @include bp-lg {
+                margin: 4.9rem 0rem;
+            }
+            @include bp-xl {
+                margin: 5.8rem 0rem;
+            }
 
             //! container runt "ingredinser" och "Gör såhär"
             .steps-container{
