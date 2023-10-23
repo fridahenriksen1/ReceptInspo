@@ -139,6 +139,42 @@ a {
   border-radius: 5px;
 }
 
+#main-footer {
+  background-color: #D3D8D4;
+  padding: 2rem 0;
+}
+#main-footer .footer-inside {
+  max-width: 400px;
+  margin: auto;
+}
+#main-footer .footer-inside h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: rgb(11, 11, 11);
+  font-size: 1.5rem;
+}
+@media (min-width: 480px) {
+  #main-footer .footer-inside h3 {
+    font-size: 3rem;
+  }
+}
+#main-footer .footer-inside p {
+  margin-bottom: 0.8rem;
+}
+#main-footer .footer-inside #newsletter {
+  display: flex;
+  margin-bottom: 2rem;
+}
+#main-footer .footer-inside #newsletter #email {
+  flex: 1;
+  margin-right: 1rem;
+}
+#main-footer .footer-inside .footer-text {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -426,49 +462,13 @@ img {
   display: none;
 }
 .chip[type=checkbox]:checked + label {
-  background-color: #22211d;
+  background-color: #3262f1;
 }
 
 .textField {
   padding: 0.6rem 1rem;
   border-radius: 0.625rem;
   border: 1px solid white;
-}
-
-#main-footer {
-  background-color: #D3D8D4;
-  padding: 2rem 0;
-}
-#main-footer .footer-inside {
-  max-width: 400px;
-  margin: auto;
-}
-#main-footer .footer-inside h3 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-family: "Oswald", sans-serif;
-  color: rgb(11, 11, 11);
-  font-size: 1.5rem;
-}
-@media (min-width: 480px) {
-  #main-footer .footer-inside h3 {
-    font-size: 3rem;
-  }
-}
-#main-footer .footer-inside p {
-  margin-bottom: 0.8rem;
-}
-#main-footer .footer-inside #newsletter {
-  display: flex;
-  margin-bottom: 2rem;
-}
-#main-footer .footer-inside #newsletter #email {
-  flex: 1;
-  margin-right: 1rem;
-}
-#main-footer .footer-inside .footer-text {
-  font-size: 0.8rem;
-  text-align: center;
 }
 
 .news {

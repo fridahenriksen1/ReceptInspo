@@ -6,6 +6,7 @@
 
 @import 'sass-partials/breakpoints';
 @import 'sass-partials/recipe';
+@import 'sass-partials/footer';
 
 
 @import 'sass-partials/components/buttons';
@@ -382,62 +383,10 @@ img {
     }
 }
 
-
-
-
-
 .textField {
     padding: .6rem 1rem;
     border-radius: .625rem;
     border: 1px solid white;
-}
-
-#main-footer {
-    background-color: $primary-color;
-    padding: 2rem 0;
-    //color: white;
-
-    .footer-inside {
-        max-width: 400px;
-        margin: auto;
-
-        h3 {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-family: $logo-text;
-
-            color: rgb(11, 11, 11);
-            font-size: 1.5rem;
-    
-            @include bp-sm {
-                font-size: 3rem;
-
-            }
-
-           
-        }
-
-        p {
-            margin-bottom: .8rem;
-        }
-
-        #newsletter {
-            display: flex;
-            margin-bottom: 2rem;
-
-            #email {
-                flex: 1;
-                margin-right: 1rem;
-            }
-        }
-
-        .footer-text {
-            font-size: 0.8rem;
-            text-align: center;
-        }
-
-    }
-
 }
 
 .news {
