@@ -48,13 +48,10 @@
         ],
         "html": "recept/halloumi_ceasersallad.html",
         "time": "Cirka 20 min",
-      
         "imageURL": "../img/hallomi-cesarsallad-1200.webp",
         "image400": "../img/hallomi-cesarsallad-400.webp",
         "image800": "../img/hallomi-cesarsallad-800.webp",
-       "altText": "Halloumi ceasarsallad på en tallrik"
-      
-
+        "altText": "Somrig bild på en tallrik med hallomi ceasarsallad"
     },
     {
         "id": 2,
@@ -125,7 +122,8 @@
         "buyIngredients": "11 ingredienser",
         "imageURL": "../img/vodka-pasta-1200.webp",
         "image400": "../img/vodka-pasta-400.webp",
-        "image800": "../img/vodka-pasta-800.webp"
+        "image800": "../img/vodka-pasta-800.webp",
+        "altText": "Röd pasta penne som är färgad av tomat ligger på en grå brun tallrik. Pastan är toppad med parmesan och färsk basilika"
     },
     {
         "id": 3,
@@ -183,7 +181,8 @@
         "buyIngredients": "6 ingredienser",
         "imageURL": "../img/ica-hallomigryta-jordnösås-1200.webp",
         "image400": "../img/ica-hallomigryta-jordnösås-400.webp",
-        "image800": "../img/ica-hallomigryta-jordnösås-800.webp"
+        "image800": "../img/ica-hallomigryta-jordnösås-800.webp",
+        "altText": "Ljus bild på en djup skål med ris och hallomigryta. maten är inte blandad utan ligger som lager på varandra. Hallomigrytan är gul, i grytan ligger grönsaker och halva plompntommater syns tydligt."
     },
     {
         "id": 4,
@@ -251,7 +250,8 @@
         "buyIngredients": "6 ingredienser",
         "imageURL": "../img/ica-pizza-blanco-sparris-1200.webp",
         "image400": "../img/ica-pizza-blanco-sparris-400.webp",
-        "image800": "../img/ica-pizza-blanco-sparris-800.webp"
+        "image800": "../img/ica-pizza-blanco-sparris-800.webp",
+        "altText": "Ljus bild på en pizza som ser rätt blek ut, brödet är lätt gräddat, på brödet ligger sparris och basilika."
     },
     {
         "id": 5,
@@ -322,7 +322,8 @@
         "buyIngredients": "9 ingredienser",
         "imageURL": "../img/pasta-alfredo-1200.webp",
         "image400": "../img/pasta-alfredo-400.webp",
-        "image800": "../img/pasta-alfredo-800.webp"
+        "image800": "../img/pasta-alfredo-800.webp",
+        "altText": "På en svart tallrik ligger en kladdig pasta där gröna ärtor syns, pastan är tagliatelle."
     },
     {
         "id": 6,
@@ -409,7 +410,8 @@
         "buyIngredients": "12 ingredienser",
         "imageURL": "../img/kantarellpasta-1200.webp",
         "image400": "../img/kantarellpasta-400.webp",
-        "image800": "../img/kantarellpasta-800.webp"
+        "image800": "../img/kantarellpasta-800.webp",
+        "altText": "Ljus bild på en halvdjupskål med pasta regatoni, blandat i passtan syns kantareller, parmesan och persilja."
     },
     {
         "id": 7,
@@ -485,7 +487,8 @@
         "buyIngredients": "10 ingredienser",
         "imageURL": "../img/stekt-ris-1200.webp",
         "image400": "../img/stekt-ris-400.webp",
-        "image800": "../img/stekt-ris-800.webp"
+        "image800": "../img/stekt-ris-800.webp",
+        "altText": "I en djup skål synns risblandat med grönsaker, toppad med koriander och en fjärdedels lime. Över skålen ligger ett par matpinnar."
     },
     {
         "id": 8,
@@ -575,7 +578,8 @@
         "buyIngredients": "11 ingredienser",
         "imageURL": "../img/Krämig-kantarell-hallomipasta-1200.webp",
         "image400": "../img/Krämig-kantarell-hallomipasta-400.webp",
-        "image800": "../img/Krämig-kantarell-hallomipasta-800.webp"
+        "image800": "../img/Krämig-kantarell-hallomipasta-800.webp",
+        "altText": "I en panna syns pasta fysilli. Bilden är rörig och det ger en känsla av att mattlagningen är pågående men väldogt nära klar. I pastan syns kantareller, hallomi, ost och pinjenötter."
     },
     {
         "id": 9,
@@ -637,7 +641,8 @@
         "buyIngredients": "6 ingredienser",
         "imageURL": "../img/Vegocurry-broccoli-halloumi-1200.webp",
         "image400": "../img/Vegocurry-broccoli-halloumi-400.webp",
-        "image800": "../img/Vegocurry-broccoli-halloumi-800.webp"
+        "image800": "../img/Vegocurry-broccoli-halloumi-800.webp",
+        "altText": "I en djup skål ligger nudlar blandat med hallomigryta. Färgen är ljusbryn, i grytan syns brocoli. Över skålen ligger ett par matpinnar. "
     },
     {
         "id": 10,
@@ -706,7 +711,8 @@
         "buyIngredients": "7 ingredienser",
         "imageURL": "../img/ica-gron-coscos-1200.webp",
         "image400": "../img/ica-gron-coscos-400.webp",
-        "image800": "../img/ica-gron-coscos-800.webp"
+        "image800": "../img/ica-gron-coscos-800.webp",
+        "altText": "I förgrunden synns en skål med grön coscos. I den gröna blandningen syns tomater. I bakrunden syns en skål med vit sås som inehåll, skålen är suddig."
     },
     {
         "id": 11,
@@ -770,7 +776,8 @@
         "buyIngredients": "7 ingredienser",
         "imageURL": "../img/ica-coscos-avocadoboal-1200.webp",
         "image400": "../img/ica-coscos-avocadoboal-400.webp",
-        "image800": "../img/ica-coscos-avocadoboal-800.webp"
+        "image800": "../img/ica-coscos-avocadoboal-800.webp",
+        "altText": "I en ljusbrun skål syns skurren avocado och ett stekt ägg. Dessa är toppade med sriracham och trimmlade örter. "
     },
     {
         "id": 12,
@@ -860,7 +867,8 @@
         "buyIngredients": "12 ingredienser",
         "imageURL": "../img/risotto-med-skogschampinjoner-1200.webp",
         "image400": "../img/risotto-med-skogschampinjoner-400.webp",
-        "image800": "../img/risotto-med-skogschampinjoner-800.webp"
+        "image800": "../img/risotto-med-skogschampinjoner-800.webp",
+        "altText": "I en halvdjupskål syns en kladdig risotto toppad med rucola. I risotton ligger en gafffel med brunt skafft. "
     },
     {
         "id": 13,
@@ -940,7 +948,8 @@
         "buyIngredients": "9 ingredienser",
         "imageURL": "../img/Skärmbild-avokadosalad-sparris-1200.webp",
         "image400": "../img/Skärmbild-avokadosalad-sparris-400.webp",
-        "image800": "../img/Skärmbild-avokadosalad-sparris-800.webp"
+        "image800": "../img/Skärmbild-avokadosalad-sparris-800.webp",
+        "altText": "På en svart tallrik syns en blandad sallad, i salladen synns avocado, pinjenötter, sparris och bönor. En hand håller i tallriken och en annan hand ser ut att blanda runt salladen.  "
     },
     {
         "id": 14,
@@ -1039,7 +1048,8 @@
         "buyIngredients": "14 ingredienser",
         "imageURL": "../img/one-pot-pasta-bonor-soltorkadetomater-1200.webp",
         "image400": "../img/one-pot-pasta-bonor-soltorkadetomater-400.webp",
-        "image800": "../img/one-pot-pasta-bonor-soltorkadetomater-800.webp"
+        "image800": "../img/one-pot-pasta-bonor-soltorkadetomater-800.webp",
+        "altText": "I en stor gryta ligger en pastasås, pastan är penne, såsen är rödbrun. Röran är toppad med färsk basilika. I grytan ligger en stor slev. "
     },
     {
         "id": 15,
@@ -1134,7 +1144,8 @@
         "buyIngredients": "13 ingredienser",
         "imageURL": "../img/hallomi-stroganoff-1200.webp",
         "image400": "../img/hallomi-stroganoff-400.webp",
-        "image800": "../img/hallomi-stroganoff-800.webp"
+        "image800": "../img/hallomi-stroganoff-800.webp",
+        "altText": "I en panna ligger en röd röra, i rörran kan hallomiskivor skymtas. Brevis pannan nästan utanför bilden syns en skål fylld med ris."
     },
     {
         "id": 16,
@@ -1208,7 +1219,8 @@
         "buyIngredients": "8 ingredienser",
         "imageURL": "../img/broccoligratang-pasta-1200.webp",
         "image400": "../img/broccoligratang-pasta-400.webp",
-        "image800": "../img/broccoligratang-pasta-800.webp"
+        "image800": "../img/broccoligratang-pasta-800.webp",
+        "altText": "I en vit form ligger en pasta balndning. Pastan är penne och i blandningen ligger broccoli. Maten har tillagats i ugnen, det synns då pennen på vissa ställe fått en brun färg. "
     },
     {
         "id": 17,
@@ -1268,12 +1280,13 @@
         "buyIngredients": "6 ingredienser",
         "imageURL": "../img/Tortillapizza-brie-1200.webp",
         "image400": "../img/Tortillapizza-brie-400.webp",
-        "image800": "../img/Tortillapizza-brie-800.webp"
+        "image800": "../img/Tortillapizza-brie-800.webp",
+        "altText": "På en tallrik ligger en blek pizza med pinjenötter och rödlök. Pizzan är delad. "
     },
     {
         "id": 18,
         "name": "Halloumitallrik",
-        "category": "potatis",
+        "category": "Potatis",
         "description": "En tallrik som man kanske inte skulle bli så bra som den faktiskt blir, testa och se vad du tycker!",
         "ingredients": [
             {
@@ -1335,12 +1348,13 @@
         "buyIngredients": "7 ingredienser",
         "imageURL": "../img/Halloumitallrik-ugnspotatis-1200.webp",
         "image400": "../img/Halloumitallrik-ugnspotatis-400.webp",
-        "image800": "../img/Halloumitallrik-ugnspotatis-800.webp"
+        "image800": "../img/Halloumitallrik-ugnspotatis-800.webp",
+        "altText": "På en ljus tallrik med textur på kanterna ligger hen blandning med hallomi, potatis och grönsaker."
     },
     {
         "id": 19,
         "name": "Pankofriterade fetaostbiffar",
-        "category": "potatis",
+        "category": "Potatis",
         "description": "Detta är helt sjukt gott! Går att göra til olika tillbehör. De är så enkla att göra",
         "ingredients": [
             {
@@ -1417,6 +1431,7 @@
         "buyIngredients": "10 ingredienser",
         "imageURL": "../img/pankofriterade-fetaostbiffar-1200.webp",
         "image400": "../img/pankofriterade-fetaostbiffar-400.webp",
-        "image800": "../img/pankofriterade-fetaostbiffar-800.webp"
+        "image800": "../img/pankofriterade-fetaostbiffar-800.webp",
+        "altText": "På en blå tallrik syns pankobiffarna, ungspotatis, en rosa sås och en mindre salladsblandning. "
     }
 ]
