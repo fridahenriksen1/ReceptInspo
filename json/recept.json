@@ -41,10 +41,13 @@
         ],
         "html": "recept/halloumi_ceasersallad.html",
         "time": "Cirka 20 min",
-        "imageURL": "../img/Halloumitallrik-ugnspotatis-1200.webp",
-        "image400": "../img/Halloumitallrik-ugnspotatis-400.webp",
-        "image800": "../img/Halloumitallrik-ugnspotatis-800.webp",
-        "altText": "Halloumi ceasarsallad på en tallrik"
+      
+        "imageURL": "../img/hallomi-cesarsallad-1200.webp",
+        "image400": "../img/hallomi-cesarsallad-400.webp",
+        "image800": "../img/hallomi-cesarsallad-800.webp",
+       "altText": "Halloumi ceasarsallad på en tallrik"
+      
+
     },
     {
         "id": 2,
@@ -113,7 +116,9 @@
         "html": "recept/spaghetti_bolognese.html",
         "time": "Under 30 min",
         "buyIngredients": "11 ingredienser",
-        "imageURL": "../img/paella.jpg"
+        "imageURL": "../img/vodka-pasta-1200.webp",
+        "image400": "../img/vodka-pasta-400.webp",
+        "image800": "../img/vodka-pasta-800.webp"
     },
     {
         "id": 3,
@@ -695,5 +700,716 @@
         "imageURL": "../img/ica-gron-coscos-1200.webp",
         "image400": "../img/ica-gron-coscos-400.webp",
         "image800": "../img/ica-gron-coscos-800.webp"
+    },
+    {
+        "id": 11,
+        "name": "Snabb couscous bowl med ägg och avokado",
+        "category": "couscous",
+        "description": "Couscous bowl är en rekordsnabb middag eller lunch med bara 4 ingredienser! Kokt couscous tillsammans med stekt ägg, avokado och sriracha är en vinnande kombo. Örter sätter smak och gör måltiden komplett.",
+        "ingredients": [
+            {
+                "quantity": "1 dl",
+                "name": "hackade örter (t ex persilja eller gräslök)",
+                "type": "Spices"
+            },
+            {
+                "quantity": "2 1/2 dl",
+                "name": "couscous",
+                "type": "Pasta"
+            },
+            {
+                "quantity": "50 g",
+                "name": "smör",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "4",
+                "name": "ägg",
+                "type": "Protein"
+            },
+            {
+                "quantity": "",
+                "name": "smör (till stekning)",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2",
+                "name": "avocador",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "srirachasås",
+                "type": "sauce"
+            }
+        ],
+        "steps": [
+            "Finhacka örterna.",
+            "Koka couscous enligt anvisning på förpackningen med smöret. Rör ner örter.",
+            "Stek äggen i lite smör. Dela och kärna ur avokadon, skär i skivor.",
+            "Till servering: Fördela couscousen i fyra skålar och toppa med stekt ägg, skivad avokado, sriracha och ev mer örter."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/snabb-couscous-bowl.html",
+        "time": "under 30 min",
+        "buyIngredients": "7 ingredienser",
+        "imageURL": "../img/ica-coscos-avocadoboal-1200.webp",
+        "image400": "../img/ica-coscos-avocadoboal-400.webp",
+        "image800": "../img/ica-coscos-avocadoboal-800.webp"
+    },
+    {
+        "id": 12,
+        "name": "Risotto med skogschampinjoner",
+        "category": "Ris",
+        "description": "En perfekt kokt risotto är krämig och riset har kvar lite tuggmotstånd. Följ det här grundreceptet på svamprisotto och du har alla chanser att lyckas. Kastanjechampinjonerna i risotton går utmärkt att byta ut mot andra goda svampar som kantareller, karljohansvamp eller portabello till en ännu lyxigare festrätt.",
+        "ingredients": [
+            {
+                "quantity": "3",
+                "name": "sharlottenlök",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "1",
+                "name": "vitlöksklyfta",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "9 dl",
+                "name": "svampbuljong (vatten och buljongtärning eller fond)",
+                "type": "Spices"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "olivolja",
+                "type": "oil"
+            },
+            {
+                "quantity": "3 dl",
+                "name": "carnaroli- eller arborioris",
+                "type": "Pasta"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "vitt vin eller matlagningsvin",
+                "type": "Spices"
+            },
+            {
+                "quantity": "250 g",
+                "name": "kastanjechampinjoner",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "3 msk",
+                "name": "smör",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "rivem parmesan",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "rucola",
+                "type": "Vegetables"
+            }
+        ],
+        "steps": [
+            "Skala och finhacka löken och vitlöken. Koka upp buljongen som ska hållas varm.",
+            "Fräs lök och vitlök i olivoljan i en tjockbottnad kastrull utan att det får färg. Höj värmen och tillsätt riset, fräs tills det är glansigt. Häll på vinet och låt det koka in i riset.",
+            "Späd med varm buljong under omrörning. Börja med 3-4 dl och ta sedan 1 dl i taget (för 4 port) efterhand som riset suger upp buljongen. Låt det koka sakta och rör ofta. Riset är färdigkokt efter 15-20 minuter. Ta upp några riskorn och smaka. Det ska finnas en kärna som ger visst tuggmotstånd. ",
+            "Ansa och skiva svampen. Stek den i smöret och krydda med salt och peppar. Rör ner svampen i riset. Tillsätt den rivna parmesansosten. Risotton ska nu vara ganska lös och krämig i konsistensen. Späd ev. med mer buljong. Smaksätt med salt och peppar.",
+            "Servera risotton direkt på varma tallrikar med lite rucola på toppen."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/risotto-skogschampinjoner.html",
+        "time": "under 45 min",
+        "buyIngredients": "12 ingredienser",
+        "imageURL": "../img/risotto-med-skogschampinjoner-1200.webp",
+        "image400": "../img/risotto-med-skogschampinjoner-400.webp",
+        "image800": "../img/risotto-med-skogschampinjoner-800.webp"
+    },
+    {
+        "id": 13,
+        "name": "Avokadosallad med råhyvlad sparris och pinjenötter",
+        "category": "Sallad",
+        "description": "En somrig sallad som kan njutas som både en komplett rätt eller som tillbehör. Smaken från de rostade pinjenötterna och hyvlad Västerbottensost tillför ytterligare en dimension. Kan även serveras ljummen, genom att koka färsk potatis, riva Västerbottensost över och vända ner i salladen.",
+        "ingredients": [
+            {
+                "quantity": "250 g",
+                "name": "frysta sojabönor",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2",
+                "name": "buntar grön sparris",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "1/2 dl",
+                "name": "olivolja alt kallpressad rapsolja",
+                "type": "oil"
+            },
+            {
+                "quantity": "1",
+                "name": "citron (rivet skal och saft)",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "peppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "2",
+                "name": "avocador",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "1 påse",
+                "name": "rucola",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "4 msk",
+                "name": "rostade pinjenötter",
+                "type": "nuts"
+            },
+            {
+                "quantity": "100 g",
+                "name": "Västerbottensost",
+                "type": "Dairy"
+            }
+        ],
+        "steps": [
+            "Tina upp sojabönorna.",
+            "Hyvla sparrisen på längden, spara knopparna. Droppa oljan över sparrisen och smaksätt med citron, salt och peppar.",
+            "Dela avokadon, gröp ur och skär i skivor.",
+            "Blanda sparris, sojabönor, ruccola och toppa med avokadoskivorna.",
+            "Strö på de rostade pinjenötterna och hyvla Västerbottensost över salladen."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/avokadosallad.html",
+        "time": "under 30 min",
+        "buyIngredients": "9 ingredienser",
+        "imageURL": "../img/Skärmbild-avokadosalad-sparris-1200.webp",
+        "image400": "../img/Skärmbild-avokadosalad-sparris-400.webp",
+        "image800": "../img/Skärmbild-avokadosalad-sparris-800.webp"
+    },
+    {
+        "id": 14,
+        "name": "One pot pasta med bönor och soltorkade tomater",
+        "category": "Pasta",
+        "description": "Slipp onödig disk och få en extra krämig pastarätt genom att laga pastan och såsen i en och samma gryta. Pastan får protein från bönor och god smak av soltorkade tomater och rivet citronskal.",
+        "ingredients": [
+            {
+                "quantity": "3",
+                "name": "vitlöksklyftor",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "smör",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "4 ½ dl ",
+                "name": "vatten",
+                "type": "Water"
+            },
+            {
+                "quantity": "3 dl",
+                "name": "vispgrädde",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "400 g",
+                "name": "krossade tomater",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "300 g",
+                "name": "pasta penne",
+                "type": "Pasta"
+            },
+            {
+                "quantity": " 1 tsk",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "½ tsk",
+                "name": "chili flakes",
+                "type": "Spices"
+            },
+            {
+                "quantity": "1 dl",
+                "name": "strimlade soltrokade tomater i olja",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "400 g",
+                "name": "vita bönor",
+                "type": "beans"
+            },
+            {
+                "quantity": "1 krm",
+                "name": "svartpeppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "Färsk basilika",
+                "type": "Spices"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "riven ost",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "citron",
+                "type": "Spices"
+            }
+        ],
+        "steps": [
+            "Skala och skiva vitlöken tunt. Fräs den mjuk i smör-&rapsolja i en stor kastrull.",
+            "Tillsätt vatten, grädde, krossade tomater, pasta, salt, chili flakes och soltorkade tomater. Koka utan lock ca 10 min. Rör om då och då så att pastan inte fastnar i botten.",
+            "Häll av och skölj bönorna. Rör ner i grytan. Låt koka ytterligare ca 2 min tills pastan är al dente. Smaka av med salt och peppar.",
+            "Toppa med basilikablad och riven ost. Riv över citronskal."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/onepotpasta-bonor.html",
+        "time": "30 min",
+        "buyIngredients": "14 ingredienser",
+        "imageURL": "../img/one-pot-pasta-bonor-soltorkadetomater-1200.webp",
+        "image400": "../img/one-pot-pasta-bonor-soltorkadetomater-400.webp",
+        "image800": "../img/one-pot-pasta-bonor-soltorkadetomater-800.webp"
+    },
+    {
+        "id": 15,
+        "name": "Halloumi Stroganoff",
+        "category": "Ris",
+        "description": "Halloumi Stroganoff - vardagsfavoriten Stroganoff med ost istället! Den här vegetariska rätten passar utmärkt som vardagsmiddag och går snabbt att göra. Får du rester över går de fint att frysa in eller att ha som lunchlåda dagen efter. Servera halloumi Stroganoff med ris och sockerärtor.",
+        "ingredients": [
+            {
+                "quantity": "200 g",
+                "name": "halloumi",
+                "type": "cheese"
+            },
+            {
+                "quantity": "1",
+                "name": "gul lök",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "1",
+                "name": "röd paprika",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "250 g",
+                "name": "champinjoner",
+                "type": "mushroom"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "smör",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "400 g",
+                "name": "kokta torkade röda linser",
+                "type": "Protein"
+            },
+            {
+                "quantity": " 400 g",
+                "name": "krossade tomater",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "tomatpuré",
+                "type": "sauce"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "dijonsenap",
+                "type": "sauce"
+            },
+            {
+                "quantity": "3 dl",
+                "name": "grädde",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1 krm",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "3 dl",
+                "name": "ris",
+                "type": "carbohydrates"
+            },
+            {
+                "quantity": "250 g",
+                "name": "sockerärtor",
+                "type": "Vegetables"
+            }
+        ],
+        "steps": [
+            "Skär osten i ca 1 cm tjocka strimlor. Skala löken. Kärna ur paprikan.",
+            "Skär lök, paprika och champinjoner i skivor och fräs i hälften av smör-&rapsoljan i en gryta.",
+            "Skölj linserna och tillsätt tillsammans med krossade tomater, tomatpuré, dijonsenap och syrad grädde. Låt koka på svag värme 2-3 min.",
+            "Fräs osten i resten av smör-&rapsoljan i en stekpanna ca 2 min. Vänd ner osten i grytan och smaka av med salt.",
+            "Koka riset enligt anvisning på förpackningen. Koka sockerärterna i lättsaltat vatten ca 1 min.Servera till halloumi Stroganoffen."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/halloumi-stroganoff.html",
+        "time": "20 min",
+        "buyIngredients": "13 ingredienser",
+        "imageURL": "../img/hallomi-stroganoff-1200.webp",
+        "image400": "../img/hallomi-stroganoff-400.webp",
+        "image800": "../img/hallomi-stroganoff-800.webp"
+    },
+    {
+        "id": 16,
+        "name": "Broccoligratäng med pasta",
+        "category": "Pasta",
+        "description": "Broccoligratäng med pasta och ädelost är en jättegod kombination. Om du gillar hetta i maten kan du med fördel lägga till 1 tsk chili flakes i äggstanningen. Servera gärna denna vegetariska pastagratäng med en blandad grönsallad.",
+        "ingredients": [
+            {
+                "quantity": "300 g",
+                "name": "pasta penne",
+                "type": "Pasta"
+            },
+            {
+                "quantity": "250 g",
+                "name": "broccoli",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2",
+                "name": "ägg",
+                "type": "Protein"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "Creme fraiche",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1½ dl",
+                "name": "mjölk",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "400 g",
+                "name": "kokta torkade röda linser",
+                "type": "Protein"
+            },
+            {
+                "quantity": " 170 g",
+                "name": "blåmögelost",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1 msk",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "blandad grönsallad",
+                "type": "Vegetables"
+            }
+        ],
+        "steps": [
+            "Sätt ugnen på 225°. Koka pasta enligt anvisning på förpackningen.",
+            "Skär broccolin i buketter och skiva stammen. Koka i lättsaltat vatten ca 1 min. Låt rinna av och blanda med den kokta pastan i en smord ugnsform.",
+            "Vispa ihop ägg, crème fraiche, mjölk, ädel creme och salt. Häll äggstanningen över pastan i formen.",
+            "Grädda i mitten av ugnen i ca 15 min. Ta ut och låt vila ca 10 min. Servera gärna med en grönsallad."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/broccoligratang-pasta.html",
+        "time": "30 min",
+        "buyIngredients": "8 ingredienser",
+        "imageURL": "../img/broccoligratang-pasta-1200.webp",
+        "image400": "../img/broccoligratang-pasta-400.webp",
+        "image800": "../img/broccoligratang-pasta-800.webp"
+    },
+    {
+        "id": 17,
+        "name": "Tortillapizza med brie",
+        "category": "Tortilla",
+        "description": "Vill ni göra ett smarrigt och enkelt tilltugg ska du definitivt testa dessa, blev över all förväntan! Brie på tub är så smidigt för sommarens alla tilltugg",
+        "ingredients": [
+            {
+                "quantity": "ca 1 msk",
+                "name": "Brie på tub",
+                "type": "cheese"
+            },
+            {
+                "quantity": "1",
+                "name": "Tortillabröd",
+                "type": "Bread"
+            },
+            {
+                "quantity": "1 dl",
+                "name": "rivem parmesan",
+                "type": "cheese"
+            },
+            {
+                "quantity": "efter behag",
+                "name": "Rödlök",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "efter behag",
+                "name": "pinjenötter",
+                "type": "nuts"
+            },
+            {
+                "quantity": "efter behag",
+                "name": "honung",
+                "type": "sauce"
+            }
+        ],
+        "steps": [
+            "Bre brie på tortiljabrödet.",
+            "Strö ut parmesan, pinjenötter och rödlök.",
+            " Kör in Bröden i ugnen på cirka 200 grader.",
+            " Håll koll själv tills du är nöjd med färgen innan du tar ut den!",
+            " Toppade med allt igen för extra topping efter pizzan kommit ut ur ugnen."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/tortillapizza-brie.html",
+        "time": "ca 20 min",
+        "buyIngredients": "6 ingredienser",
+        "imageURL": "../img/Tortillapizza-brie-1200.webp",
+        "image400": "../img/Tortillapizza-brie-400.webp",
+        "image800": "../img/Tortillapizza-brie-800.webp"
+    },
+    {
+        "id": 18,
+        "name": "Halloumitallrik",
+        "category": "potatis",
+        "description": "En tallrik som man kanske inte skulle bli så bra som den faktiskt blir, testa och se vad du tycker!",
+        "ingredients": [
+            {
+                "quantity": "200 g",
+                "name": "halloumi",
+                "type": "cheese"
+            },
+            {
+                "quantity": "100 g",
+                "name": "potatis",
+                "type": "potato"
+            },
+            {
+                "quantity": "1",
+                "name": "granatäpple",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "1",
+                "name": "avocado",
+                "type": "Vegetables"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "grön pesto",
+                "type": "sauce"
+            },
+            {
+                "quantity": "150 g",
+                "name": "fetaost",
+                "type": "cheese"
+            },
+            {
+                "quantity": "1",
+                "name": "rödlök",
+                "type": "Vegetables"
+            }
+        ],
+        "steps": [
+            "In i ugnen med potatis marinerad i olja på runt 175 grader.",
+            "Håll koll tills allt är klart.",
+            "Stek halloumin.",
+            "Hacka rödlök fint.",
+            "Gröp ur granatäpplet.",
+            "Dela avokadon i bitar.",
+            "Lägg upp allt på ett fat och avsluta med fetaost och pesto, sist granatäpple"
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/halloumitallrik.html",
+        "time": "ca 20 min",
+        "buyIngredients": "7 ingredienser",
+        "imageURL": "../img/Halloumitallrik-ugnspotatis-1200.webp",
+        "image400": "../img/Halloumitallrik-ugnspotatis-400.webp",
+        "image800": "../img/Halloumitallrik-ugnspotatis-800.webp"
+    },
+    {
+        "id": 19,
+        "name": "Pankofriterade fetaostbiffar",
+        "category": "potatis",
+        "description": "Detta är helt sjukt gott! Går att göra til olika tillbehör. De är så enkla att göra",
+        "ingredients": [
+            {
+                "quantity": "300 g",
+                "name": "fetaost",
+                "type": "cheese"
+            },
+            {
+                "quantity": "1",
+                "name": "ägg",
+                "type": "Protein"
+            },
+            {
+                "quantity": "3 msk",
+                "name": "vetemjöl",
+                "type": "flour"
+            },
+            {
+                "quantity": "1 dl",
+                "name": "pankoströbröd",
+                "type": "flour"
+            },
+            {
+                "quantity": "1 msk",
+                "name": "olivolja",
+                "type": "oil"
+            },
+            {
+                "quantity": "0,5 msk",
+                "name": "citron saft",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "salt",
+                "type": "Spices"
+            },
+            {
+                "quantity": "",
+                "name": "peppar",
+                "type": "Spices"
+            },
+            {
+                "quantity": "3 msk",
+                "name": "rapsolja",
+                "type": "oil"
+            },
+            {
+                "quantity": "Till servering",
+                "name": "potatis",
+                "type": "potato"
+            }
+        ],
+        "steps": [
+            "Smula ned fetaosten i en bunke.",
+            "Tillsätt ägg och mjöl samt citronsaft och olivolja.",
+            "Krydda med salt och peppar.",
+            "Rör runt ordentligt.",
+            "Gör små bollar av fetaröran.",
+            "Vänd runt bollarna i pankon och stek dem gyllene i rapsoljan i en stekpanna.",
+            "Servera med ungsbakad potatis"
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            0
+        ],
+        "html": "recept/pankofriterade-fetaostbiffar.html",
+        "time": "ca 45 min",
+        "buyIngredients": "10 ingredienser",
+        "imageURL": "../img/pankofriterade-fetaostbiffar-1200.webp",
+        "image400": "../img/pankofriterade-fetaostbiffar-400.webp",
+        "image800": "../img/pankofriterade-fetaostbiffar-800.webp"
     }
 ]
