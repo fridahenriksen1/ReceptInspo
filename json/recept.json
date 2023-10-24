@@ -41,9 +41,13 @@
         ],
         "html": "recept/halloumi_ceasersallad.html",
         "time": "Cirka 20 min",
+      
         "imageURL": "../img/hallomi-cesarsallad-1200.webp",
         "image400": "../img/hallomi-cesarsallad-400.webp",
-        "image800": "../img/hallomi-cesarsallad-800.webp"
+        "image800": "../img/hallomi-cesarsallad-800.webp",
+       "altText": "Halloumi ceasarsallad på en tallrik"
+      
+
     },
     {
         "id": 2,

@@ -375,7 +375,7 @@ a {
 .btn {
   display: inline-block;
   cursor: pointer;
-  background-color: #818181;
+  background-color: #201f1f;
   padding: 1rem 2rem;
   border-radius: 10px;
   border: 0;
@@ -386,12 +386,12 @@ a {
 .btn-primary {
   display: inline-block;
   cursor: pointer;
-  background-color: #D3D8D4;
+  background-color: #201f1f;
   padding: 1rem 2rem;
   border-radius: 10px;
   border: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: black;
+  color: white;
 }
 
 .btn-secondary {

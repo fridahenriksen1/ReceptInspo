@@ -1,4 +1,6 @@
-@mixin btn($bg-color:#818181, $text-color:#ffffff){
+@mixin btn($bg-color:#201f1f, $text-color:#ffffff){
+
+    //background-color: #818181;
     display: inline-block;
     cursor: pointer;
     background-color: $bg-color;
@@ -12,7 +14,8 @@
     @include btn;
 }
 .btn-primary {
-    @include btn(#D3D8D4,black)
+    @include btn(#201f1f,white)
+   // background-color:#D3D8D4;
 }
 .btn-secondary{
     @include btn(yellow, coral);
