@@ -196,11 +196,11 @@ a {
   list-style: circle;
   list-style-position: inside;
 }
+.recept .bigBox .howToMake .steps-container .checkBoxContainer {
+  list-style-type: none;
+}
 .recept .bigBox .howToMake .steps-container .checkBoxContainer .steps-list-howTo {
   background-color: #FFD9A0;
-}
-.recept .bigBox .howToMake .steps-container .checkBoxContainer .steps-list-howTo label {
-  font-size: 1.7rem;
 }
 .recept .bigBox .howToMake .steps-container.howToContainer {
   margin-top: 5rem;

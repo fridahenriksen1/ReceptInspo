@@ -217,17 +217,19 @@
                 }
 
                 .checkBoxContainer{
+
+                    list-style-type: none;
+
                     .steps-list-howTo{
                         // justify-content: center;
+                       
                         
                         background-color: $ingredients-color;
                         // margin:1rem;
                         // padding:1rem;
                         // border-radius: 5px;
                         
-                        label{
-                            font-size: 1.7rem;
-                        }
+                        
                          
      
      

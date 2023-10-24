@@ -85,46 +85,38 @@ fetch('../json/recept.json')
 
 
             // // Checkboxes for each step
-                let checkboxes = document.createElement('ul'); // Create a container for checkboxes
+                let checkboxes = document.createElement('li'); // Create a container for checkboxes
                 checkboxes.classList.add('checkBoxContainer');
 
-                let checkBoxLi =document.createElement('li');
-
+                let checkBoxLi =document.createElement('ul');
+                   
 
             
                 item.steps.forEach((step, index) => {
-
-
-                let checkBoxLi =document.createElement('li');
-                let checkboxLabel = document.createElement('label'); // Create a label element
-                let checkbox = document.createElement('input'); // Create an input element
-
-                checkboxLabel.classList.add('steps-list-howTo');
-                    
-
+                     //let checkBoxLi =document.createElement('li');
+                     let checkboxLabel = document.createElement('label'); // Create a label element
+                     let checkbox = document.createElement('input'); // Create an input element
+ 
+                     checkboxLabel.classList.add('steps-list-howTo');
+                     let li = document.createElement('li');
+                     li.textContent = step;
+                     ol.append(li);
                         // let checkboxContainer = document.createElement('div');
-
                         // checkboxContainer.classList.add('checkboxContainer');
 
-
                         // checkboxContainer.append(checkboxes,checkboxLabel);
+                        checkbox.type = 'checkbox'; // Set the input type to 'checkbox'
+                        checkbox.id = `step${index}`; // Assign a unique ID to the checkbox
+                        checkbox.name = 'recipeSteps'; // Set the name attribute for the group
+                        checkbox.value = step; // Set the value attribute to the step text
 
+                        checkboxLabel.htmlFor = `step${index}`; // Associate the label with the checkbox
+                        checkboxLabel.textContent = step; // Set the label text to the step text
 
-                      
-                
+                        checkBoxLi.appendChild(checkbox,checkboxLabel);
 
-                checkbox.type = 'checkbox'; // Set the input type to 'checkbox'
-                checkbox.id = `step${index}`; // Assign a unique ID to the checkbox
-                checkbox.name = 'recipeSteps'; // Set the name attribute for the group
-                checkbox.value = step; // Set the value attribute to the step text
-
-                checkboxLabel.htmlFor = `step${index}`; // Associate the label with the checkbox
-                checkboxLabel.textContent = step; // Set the label text to the step text
-
-                checkBoxLi.appendChild(checkbox,checkboxLabel);
-
-                checkboxes.appendChild(checkbox); // Append the checkbox to the container
-                checkboxes.appendChild(checkboxLabel); // Append the label to the container
+                        checkboxes.appendChild(checkbox); // Append the checkbox to the container
+                        checkboxes.appendChild(checkboxLabel); // Append the label to the container
 
 
                 });
@@ -184,7 +176,12 @@ fetch('../json/recept.json')
             //!APPEND
             timebox.append(timeIcon, time );
             ingridentsBox.append(ingridentsIcon,buyIngredients);
+
+
+            
            
+
+            checkBoxLi.append(checkboxes);
 
 
             // timeCategoty.append(time,buyIngredients);
@@ -197,7 +194,7 @@ fetch('../json/recept.json')
             
             //section1.append(h2I,ul);
             section1.append(h2I, ul); // Append checkboxes to the "Ingredienser" section
-            section2.append(h2G,ol, checkboxes);
+            section2.append(h2G,ol, checkBoxLi);
             figure.append(img);
             header.append(h1);
             // getID.append(section3,section4); 
