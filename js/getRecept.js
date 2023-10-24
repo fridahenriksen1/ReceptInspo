@@ -84,12 +84,34 @@ fetch('../json/recept.json')
 
 
 
-            // Checkboxes for each step
-                let checkboxes = document.createElement('div'); // Create a container for checkboxes
+            // // Checkboxes for each step
+                let checkboxes = document.createElement('ul'); // Create a container for checkboxes
+                checkboxes.classList.add('checkBoxContainer');
 
+                let checkBoxLi =document.createElement('li');
+
+
+            
                 item.steps.forEach((step, index) => {
+
+
+                let checkBoxLi =document.createElement('li');
                 let checkboxLabel = document.createElement('label'); // Create a label element
                 let checkbox = document.createElement('input'); // Create an input element
+
+                checkboxLabel.classList.add('steps-list-howTo');
+                    
+
+                        // let checkboxContainer = document.createElement('div');
+
+                        // checkboxContainer.classList.add('checkboxContainer');
+
+
+                        // checkboxContainer.append(checkboxes,checkboxLabel);
+
+
+                      
+                
 
                 checkbox.type = 'checkbox'; // Set the input type to 'checkbox'
                 checkbox.id = `step${index}`; // Assign a unique ID to the checkbox
@@ -99,9 +121,41 @@ fetch('../json/recept.json')
                 checkboxLabel.htmlFor = `step${index}`; // Associate the label with the checkbox
                 checkboxLabel.textContent = step; // Set the label text to the step text
 
+                checkBoxLi.appendChild(checkbox,checkboxLabel);
+
                 checkboxes.appendChild(checkbox); // Append the checkbox to the container
                 checkboxes.appendChild(checkboxLabel); // Append the label to the container
+
+
                 });
+
+
+            //             // Checkboxes for each step
+            // let checkboxesList = document.createElement('ol'); // Create an ordered list for checkboxes
+            // checkboxesList.classList.add('steps-list-howTo'); // Add the same class to the checkboxes list
+
+            // item.steps.forEach((step, index) => {
+            // let li = document.createElement('li'); // Create a list item for each step
+            // let checkboxLabel = document.createElement('label'); // Create a label element
+            // let checkbox = document.createElement('input'); // Create an input element
+
+            // checkbox.type = 'checkbox'; // Set the input type to 'checkbox'
+            // checkbox.id = `step${index}`; // Assign a unique ID to the checkbox
+            // checkbox.name = 'recipeSteps'; // Set the name attribute for the group
+            // checkbox.value = step; // Set the value attribute to the step text
+
+            // checkboxLabel.htmlFor = `step${index}`; // Associate the label with the checkbox
+            // checkboxLabel.textContent = step; // Set the label text to the step text
+
+            // li.appendChild(checkbox); // Append the checkbox to the list item
+            // li.appendChild(checkboxLabel); // Append the label to the list item
+            // checkboxesList.appendChild(li); // Append the list item to the checkboxes list
+            // });
+
+            // // Append the checkboxes list to the 'steps-list-howTo' ol
+            // ol.appendChild(checkboxesList);
+
+            
 
 
 
@@ -112,6 +166,7 @@ fetch('../json/recept.json')
                 let li = document.createElement('li');
                 li.textContent = step;
                 ol.append(li);
+                
             });
             item.ingredients.forEach(ingrident => {
                 let li = document.createElement('li');
@@ -141,7 +196,7 @@ fetch('../json/recept.json')
             bigBox.append(section3,section4);
             
             //section1.append(h2I,ul);
-            section1.append(h2I, ul, checkboxes); // Append checkboxes to the "Ingredienser" section
+            section1.append(h2I, ul); // Append checkboxes to the "Ingredienser" section
             section2.append(h2G,ol, checkboxes);
             figure.append(img);
             header.append(h1);

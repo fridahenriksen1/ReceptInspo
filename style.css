@@ -98,7 +98,6 @@ a {
 }
 .recept .bigBox .section3 .recept-img {
   padding: 1rem;
-  margin: auto;
 }
 @media (min-width: 480px) {
   .recept .bigBox .section3 .recept-img {
@@ -159,7 +158,7 @@ a {
   padding: 2rem 0rem;
   border-radius: 5px;
   max-width: 400px;
-  margin: auto;
+  margin-left: 1rem;
 }
 @media (min-width: 960px) {
   .recept .bigBox .section3 .info-recipe {
@@ -178,7 +177,6 @@ a {
 }
 .recept .bigBox .howToMake .steps-container {
   max-width: 600px;
-  margin: auto;
 }
 .recept .bigBox .howToMake .steps-container h2 {
   margin-left: 1rem;
@@ -197,6 +195,12 @@ a {
 .recept .bigBox .howToMake .steps-container .steps-list-howTo li {
   list-style: circle;
   list-style-position: inside;
+}
+.recept .bigBox .howToMake .steps-container .checkBoxContainer .steps-list-howTo {
+  background-color: #FFD9A0;
+}
+.recept .bigBox .howToMake .steps-container .checkBoxContainer .steps-list-howTo label {
+  font-size: 1.7rem;
 }
 .recept .bigBox .howToMake .steps-container.howToContainer {
   margin-top: 5rem;
