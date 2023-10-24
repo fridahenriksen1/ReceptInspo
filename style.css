@@ -94,7 +94,7 @@ a {
   }
 }
 .recept .bigBox .section3 .recipe-heading {
-  text-align: center;
+  margin-left: 0.8rem;
 }
 .recept .bigBox .section3 .recept-img {
   padding: 1rem;
@@ -117,6 +117,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 .recept .bigBox .section3 .time-ingredients-container {
   background-color: #FFE795;
@@ -155,7 +156,7 @@ a {
 }
 .recept .bigBox .section3 .info-recipe {
   background-color: white;
-  padding: 2rem;
+  padding: 2rem 0rem;
   border-radius: 5px;
   max-width: 400px;
   margin: auto;
@@ -414,6 +415,7 @@ img {
   width: 100%;
   display: block;
   height: 100%;
+  border-radius: 5px;
 }
 
 .container {
@@ -646,6 +648,7 @@ img {
   align-items: stretch;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 #categorys {
