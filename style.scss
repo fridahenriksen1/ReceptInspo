@@ -364,8 +364,8 @@ img {
 
 .user-recipes {
     @include flexbox(center, stretch, wrap);
-
     gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 // .chips{
