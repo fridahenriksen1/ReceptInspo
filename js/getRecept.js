@@ -73,6 +73,7 @@ fetch('../json/recept.json')
             img.setAttribute('srcset',`${item.image400} 400w`);
             img.setAttribute('srcset',`${item.image800} 800w`);
             img.setAttribute('srcset',`${item.imageURL} 1200w`);
+            img.setAttribute('alt', `${item.altText}`);
            
             figure.setAttribute('class','recept-img');
 

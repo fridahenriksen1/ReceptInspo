@@ -43,7 +43,8 @@
         "time": "Cirka 20 min",
         "imageURL": "../img/Halloumitallrik-ugnspotatis-1200.webp",
         "image400": "../img/Halloumitallrik-ugnspotatis-400.webp",
-        "image800": "../img/Halloumitallrik-ugnspotatis-800.webp"
+        "image800": "../img/Halloumitallrik-ugnspotatis-800.webp",
+        "altText": "Halloumi ceasarsallad på en tallrik"
     },
     {
         "id": 2,
