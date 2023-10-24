@@ -2,6 +2,8 @@ const jsonUrl = '../json/recept.json';
 const dataUserTemplate = document.querySelector('[data-user-template]');
 const dataUserCards = document.querySelector('[data-user-cards]');
 const dataUserPopuar = document.querySelectorAll('[data-user-popular]');
+const dataUserPopuar2 = document.querySelectorAll('[data-user-popular2]');
+const dataUserPopuar3 = document.querySelectorAll('[data-user-popular3]');
 const searchInput = document.querySelector('[data-search]');
 
 let recipes = []; 
@@ -80,10 +82,62 @@ fetch(jsonUrl)
                 time.textContent = recipe.time;
                 section.append(card);
                 return{name: recipe.name,category: recipe.category,time: recipe.time, element:card}
+
+                
+            });
+        }); 
+    }  
+    const maxCardsToShow2 = 8; // Antal kort att visa
+    if(dataUserPopuar2){
+        //Detta kan göras snyggare
+        dataUserPopuar2.forEach(section => {
+            recipes = data.slice(4, maxCardsToShow2).map(recipe => { // Använd slice() för att begränsa antalet kort
+                const card = dataUserTemplate.content.cloneNode(true).children[0];
+                const header = card.querySelector('[data-header]');
+                const img = card.querySelector('[data-image]');
+                const cat = card.querySelector('[data-cat]');
+                const link = card.querySelector('[data-link]');
+                const time = card.querySelector('[data-time]');
+                console.log(time);
+                link.setAttribute('href', recipe.html);
+                header.textContent = recipe.name;
+                cat.textContent = recipe.category;
+                img.setAttribute('src', recipe.imageURL);
+                time.textContent = recipe.time;
+                section.append(card);
+                return{name: recipe.name,category: recipe.category,time: recipe.time, element:card}
+
+                
+            });
+        }); 
+    }  
+    const maxCardsToShow3 = 16; // Antal kort att visa
+    if(dataUserPopuar3){
+        //Detta kan göras snyggare
+        dataUserPopuar3.forEach(section => {
+            recipes = data.slice(12, maxCardsToShow3).map(recipe => { // Använd slice() för att begränsa antalet kort
+                const card = dataUserTemplate.content.cloneNode(true).children[0];
+                const header = card.querySelector('[data-header]');
+                const img = card.querySelector('[data-image]');
+                const cat = card.querySelector('[data-cat]');
+                const link = card.querySelector('[data-link]');
+                const time = card.querySelector('[data-time]');
+                console.log(time);
+                link.setAttribute('href', recipe.html);
+                header.textContent = recipe.name;
+                cat.textContent = recipe.category;
+                img.setAttribute('src', recipe.imageURL);
+                time.textContent = recipe.time;
+                section.append(card);
+                return{name: recipe.name,category: recipe.category,time: recipe.time, element:card}
+
+                
             });
         }); 
     }  
 })
+
+
 .catch(errorMsg => console.log(errorMsg));
 
 const allChips = document.querySelectorAll('.chip');

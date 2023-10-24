@@ -90,21 +90,24 @@ fetch('../json/recept.json')
 
                 let checkBoxLi =document.createElement('ul');
                    
+                      //!Ta bort här
+                let checkboxLabel = document.createElement('label'); // Create a label element
+                let checkbox = document.createElement('input'); // Create an input element
+
+                checkboxLabel.classList.add('steps-list-howTo');
 
             
                 item.steps.forEach((step, index) => {
-                     //let checkBoxLi =document.createElement('li');
-                     let checkboxLabel = document.createElement('label'); // Create a label element
-                     let checkbox = document.createElement('input'); // Create an input element
- 
-                     checkboxLabel.classList.add('steps-list-howTo');
-                     let li = document.createElement('li');
-                     li.textContent = step;
-                     ol.append(li);
-                        // let checkboxContainer = document.createElement('div');
-                        // checkboxContainer.classList.add('checkboxContainer');
+                 
 
-                        // checkboxContainer.append(checkboxes,checkboxLabel);
+                    //!Ta tillbaka här
+                    //  let checkboxLabel = document.createElement('label'); // Create a label element
+                    //  let checkbox = document.createElement('input'); // Create an input element
+ 
+                    //  checkboxLabel.classList.add('steps-list-howTo');
+                   
+
+
                         checkbox.type = 'checkbox'; // Set the input type to 'checkbox'
                         checkbox.id = `step${index}`; // Assign a unique ID to the checkbox
                         checkbox.name = 'recipeSteps'; // Set the name attribute for the group
@@ -157,7 +160,7 @@ fetch('../json/recept.json')
             item.steps.forEach(step => {
                 let li = document.createElement('li');
                 li.textContent = step;
-                ol.append(li);
+                checkBoxLi.append(li);
                 
             });
             item.ingredients.forEach(ingrident => {
