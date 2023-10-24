@@ -40,15 +40,105 @@ img {
 
     }
 
-    .tips-contaner {
-        margin: auto;
+    // .tips-contaner {
+    //     margin: auto;
 
-        .tips-ul {
-            max-width: 40rem;
+    //     h2 {
+    //         text-align: center;
+    //         padding: 2rem 0 1rem 0;
+    //     }
+
+    //     .tips-ul {
+    //         max-width: 38rem;
+    //         margin: auto;
 
 
-            .tips-li {
+    //         .tips-li {
+    //             padding: 1rem 0;
+    //             list-style: none;
+    //         }
+    //     }
+    // }
+
+    // p {
+    //     margin: 0 0 13px 0;
+    // }
+
+
+
+
+
+    .tips-container {
+        width: 95%;
+        max-width: 1220px;
+        margin: 0 auto;
+
+    }
+
+    .episode {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        position: relative;
+        //padding-top: 2rem;
+
+        &:first-child {
+            padding-top: 2rem;
+        }
+
+    }
+
+    .episode__number {
+        font-size: 10vw;
+        font-weight: 600;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        text-align: center;
+        height: calc(10vw + 20px);
+        transition: all 0.2s ease-in;
+    }
+
+    .episode__content {
+        border-top: 3px solid $primary-color;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 10px;
+        padding: 15px 0;
+
+        .title {
+            font-weight: 600;
+        }
+
+        .story {
+            line-height: 26px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            p {
                 padding-bottom: 1rem;
+            }
+
+            .fig-tips {
+                max-width: 20rem;
+                max-height: 25rem;
+                padding: 1rem 0;
+
+
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .episode__content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .episode__content {
+            .story {
+                font-size: 15px;
             }
         }
     }
@@ -307,6 +397,7 @@ img {
 
 .quote {
     background-color: #B8B89E;
+
     // @include flexbox(row,center,center,nowrap );
     padding: 5rem 0;
 
