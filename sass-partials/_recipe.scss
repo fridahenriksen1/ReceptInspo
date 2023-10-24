@@ -33,7 +33,8 @@
                 .recipe-heading{
                     // padding-top:3rem;
                 //  padding-left:1rem;
-                    text-align: center;
+                    //text-align: center;
+                    margin-left: 0.8rem;
                     
                 }
                 .recept-img {
@@ -42,6 +43,7 @@
             
                
                     margin: auto;
+                 
 
                     @include bp-sm {
 
@@ -61,6 +63,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        border-radius: 5px;
                     }
                 }
                 .time-ingredients-container{
@@ -149,7 +152,7 @@
                     //padding-top: 1rem;
                     background-color: white;
                     //background-color: $ingredients-color;
-                    padding:2rem;
+                    padding:2rem 0rem;
                     //margin-bottom: 2rem;
                     border-radius: 5px;
                    // margin: 3rem 0rem;

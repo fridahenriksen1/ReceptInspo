@@ -27,6 +27,7 @@ img {
     display: block;
     // height: auto;
     height: 100%;
+    border-radius: 5px;
 }
 
 .container {
@@ -377,8 +378,8 @@ img {
 
 .user-recipes {
     @include flexbox(center, stretch, wrap);
-
     gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 // .chips{

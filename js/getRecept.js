@@ -27,6 +27,8 @@ fetch('../json/recept.json')
             let time = document.createElement('span');
             let buyIngredients = document.createElement('span');
             let amountIngredients = item.ingredients.length;
+            //! Hur många steps (längden)
+           // let checkboxes = item.step.length;
             //! icon from google symbols
             let timeIcon = document.createElement('span');
             let ingridentsIcon = document.createElement('span');
@@ -63,6 +65,7 @@ fetch('../json/recept.json')
             p.textContent = item.description;
             time.textContent = item.time;
             buyIngredients.textContent = `${amountIngredients} ingredienser`;
+
             h2G.textContent = 'Gör så här';
             h2I.textContent = 'Ingredienser';
             timeIcon.textContent = "schedule";
@@ -78,6 +81,31 @@ fetch('../json/recept.json')
             figure.setAttribute('class','recept-img');
 
             console.log(item.ingredients.length);
+
+
+
+            // Checkboxes for each step
+                let checkboxes = document.createElement('div'); // Create a container for checkboxes
+
+                item.steps.forEach((step, index) => {
+                let checkboxLabel = document.createElement('label'); // Create a label element
+                let checkbox = document.createElement('input'); // Create an input element
+
+                checkbox.type = 'checkbox'; // Set the input type to 'checkbox'
+                checkbox.id = `step${index}`; // Assign a unique ID to the checkbox
+                checkbox.name = 'recipeSteps'; // Set the name attribute for the group
+                checkbox.value = step; // Set the value attribute to the step text
+
+                checkboxLabel.htmlFor = `step${index}`; // Associate the label with the checkbox
+                checkboxLabel.textContent = step; // Set the label text to the step text
+
+                checkboxes.appendChild(checkbox); // Append the checkbox to the container
+                checkboxes.appendChild(checkboxLabel); // Append the label to the container
+                });
+
+
+
+
    
             //För att skapa nya LI för varje step i json
             item.steps.forEach(step => {
@@ -112,8 +140,9 @@ fetch('../json/recept.json')
 
             bigBox.append(section3,section4);
             
-            section1.append(h2I,ul);
-            section2.append(h2G,ol);
+            //section1.append(h2I,ul);
+            section1.append(h2I, ul, checkboxes); // Append checkboxes to the "Ingredienser" section
+            section2.append(h2G,ol, checkboxes);
             figure.append(img);
             header.append(h1);
             // getID.append(section3,section4); 
