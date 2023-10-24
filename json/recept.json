@@ -7,31 +7,38 @@
         "ingredients": [
             {
                 "quantity": "",
-                "name": "Halloumi"
+                "name": "Halloumi",
+                "type": "cheese"
             },
             {
                 "quantity": "",
-                "name": "Romansallad"
+                "name": "Romansallad",
+                "type": "Vegetables"
             },
             {
                 "quantity": "",
-                "name": "Jordgubbar/melon"
+                "name": "Jordgubbar/melon",
+                "type": "Vegetables"
             },
             {
                 "quantity": "",
-                "name": "Rödlök"
+                "name": "Rödlök",
+                "type": "Vegetables"
             },
             {
                 "quantity": "",
-                "name": "Gurka"
+                "name": "Gurka",
+                "type": "Vegetables"
             },
             {
                 "quantity": "",
-                "name": "Parmesan"
+                "name": "Parmesan",
+                "type": "cheese"
             },
             {
                 "quantity": "",
-                "name": "Caesardressing"
+                "name": "Caesardressing",
+                "type": "sauce"
             }
         ],
         "steps": [
