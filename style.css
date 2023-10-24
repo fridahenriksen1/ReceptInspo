@@ -330,23 +330,18 @@ a {
   border-radius: 50%;
 }
 
-.cook-settings {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
 #main-footer {
   background-color: #D3D8D4;
   padding: 2rem 0;
 }
 #main-footer .footer-inside {
-  max-width: 400px;
+  max-width: 200px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #main-footer .footer-inside h3 {
-  text-align: center;
   margin-bottom: 2rem;
   font-family: "Oswald", sans-serif;
   color: rgb(11, 11, 11);
@@ -371,6 +366,11 @@ a {
 #main-footer .footer-inside .footer-text {
   font-size: 0.8rem;
   text-align: center;
+}
+#main-footer .footer-inside .cookie-settings-button {
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
