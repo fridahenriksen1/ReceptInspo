@@ -423,6 +423,15 @@ img {
 .container.main-container {
   padding: 0 1.8rem;
 }
+.container .tips-contaner {
+  margin: auto;
+}
+.container .tips-contaner .tips-ul {
+  max-width: 40rem;
+}
+.container .tips-contaner .tips-ul .tips-li {
+  padding-bottom: 1rem;
+}
 
 .main-header {
   background-color: #D3D8D4;
@@ -659,7 +668,7 @@ img {
   display: none;
 }
 .chip[type=checkbox]:checked + label {
-  background-color: #3262f1;
+  background-color: #FF9150;
 }
 
 .textField {
