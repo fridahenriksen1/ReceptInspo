@@ -63,7 +63,7 @@ fetch(jsonUrl)
     if(dataUserCards){
         getCard();
     }
-    const maxCardsToShow = 4; // Antal kort att visa
+    const maxCardsToShow = 3; // Antal kort att visa
     if(dataUserPopuar){
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
@@ -87,11 +87,11 @@ fetch(jsonUrl)
             });
         }); 
     }  
-    const maxCardsToShow2 = 8; // Antal kort att visa
+    const maxCardsToShow2 = 6; // Antal kort att visa
     if(dataUserPopuar2){
         //Detta kan göras snyggare
         dataUserPopuar2.forEach(section => {
-            recipes = data.slice(4, maxCardsToShow2).map(recipe => { // Använd slice() för att begränsa antalet kort
+            recipes = data.slice(3, maxCardsToShow2).map(recipe => { // Använd slice() för att begränsa antalet kort
                 const card = dataUserTemplate.content.cloneNode(true).children[0];
                 const header = card.querySelector('[data-header]');
                 const img = card.querySelector('[data-image]');
@@ -111,7 +111,7 @@ fetch(jsonUrl)
             });
         }); 
     }  
-    const maxCardsToShow3 = 16; // Antal kort att visa
+    const maxCardsToShow3 = 15; // Antal kort att visa
     if(dataUserPopuar3){
         //Detta kan göras snyggare
         dataUserPopuar3.forEach(section => {
