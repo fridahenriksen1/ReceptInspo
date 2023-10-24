@@ -40,6 +40,19 @@ img {
 
     }
 
+    .tips-contaner {
+        margin: auto;
+
+        .tips-ul {
+            max-width: 40rem;
+
+
+            .tips-li {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
 }
 
 
