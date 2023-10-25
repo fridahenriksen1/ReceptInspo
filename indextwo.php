@@ -16,7 +16,7 @@
     </section>
     <main class="container main-container">
         <section class="popular">
-            <h2>Nya recept sida 2</h2>
+            <h2>Nya recept sida 2 Test för att se något nyt hehe</h2>
             <article class="popular-cards" data-user-popular>
                 <template data-user-template>
                     <article class="card">
