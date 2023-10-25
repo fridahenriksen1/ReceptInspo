@@ -91,20 +91,20 @@ fetch('../json/recept.json')
                 let checkBoxLi =document.createElement('ul');
                    
                       //!Ta bort här
-                let checkboxLabel = document.createElement('label'); // Create a label element
-                let checkbox = document.createElement('input'); // Create an input element
+                // let checkboxLabel = document.createElement('label'); // Create a label element
+                // let checkbox = document.createElement('input'); // Create an input element
 
-                checkboxLabel.classList.add('steps-list-howTo');
+                // checkboxLabel.classList.add('steps-list-howTo');
 
             
                 item.steps.forEach((step, index) => {
                  
 
                     //!Ta tillbaka här
-                    //  let checkboxLabel = document.createElement('label'); // Create a label element
-                    //  let checkbox = document.createElement('input'); // Create an input element
+                     let checkboxLabel = document.createElement('label'); // Create a label element
+                     let checkbox = document.createElement('input'); // Create an input element
  
-                    //  checkboxLabel.classList.add('steps-list-howTo');
+                     checkboxLabel.classList.add('steps-list-howTo');
                    
 
 
@@ -151,11 +151,6 @@ fetch('../json/recept.json')
             // ol.appendChild(checkboxesList);
 
             
-
-
-
-
-   
             //För att skapa nya LI för varje step i json
             item.steps.forEach(step => {
                 let li = document.createElement('li');

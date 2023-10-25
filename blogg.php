@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="sv">
 
 <head>
@@ -8,11 +8,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> -->
     <!-- oswald -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,13 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </header> -->
+
+    <?php 
+    $pagetitel = "detta är tips";
+    include("abtest/header.php");
+    ?>
+
     <section id="hero" class="img-header">
         <img src="/img/kantarellPasta.webp" alt="kantarell pasta">
         <article class="content">
