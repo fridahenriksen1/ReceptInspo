@@ -96,14 +96,17 @@ fetch('../json/recept.json')
 
                 // checkboxLabel.classList.add('steps-list-howTo');
 
+                
             
                 item.steps.forEach((step, index) => {
                  
+                    let checkboxes2 = document.createElement('li'); // Create a container for checkboxes
+                    checkboxes2.classList.add('checkBoxContainer');
 
                     //!Ta tillbaka här
                      let checkboxLabel = document.createElement('label'); // Create a label element
                      let checkbox = document.createElement('input'); // Create an input element
- 
+                    
                      checkboxLabel.classList.add('steps-list-howTo');
                    
 
@@ -115,12 +118,13 @@ fetch('../json/recept.json')
 
                         checkboxLabel.htmlFor = `step${index}`; // Associate the label with the checkbox
                         checkboxLabel.textContent = step; // Set the label text to the step text
+                        
+                        // checkboxes2.appendChild(checkbox,checkboxLabel);
 
-                        checkBoxLi.appendChild(checkbox,checkboxLabel);
+                        checkboxes2.appendChild(checkbox); // Append the checkbox to the container
+                        checkboxes2.appendChild(checkboxLabel); // Append the label to the container
 
-                        checkboxes.appendChild(checkbox); // Append the checkbox to the container
-                        checkboxes.appendChild(checkboxLabel); // Append the label to the container
-
+                        checkBoxLi.appendChild(checkboxes2);
 
                 });
 
@@ -152,12 +156,12 @@ fetch('../json/recept.json')
 
             
             //För att skapa nya LI för varje step i json
-            item.steps.forEach(step => {
-                let li = document.createElement('li');
-                li.textContent = step;
-                checkBoxLi.append(li);
+            // item.steps.forEach(step => {
+            //     let li = document.createElement('li');
+            //     li.textContent = step;
+            //     checkBoxLi.append(li);
                 
-            });
+            // });
             item.ingredients.forEach(ingrident => {
                 let li = document.createElement('li');
                 console.log(ingrident);
@@ -179,7 +183,7 @@ fetch('../json/recept.json')
             
            
 
-            checkBoxLi.append(checkboxes);
+            // checkBoxLi.append(checkboxes);
 
 
             // timeCategoty.append(time,buyIngredients);
