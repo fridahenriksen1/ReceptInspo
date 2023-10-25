@@ -5,7 +5,7 @@ include("inc/abtest.php");
 ?>
 
     <?php 
-    $pagetitel = "detta är veggieets";
+    $pagetitel = "VeggieEats";
     include("abtest/header.php");
     ?>
 
