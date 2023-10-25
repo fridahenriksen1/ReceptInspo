@@ -26,14 +26,14 @@
 
 <header class="main-header">
         <section class="container">
-            <a class="logo" href="index.html">VeggieEats</a>
+            <a class="logo" href="index.php">VeggieEats</a>
             <nav class="main-nav">
                 <ul class="main-menu">
                     <li class="main-menu-item">
-                        <a class="link" href="recepie.html">Alla recept</a>
+                        <a class="link" href="recepie.php">Alla recept</a>
                     </li>
                     <li class="main-menu-item">
-                        <a class="link" href="blogg.html">Tips</a>
+                        <a class="link" href="blogg.php">Tips</a>
                     </li>
                 </ul>
             </nav>
